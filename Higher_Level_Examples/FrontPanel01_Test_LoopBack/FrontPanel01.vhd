@@ -27,10 +27,11 @@ use  IEEE.STD_LOGIC_UNSIGNED.all;
 entity FrontPanel01 is
 	generic 
 	(
-		constant INST_SRAM_SIZE_IN;	-- Legal Values are 256, 512, 1024, 2048, 4096
-		constant STACK_DEPTH_IN			-- Legal Values are 0 (none), 1 (single), > 1
+		constant INST_SRAM_SIZE_IN 	: integer;	-- Legal Values are 256, 512, 1024, 2048, 4096
+		constant STACK_DEPTH_IN			: integer	-- Legal Values are 0 (none), 1 (single), > 1
 	);
-port (
+	port
+	(
 	-- Clock and reset
 	i_CLOCK_50					: in std_logic := '1';
 	i_n_reset					: in std_logic := '1';
@@ -69,7 +70,6 @@ architecture struct of FrontPanel01 is
 	signal w_strPBDataLL			: std_logic;
 	signal w_LED					: std_logic;
 	signal w_LatLED				: std_logic;
-	
 	-- Front Panel Control lines
 	signal w_scanStrobe			:	std_logic;		-- Signals that a pushbutton was pressed
 	signal w_loadStrobe			:	std_logic;		-- Latch up pushbuttons
@@ -81,14 +81,9 @@ architecture struct of FrontPanel01 is
 	signal w_debouncedPBs		:	std_logic_vector(31 downto 0);		-- Pushbuttons
 	signal w_togglePinValues	:	std_logic_vector(31 downto 0);		-- Toggled pin values
 
---	attribute syn_keep: boolean;
---	attribute syn_keep of w_rawPBs		:	signal is true;
---	attribute syn_keep of w_latchedPBs	:	signal is true;
---	attribute syn_keep of w_ldStrobe2	:	signal is true;
---	attribute syn_keep of w_rawPBs		:	signal is true;
-
---	attribute syn_keep	: boolean;
---	attribute syn_keep of w_lowCount			: signal is true;
+	attribute syn_keep: boolean;
+	attribute syn_keep of w_rawPBs		:	signal is true;
+	attribute syn_keep of w_loadStrobe	:	signal is true;
 
 begin
 
@@ -113,11 +108,12 @@ begin
 	iop16 : ENTITY work.IOP16
 	generic map (
 		INST_SRAM_SIZE_PASS	=> INST_SRAM_SIZE_IN,
-		STACK_DEPTH_PASS		=> STACK_DEPTH_IN			-- Nested subroutines
+		STACK_DEPTH_PASS		=> STACK_DEPTH_IN
 	)
 	PORT map (
 		i_clk					=> i_CLOCK_50,			-- 50 MHz
-		i_resetN				=> i_n_reset,
+		i_resetN				=> i_n_reset,			-- reset
+		--
 		o_periphAdr			=> w_periphAdr,
 		i_periphDataIn		=> w_PERIP_DATA_IN,
 		o_periphWr			=> w_periphWr,
@@ -200,10 +196,10 @@ begin
 	end process;
 	
 	-- Write data strobes
-	w_strPBDataUU <= '1' when ((w_periphWr = '1') and (w_periphAdr = x"00")) else '0';
-	w_strPBDataUM <= '1' when ((w_periphWr = '1') and (w_periphAdr = x"01")) else '0';
-	w_strPBDataLM <= '1' when ((w_periphWr = '1') and (w_periphAdr = x"02")) else '0';
-	w_strPBDataLL <= '1' when ((w_periphWr = '1') and (w_periphAdr = x"03")) else '0';
+	w_strPBDataUU	<= '1' when ((w_periphWr = '1') and (w_periphAdr = x"00")) else '0';
+	w_strPBDataUM	<= '1' when ((w_periphWr = '1') and (w_periphAdr = x"01")) else '0';
+	w_strPBDataLM	<= '1' when ((w_periphWr = '1') and (w_periphAdr = x"02")) else '0';
+	w_strPBDataLL 	<= '1' when ((w_periphWr = '1') and (w_periphAdr = x"03")) else '0';
 	w_I2CWR 			<= '1' when  (w_periphWr = '1') and (w_periphAdr(7 downto 1) = x"0"&"010") else '0';
 	w_scanStrobe	<= '1' when ((w_periphWr = '1') and (w_periphAdr = x"06")) else '0';
 
