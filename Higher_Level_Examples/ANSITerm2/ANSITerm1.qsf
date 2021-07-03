@@ -179,7 +179,6 @@ set_global_assignment -name VHDL_FILE Components/CGABoldRom.vhd
 set_global_assignment -name VHDL_FILE Components/ANSIDisplayVGA.vhd
 set_global_assignment -name VHDL_FILE Components/bufferedUART.vhd
 set_global_assignment -name VHDL_FILE Components/BaudRate6850.vhd
-set_global_assignment -name VHDL_FILE Components/i2c.vhd
 set_global_assignment -name VHDL_FILE Components/Wrap_Keyboard.vhd
 set_global_assignment -name VHDL_FILE Components/ps2_keyboard_to_ascii.vhd
 set_global_assignment -name VHDL_FILE Components/ps2_keyboard.vhd
