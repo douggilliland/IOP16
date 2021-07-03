@@ -87,15 +87,15 @@ set_location_assignment PIN_N20 -to o_testPts[2]
 set_location_assignment PIN_N19 -to o_testPts[3]
 set_location_assignment PIN_M20 -to o_testPts[4]
 set_location_assignment PIN_M19 -to o_testPts[5]
-set_global_assignment -name VHDL_FILE "../../MultiComp (VHDL Template)/Components/FrontPanel01/Debounce32.vhd"
-set_global_assignment -name VHDL_FILE "../../MultiComp (VHDL Template)/Components/FrontPanel01/FrontPanel01.vhd"
-set_global_assignment -name VHDL_FILE "../../MultiComp (VHDL Template)/Components/CPU/IOP16/lifo.vhd"
-set_global_assignment -name VHDL_FILE "../../MultiComp (VHDL Template)/Components/CPU/IOP16/IOP16B.vhd"
-set_global_assignment -name VHDL_FILE "../../MultiComp (VHDL Template)/Components/CPU/IOP16/RegFile8x8.vhd"
-set_global_assignment -name VHDL_FILE "../../MultiComp (VHDL Template)/Components/Debounce/Debounce.vhd"
+set_global_assignment -name VHDL_FILE FrontPanel01.vhd
+set_global_assignment -name VHDL_FILE ../../RegFile8x8.vhd
+set_global_assignment -name VHDL_FILE "../../n-bit-gray-counter.vhd"
+set_global_assignment -name VHDL_FILE ../../lifo.vhd
+set_global_assignment -name VHDL_FILE ../../IOP16B.vhd
+set_global_assignment -name VHDL_FILE ../../Debounce.vhd
+set_global_assignment -name VHDL_FILE Components/i2c.vhd
+set_global_assignment -name VHDL_FILE Components/Debounce32.vhd
 set_global_assignment -name SIGNALTAP_FILE stp1.stp
-set_global_assignment -name VHDL_FILE "../../MultiComp (VHDL Template)/Components/COUNTER/n-bit-gray-counter.vhd"
-set_global_assignment -name VHDL_FILE "../../MultiComp (VHDL Template)/Components/I2C/i2c.vhd"
 set_global_assignment -name VHDL_FILE FrontPanel01_test.vhd
 set_global_assignment -name QIP_FILE IOP_ROM.qip
 set_global_assignment -name SIGNALTAP_FILE output_files/debouncePBs.stp
