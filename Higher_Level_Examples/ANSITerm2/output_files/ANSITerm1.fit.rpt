@@ -1,5 +1,5 @@
 Fitter report for ANSITerm1
-Sat Jul 03 18:23:08 2021
+Sat Jul 03 19:25:24 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -73,7 +73,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Jul 03 18:23:08 2021       ;
+; Fitter Status                      ; Successful - Sat Jul 03 19:25:24 2021       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; ANSITerm1                                   ;
 ; Top-level Entity Name              ; ANSITerm1                                   ;
@@ -166,7 +166,7 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   3.7%      ;
-;     Processor 3            ;   3.2%      ;
+;     Processor 3            ;   3.1%      ;
 ;     Processor 4            ;   3.0%      ;
 +----------------------------+-------------+
 
@@ -222,7 +222,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/output_files/ANSITerm1.pin.
+The pin-out file can be found in C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/output_files/ANSITerm1.pin.
 
 
 +-------------------------------------------------------------------------+
@@ -2102,43 +2102,43 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node i_CLOCK_50~input (placed in PIN T2 (CLK2, DIFFCLK_1p)) File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 37
+Info (176353): Automatically promoted node i_CLOCK_50~input (placed in PIN T2 (CLK2, DIFFCLK_1p)) File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 37
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a1 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/db/altsyncram_dc34.tdf Line: 57
-        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/db/altsyncram_dc34.tdf Line: 79
-        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a3 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/db/altsyncram_dc34.tdf Line: 101
-        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a4 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/db/altsyncram_dc34.tdf Line: 123
-        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a5 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/db/altsyncram_dc34.tdf Line: 145
-        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a6 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/db/altsyncram_dc34.tdf Line: 167
-        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a7 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/db/altsyncram_dc34.tdf Line: 189
-        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a12 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/db/altsyncram_dc34.tdf Line: 299
-        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a13 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/db/altsyncram_dc34.tdf Line: 321
-        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a14 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/db/altsyncram_dc34.tdf Line: 343
+        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a1 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_dc34.tdf Line: 57
+        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_dc34.tdf Line: 79
+        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a3 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_dc34.tdf Line: 101
+        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a4 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_dc34.tdf Line: 123
+        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a5 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_dc34.tdf Line: 145
+        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a6 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_dc34.tdf Line: 167
+        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a7 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_dc34.tdf Line: 189
+        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a12 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_dc34.tdf Line: 299
+        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a13 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_dc34.tdf Line: 321
+        Info (176357): Destination node IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_dc34:auto_generated|ram_block1a14 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_dc34.tdf Line: 343
         Info (176358): Non-global destination nodes limited to 10 nodes
-Info (176353): Automatically promoted node w_rdUart  File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 96
+Info (176353): Automatically promoted node w_rdUart  File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 96
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node w_wrUart  File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 95
+Info (176353): Automatically promoted node w_wrUart  File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 95
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
         Info (176357): Destination node bufferedUART:UART|process_1~0
-Info (176353): Automatically promoted node w_wrTerm  File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 98
+Info (176353): Automatically promoted node w_wrTerm  File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 98
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result  File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp (VHDL Template)/Components/PS2KB/ps2_Wrapped/debounce.vhd Line: 33
+Info (176353): Automatically promoted node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result  File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/debounce.vhd Line: 33
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[0] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp (VHDL Template)/Components/PS2KB/ps2_Wrapped/ps2_keyboard.vhd Line: 90
-        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[1] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp (VHDL Template)/Components/PS2KB/ps2_Wrapped/ps2_keyboard.vhd Line: 90
-        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[2] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp (VHDL Template)/Components/PS2KB/ps2_Wrapped/ps2_keyboard.vhd Line: 90
-        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[3] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp (VHDL Template)/Components/PS2KB/ps2_Wrapped/ps2_keyboard.vhd Line: 90
-        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[4] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp (VHDL Template)/Components/PS2KB/ps2_Wrapped/ps2_keyboard.vhd Line: 90
-        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[5] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp (VHDL Template)/Components/PS2KB/ps2_Wrapped/ps2_keyboard.vhd Line: 90
-        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[6] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp (VHDL Template)/Components/PS2KB/ps2_Wrapped/ps2_keyboard.vhd Line: 90
-        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[7] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp (VHDL Template)/Components/PS2KB/ps2_Wrapped/ps2_keyboard.vhd Line: 90
-        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[8] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp (VHDL Template)/Components/PS2KB/ps2_Wrapped/ps2_keyboard.vhd Line: 90
-        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[9] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp (VHDL Template)/Components/PS2KB/ps2_Wrapped/ps2_keyboard.vhd Line: 90
+        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[0] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ps2_keyboard.vhd Line: 90
+        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[1] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ps2_keyboard.vhd Line: 90
+        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[2] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ps2_keyboard.vhd Line: 90
+        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[3] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ps2_keyboard.vhd Line: 90
+        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[4] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ps2_keyboard.vhd Line: 90
+        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[5] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ps2_keyboard.vhd Line: 90
+        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[6] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ps2_keyboard.vhd Line: 90
+        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[7] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ps2_keyboard.vhd Line: 90
+        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[8] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ps2_keyboard.vhd Line: 90
+        Info (176357): Destination node Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|count_idle[9] File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ps2_keyboard.vhd Line: 90
         Info (176358): Non-global destination nodes limited to 10 nodes
-Info (176353): Automatically promoted node w_rdTerm  File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 99
+Info (176353): Automatically promoted node w_rdTerm  File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 99
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -2161,8 +2161,8 @@ Info (170195): Router estimated average interconnect usage is 2% of the availabl
     Info (170196): Router estimated peak interconnect usage is 12% of the available device resources in the region that extends from location X10_Y10 to location X20_Y19
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:05
-Info (11888): Total time spent on timing analysis during the Fitter is 2.34 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:06
+Info (11888): Total time spent on timing analysis during the Fitter is 2.62 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2170,60 +2170,60 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169177): 32 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin sdDO uses I/O standard 3.3-V LVTTL at A20 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 61
-    Info (169178): Pin sdCD uses I/O standard 3.3-V LVTTL at B14 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 62
-    Info (169178): Pin sdRamData[0] uses I/O standard 3.3-V LVTTL at AA10 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sdRamData[1] uses I/O standard 3.3-V LVTTL at AB9 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sdRamData[2] uses I/O standard 3.3-V LVTTL at AA9 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sdRamData[3] uses I/O standard 3.3-V LVTTL at AB8 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sdRamData[4] uses I/O standard 3.3-V LVTTL at AA8 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sdRamData[5] uses I/O standard 3.3-V LVTTL at AB7 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sdRamData[6] uses I/O standard 3.3-V LVTTL at AA7 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sdRamData[7] uses I/O standard 3.3-V LVTTL at AB5 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sdRamData[8] uses I/O standard 3.3-V LVTTL at Y7 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sdRamData[9] uses I/O standard 3.3-V LVTTL at W8 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sdRamData[10] uses I/O standard 3.3-V LVTTL at Y8 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sdRamData[11] uses I/O standard 3.3-V LVTTL at V9 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sdRamData[12] uses I/O standard 3.3-V LVTTL at V10 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sdRamData[13] uses I/O standard 3.3-V LVTTL at Y10 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sdRamData[14] uses I/O standard 3.3-V LVTTL at W10 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sdRamData[15] uses I/O standard 3.3-V LVTTL at V11 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 79
-    Info (169178): Pin sramData[0] uses I/O standard 3.3-V LVTTL at E1 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169178): Pin sramData[1] uses I/O standard 3.3-V LVTTL at C1 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169178): Pin sramData[2] uses I/O standard 3.3-V LVTTL at B1 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169178): Pin sramData[3] uses I/O standard 3.3-V LVTTL at B3 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169178): Pin sramData[4] uses I/O standard 3.3-V LVTTL at B2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169178): Pin sramData[5] uses I/O standard 3.3-V LVTTL at C2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169178): Pin sramData[6] uses I/O standard 3.3-V LVTTL at D2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169178): Pin sramData[7] uses I/O standard 3.3-V LVTTL at F2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169178): Pin io_PS2_CLK uses I/O standard 3.3-V LVTTL at R1 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 54
-    Info (169178): Pin io_PS2_DAT uses I/O standard 3.3-V LVTTL at R2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 55
-    Info (169178): Pin ucts1 uses I/O standard 3.3-V LVTTL at A13 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 42
-    Info (169178): Pin i_CLOCK_50 uses I/O standard 3.3-V LVTTL at T2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 37
-    Info (169178): Pin urxd1 uses I/O standard 3.3-V LVTTL at B13 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 40
-    Info (169178): Pin i_n_reset uses I/O standard 3.3-V LVTTL at W13 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 38
+    Info (169178): Pin sdDO uses I/O standard 3.3-V LVTTL at A20 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 61
+    Info (169178): Pin sdCD uses I/O standard 3.3-V LVTTL at B14 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 62
+    Info (169178): Pin sdRamData[0] uses I/O standard 3.3-V LVTTL at AA10 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sdRamData[1] uses I/O standard 3.3-V LVTTL at AB9 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sdRamData[2] uses I/O standard 3.3-V LVTTL at AA9 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sdRamData[3] uses I/O standard 3.3-V LVTTL at AB8 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sdRamData[4] uses I/O standard 3.3-V LVTTL at AA8 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sdRamData[5] uses I/O standard 3.3-V LVTTL at AB7 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sdRamData[6] uses I/O standard 3.3-V LVTTL at AA7 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sdRamData[7] uses I/O standard 3.3-V LVTTL at AB5 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sdRamData[8] uses I/O standard 3.3-V LVTTL at Y7 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sdRamData[9] uses I/O standard 3.3-V LVTTL at W8 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sdRamData[10] uses I/O standard 3.3-V LVTTL at Y8 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sdRamData[11] uses I/O standard 3.3-V LVTTL at V9 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sdRamData[12] uses I/O standard 3.3-V LVTTL at V10 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sdRamData[13] uses I/O standard 3.3-V LVTTL at Y10 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sdRamData[14] uses I/O standard 3.3-V LVTTL at W10 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sdRamData[15] uses I/O standard 3.3-V LVTTL at V11 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 79
+    Info (169178): Pin sramData[0] uses I/O standard 3.3-V LVTTL at E1 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169178): Pin sramData[1] uses I/O standard 3.3-V LVTTL at C1 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169178): Pin sramData[2] uses I/O standard 3.3-V LVTTL at B1 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169178): Pin sramData[3] uses I/O standard 3.3-V LVTTL at B3 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169178): Pin sramData[4] uses I/O standard 3.3-V LVTTL at B2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169178): Pin sramData[5] uses I/O standard 3.3-V LVTTL at C2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169178): Pin sramData[6] uses I/O standard 3.3-V LVTTL at D2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169178): Pin sramData[7] uses I/O standard 3.3-V LVTTL at F2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169178): Pin io_PS2_CLK uses I/O standard 3.3-V LVTTL at R1 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 54
+    Info (169178): Pin io_PS2_DAT uses I/O standard 3.3-V LVTTL at R2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 55
+    Info (169178): Pin ucts1 uses I/O standard 3.3-V LVTTL at A13 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 42
+    Info (169178): Pin i_CLOCK_50 uses I/O standard 3.3-V LVTTL at T2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 37
+    Info (169178): Pin urxd1 uses I/O standard 3.3-V LVTTL at B13 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 40
+    Info (169178): Pin i_n_reset uses I/O standard 3.3-V LVTTL at W13 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 38
 Warning (169064): Following 10 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
-    Info (169065): Pin sramData[0] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169065): Pin sramData[1] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169065): Pin sramData[2] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169065): Pin sramData[3] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169065): Pin sramData[4] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169065): Pin sramData[5] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169065): Pin sramData[6] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169065): Pin sramData[7] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 65
-    Info (169065): Pin io_PS2_CLK has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 54
-    Info (169065): Pin io_PS2_DAT has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/ANSITerm1.vhd Line: 55
-Info (144001): Generated suppressed messages file C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/output_files/ANSITerm1.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 5544 megabytes
-    Info: Processing ended: Sat Jul 03 18:23:09 2021
+    Info (169065): Pin sramData[0] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169065): Pin sramData[1] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169065): Pin sramData[2] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169065): Pin sramData[3] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169065): Pin sramData[4] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169065): Pin sramData[5] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169065): Pin sramData[6] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169065): Pin sramData[7] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 65
+    Info (169065): Pin io_PS2_CLK has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 54
+    Info (169065): Pin io_PS2_DAT has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 55
+Info (144001): Generated suppressed messages file C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/output_files/ANSITerm1.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 5564 megabytes
+    Info: Processing ended: Sat Jul 03 19:25:25 2021
     Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Total CPU time (on all processors): 00:00:29
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/HPz420/Documents/GitHub/Doug Gilliland/MultiComp/MultiComp_On_RETRO-EP4CE15/ANSITerm2/output_files/ANSITerm1.fit.smsg.
+The suppressed messages can be found in C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/output_files/ANSITerm1.fit.smsg.
 
 
