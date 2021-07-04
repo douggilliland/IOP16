@@ -329,7 +329,7 @@ BEGIN
 								x"AA";
 	
 	-- Peripheral read/write Controls
-	o_periphWr <=	'1' when ((w_OP_IOW = '1') and (w_StateGC(1) = '1')) else 
+	o_periphWr <=	'1' when ((w_OP_IOW = '1') and (w_StateGC(1) = '1') and (w_StateGC(0) = '1')) else 
 						'0';
 	o_periphRd <=	'1' when ((w_OP_IOR = '1') and (w_StateGC(1) = '1')) else 
 						'1' when ((w_OP_IOR = '1') and (w_StateGC(1) = '1')) else 

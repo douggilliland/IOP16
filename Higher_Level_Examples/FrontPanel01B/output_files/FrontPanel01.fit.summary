@@ -1,16 +1,16 @@
-Fitter Status : Successful - Sat Jul 03 20:03:26 2021
+Fitter Status : Successful - Sun Jul 04 00:17:41 2021
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : FrontPanel01
 Top-level Entity Name : FrontPanel01_test
 Family : Cyclone IV E
 Device : EP4CE15F23C8
 Timing Models : Final
-Total logic elements : 1,786 / 15,408 ( 12 % )
-    Total combinational functions : 1,241 / 15,408 ( 8 % )
-    Dedicated logic registers : 1,200 / 15,408 ( 8 % )
-Total registers : 1200
+Total logic elements : 1,796 / 15,408 ( 12 % )
+    Total combinational functions : 1,271 / 15,408 ( 8 % )
+    Dedicated logic registers : 1,182 / 15,408 ( 8 % )
+Total registers : 1182
 Total pins : 7 / 344 ( 2 % )
 Total virtual pins : 0
-Total memory bits : 84,288 / 516,096 ( 16 % )
+Total memory bits : 83,904 / 516,096 ( 16 % )
 Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
