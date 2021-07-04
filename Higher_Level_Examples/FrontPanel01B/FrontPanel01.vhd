@@ -25,8 +25,13 @@ use  IEEE.STD_LOGIC_ARITH.all;
 use  IEEE.STD_LOGIC_UNSIGNED.all;
 
 entity FrontPanel01 is
-port
-(
+	generic 
+	(
+		constant INST_SRAM_SIZE_IN 	: integer;	-- Legal Values are 256, 512, 1024, 2048, 4096
+		constant STACK_DEPTH_IN			: integer	-- Legal Values are 0 (none), 1 (single), > 1
+	);
+	port
+	(
 	-- Clock and reset
 	i_CLOCK_50					: in std_logic := '1';
 	i_n_reset					: in std_logic := '1';
@@ -65,7 +70,6 @@ architecture struct of FrontPanel01 is
 	signal w_strPBDataLL			: std_logic;
 	signal w_LED					: std_logic;
 	signal w_LatLED				: std_logic;
-	
 	-- Front Panel Control lines
 	signal w_scanStrobe			:	std_logic;		-- Signals that a pushbutton was pressed
 	signal w_loadStrobe			:	std_logic;		-- Latch up pushbuttons
@@ -80,8 +84,6 @@ architecture struct of FrontPanel01 is
 	attribute syn_keep: boolean;
 	attribute syn_keep of w_rawPBs		:	signal is true;
 	attribute syn_keep of w_loadStrobe	:	signal is true;
---	attribute syn_keep of w_ldStrobe2	:	signal is true;
---	attribute syn_keep of w_lowCount			: signal is true;
 
 begin
 
@@ -104,13 +106,13 @@ begin
 	-- 	x04 - I2C Write Data
 	-- 	x05 - I2C Command
 	iop16 : ENTITY work.IOP16
-	generic map 	( 
-		INST_SRAM_SIZE_PASS	=> 512,
-		STACK_DEPTH				=> 4
+	generic map (
+		INST_SRAM_SIZE_PASS	=> INST_SRAM_SIZE_IN,
+		STACK_DEPTH_PASS		=> STACK_DEPTH_IN
 	)
 	PORT map (
-		i_clk					=> i_CLOCK_50,
-		i_resetN				=> i_n_reset,			-- 50 MHz
+		i_clk					=> i_CLOCK_50,			-- 50 MHz
+		i_resetN				=> i_n_reset,			-- reset
 		--
 		o_periphAdr			=> w_periphAdr,
 		i_periphDataIn		=> w_PERIP_DATA_IN,
