@@ -2,160 +2,64 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'i_CLOCK_50'
-Slack : -14.145
-TNS   : -2995.059
-
-Type  : Slow 1200mV 85C Model Setup 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -6.584
-TNS   : -203.344
-
-Type  : Slow 1200mV 85C Model Setup 'Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result'
-Slack : -0.210
-TNS   : -0.969
-
-Type  : Slow 1200mV 85C Model Hold 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : 0.089
+Type  : Slow 1200mV 85C Model Setup 'altera_reserved_tck'
+Slack : 43.375
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'i_CLOCK_50'
-Slack : 0.432
+Type  : Slow 1200mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.455
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result'
-Slack : 0.515
+Type  : Slow 1200mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 96.264
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'i_CLOCK_50'
-Slack : -1.155
-TNS   : -35.826
-
-Type  : Slow 1200mV 85C Model Recovery 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -0.545
-TNS   : -3.267
-
-Type  : Slow 1200mV 85C Model Removal 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : 0.538
+Type  : Slow 1200mV 85C Model Removal 'altera_reserved_tck'
+Slack : 1.649
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Removal 'i_CLOCK_50'
-Slack : 1.136
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.418
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'i_CLOCK_50'
-Slack : -3.201
-TNS   : -774.730
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -3.201
-TNS   : -62.681
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result'
-Slack : -1.487
-TNS   : -16.357
-
-Type  : Slow 1200mV 0C Model Setup 'i_CLOCK_50'
-Slack : -13.055
-TNS   : -2768.238
-
-Type  : Slow 1200mV 0C Model Setup 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -6.129
-TNS   : -185.593
-
-Type  : Slow 1200mV 0C Model Setup 'Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result'
-Slack : -0.236
-TNS   : -0.601
-
-Type  : Slow 1200mV 0C Model Hold 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : 0.103
+Type  : Slow 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 43.895
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'i_CLOCK_50'
-Slack : 0.383
+Type  : Slow 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.403
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result'
-Slack : 0.486
+Type  : Slow 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 96.479
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'i_CLOCK_50'
-Slack : -1.006
-TNS   : -28.801
-
-Type  : Slow 1200mV 0C Model Recovery 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -0.408
-TNS   : -2.320
-
-Type  : Slow 1200mV 0C Model Removal 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : 0.321
+Type  : Slow 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 1.496
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Removal 'i_CLOCK_50'
-Slack : 1.000
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.265
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'i_CLOCK_50'
-Slack : -3.201
-TNS   : -774.772
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -3.201
-TNS   : -65.620
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result'
-Slack : -1.487
-TNS   : -16.357
-
-Type  : Fast 1200mV 0C Model Setup 'i_CLOCK_50'
-Slack : -5.594
-TNS   : -1060.643
-
-Type  : Fast 1200mV 0C Model Setup 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -2.332
-TNS   : -65.288
-
-Type  : Fast 1200mV 0C Model Setup 'Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result'
-Slack : 0.347
+Type  : Fast 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 47.436
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'i_CLOCK_50'
-Slack : 0.153
+Type  : Fast 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.187
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : 0.188
+Type  : Fast 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 98.238
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result'
-Slack : 0.200
+Type  : Fast 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.705
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'i_CLOCK_50'
-Slack : 0.019
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.294
 TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Recovery 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : 0.114
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : 0.296
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'i_CLOCK_50'
-Slack : 0.485
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'i_CLOCK_50'
-Slack : -3.000
-TNS   : -628.910
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -1.000
-TNS   : -41.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result'
-Slack : -1.000
-TNS   : -11.000
 
 ------------------------------------------------------------

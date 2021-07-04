@@ -128,13 +128,13 @@ ARCHITECTURE IOP16_beh OF IOP16 IS
 	signal w_OP_RTS	: std_logic;
 	
 	-- Signal Tap Logic Analyzer signals
---	attribute syn_keep	: boolean;
---	attribute syn_keep of w_StateGC			: signal is true;
---	attribute syn_keep of w_PC_out			: signal is true;
---	attribute syn_keep of w_RomData			: signal is true;
---	attribute syn_keep of w_rtnAddr			: signal is true;
---	attribute syn_keep of w_incPC				: signal is true;
---	attribute syn_keep of w_ldPC				: signal is true;
+	attribute syn_keep	: boolean;
+	attribute syn_keep of w_StateGC			: signal is true;
+	attribute syn_keep of w_PC_out			: signal is true;
+	attribute syn_keep of w_RomData			: signal is true;
+	attribute syn_keep of w_rtnAddr			: signal is true;
+	attribute syn_keep of w_incPC				: signal is true;
+	attribute syn_keep of w_ldPC				: signal is true;
 	
 
 BEGIN
