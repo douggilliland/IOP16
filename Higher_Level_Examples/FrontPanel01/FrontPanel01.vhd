@@ -214,10 +214,10 @@ begin
 	end process;
 
 	-- Read data mux
-	w_PERIP_DATA_IN <=	i_FPLEDs(31 downto 24)	when (w_periphAdr = x"00") else
-								i_FPLEDs(23 downto 16)	when (w_periphAdr = x"01") else
-								i_FPLEDs(15 downto 8)	when (w_periphAdr = x"02") else
-								i_FPLEDs(7 downto 0)		when (w_periphAdr = x"03") else
+	w_PERIP_DATA_IN <=	i_FPLEDs(31 downto 24)			when (w_periphAdr = x"00") else
+								i_FPLEDs(23 downto 16)			when (w_periphAdr = x"01") else
+								i_FPLEDs(15 downto 8)			when (w_periphAdr = x"02") else
+								i_FPLEDs(7 downto 0)				when (w_periphAdr = x"03") else
 								w_I2C_RD_DATA 						when (w_periphAdr(7 downto 1) = x"0"&"010") else
 								"0000000"&(not i_I2C_INTn)		when (w_periphAdr = x"06") else
 								"0000000"&i_key1					when (w_periphAdr = x"07") else

@@ -64,9 +64,9 @@ begin
 	debounceReset : entity work.Debouncer
 		port map
 		(
-			i_clk				=> i_CLOCK_50,
-			i_PinIn			=> i_n_reset,
-			o_PinOut			=> w_resetClean_n
+			i_clk		=> i_CLOCK_50,
+			i_PinIn	=> i_n_reset,
+			o_PinOut	=> w_resetClean_n
 		);
 	
 	-- -------------------------------------------------------------------------------------------------------
@@ -75,7 +75,7 @@ begin
 	fp01 : work.FrontPanel01
 		-- Need to pass down instruction RAM and stack sizes
 		generic	map ( 
-			INST_SRAM_SIZE_IN	=> 1024,
+			INST_SRAM_SIZE_IN	=> 512,
 			STACK_DEPTH_IN		=> 4
 		)
 		port map
