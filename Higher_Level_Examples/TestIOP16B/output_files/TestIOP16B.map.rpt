@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TestIOP16B
-Sun Jul 04 00:48:34 2021
+Sun Jul 04 00:54:29 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -21,7 +21,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  13. Inverted Register Statistics
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
  15. Source assignments for IOP16:IOP16
- 16. Source assignments for IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_1eu3:auto_generated
+ 16. Source assignments for IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_m9u3:auto_generated
  17. Parameter Settings for User Entity Instance: IOP16:IOP16
  18. Parameter Settings for User Entity Instance: IOP16:IOP16|GrayCounter:greyLow
  19. Parameter Settings for User Entity Instance: IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component
@@ -57,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jul 04 00:48:34 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sun Jul 04 00:54:29 2021       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; TestIOP16B                                  ;
 ; Top-level Entity Name              ; TestIOP16B                                  ;
@@ -177,30 +177,30 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                          ;
-+--------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path           ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                  ; Library ;
-+--------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
-; ../../Debounce.vhd                         ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Debounce.vhd                                            ;         ;
-; ../../n-bit-gray-counter.vhd               ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/n-bit-gray-counter.vhd                                  ;         ;
-; ../../RegFile8x8.vhd                       ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/RegFile8x8.vhd                                          ;         ;
-; ../../lifo.vhd                             ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/lifo.vhd                                                ;         ;
-; ../../IOP16B.vhd                           ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP16B.vhd                                              ;         ;
-; IOP_ROM.vhd                                ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/IOP_ROM.vhd            ;         ;
-; TestIOP16B.vhd                             ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TestIOP16B.vhd         ;         ;
-; altsyncram.tdf                             ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                         ;         ;
-; stratix_ram_block.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                  ;         ;
-; lpm_mux.inc                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                            ;         ;
-; lpm_decode.inc                             ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                         ;         ;
-; aglobal201.inc                             ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                         ;         ;
-; a_rdenreg.inc                              ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                          ;         ;
-; altrom.inc                                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                             ;         ;
-; altram.inc                                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                             ;         ;
-; altdpram.inc                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                           ;         ;
-; db/altsyncram_1eu3.tdf                     ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/db/altsyncram_1eu3.tdf ;         ;
-; ../../../IOP16_Code/TestIOP16B/testLED.mif ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP16_Code/TestIOP16B/testLED.mif                       ;         ;
-+--------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                       ;
++-----------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path        ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                  ; Library ;
++-----------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
+; ../../Debounce.vhd                      ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Debounce.vhd                                            ;         ;
+; ../../n-bit-gray-counter.vhd            ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/n-bit-gray-counter.vhd                                  ;         ;
+; ../../RegFile8x8.vhd                    ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/RegFile8x8.vhd                                          ;         ;
+; ../../lifo.vhd                          ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/lifo.vhd                                                ;         ;
+; ../../IOP16B.vhd                        ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP16B.vhd                                              ;         ;
+; IOP_ROM.vhd                             ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/IOP_ROM.vhd            ;         ;
+; TestIOP16B.vhd                          ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TestIOP16B.vhd         ;         ;
+; altsyncram.tdf                          ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                         ;         ;
+; stratix_ram_block.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                  ;         ;
+; lpm_mux.inc                             ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                            ;         ;
+; lpm_decode.inc                          ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                         ;         ;
+; aglobal201.inc                          ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                         ;         ;
+; a_rdenreg.inc                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                          ;         ;
+; altrom.inc                              ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                             ;         ;
+; altram.inc                              ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                             ;         ;
+; altdpram.inc                            ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                           ;         ;
+; db/altsyncram_m9u3.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/db/altsyncram_m9u3.tdf ;         ;
+; ../../IOP16_Code/TestIOP16B/testLED.mif ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP16_Code/TestIOP16B/testLED.mif                       ;         ;
++-----------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -247,19 +247,19 @@ https://fpgasoftware.intel.com/eula.
 ;       |GrayCounter:greyLow|                  ; 1 (1)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestIOP16B|IOP16:IOP16|GrayCounter:greyLow                                                                              ; GrayCounter     ; work         ;
 ;       |IOP_ROM:\GEN_512W_INST_ROM:IopRom|    ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestIOP16B|IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom                                                                ; IOP_ROM         ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestIOP16B|IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;             |altsyncram_1eu3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestIOP16B|IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_1eu3:auto_generated ; altsyncram_1eu3 ; work         ;
+;             |altsyncram_m9u3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestIOP16B|IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_m9u3:auto_generated ; altsyncram_m9u3 ; work         ;
 ;       |RegFile8x8:RegFile|                   ; 82 (82)             ; 64 (64)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestIOP16B|IOP16:IOP16|RegFile8x8:RegFile                                                                               ; RegFile8x8      ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                      ;
-+-------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------------------------------------+
-; Name                                                                                                                    ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                        ;
-+-------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------------------------------------+
-; IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_1eu3:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 512          ; 16           ; --           ; --           ; 8192 ; ../../../IOP16_Code/TestIOP16B/testLED.mif ;
-+-------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------------------------+
+; Name                                                                                                                    ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                     ;
++-------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------------------------+
+; IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_m9u3:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 512          ; 16           ; --           ; --           ; 8192 ; ../../IOP16_Code/TestIOP16B/testLED.mif ;
++-------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -432,7 +432,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_1eu3:auto_generated ;
+; Source assignments for IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_m9u3:auto_generated ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                    ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------+
@@ -463,62 +463,62 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +----------------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component ;
-+------------------------------------+--------------------------------------------+------------------------------------------+
-; Parameter Name                     ; Value                                      ; Type                                     ;
-+------------------------------------+--------------------------------------------+------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                                          ; Untyped                                  ;
-; AUTO_CARRY_CHAINS                  ; ON                                         ; AUTO_CARRY                               ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                        ; IGNORE_CARRY                             ;
-; AUTO_CASCADE_CHAINS                ; ON                                         ; AUTO_CASCADE                             ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                        ; IGNORE_CASCADE                           ;
-; WIDTH_BYTEENA                      ; 1                                          ; Untyped                                  ;
-; OPERATION_MODE                     ; ROM                                        ; Untyped                                  ;
-; WIDTH_A                            ; 16                                         ; Signed Integer                           ;
-; WIDTHAD_A                          ; 9                                          ; Signed Integer                           ;
-; NUMWORDS_A                         ; 512                                        ; Signed Integer                           ;
-; OUTDATA_REG_A                      ; UNREGISTERED                               ; Untyped                                  ;
-; ADDRESS_ACLR_A                     ; NONE                                       ; Untyped                                  ;
-; OUTDATA_ACLR_A                     ; NONE                                       ; Untyped                                  ;
-; WRCONTROL_ACLR_A                   ; NONE                                       ; Untyped                                  ;
-; INDATA_ACLR_A                      ; NONE                                       ; Untyped                                  ;
-; BYTEENA_ACLR_A                     ; NONE                                       ; Untyped                                  ;
-; WIDTH_B                            ; 1                                          ; Signed Integer                           ;
-; WIDTHAD_B                          ; 1                                          ; Signed Integer                           ;
-; NUMWORDS_B                         ; 0                                          ; Signed Integer                           ;
-; INDATA_REG_B                       ; CLOCK1                                     ; Untyped                                  ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                     ; Untyped                                  ;
-; RDCONTROL_REG_B                    ; CLOCK1                                     ; Untyped                                  ;
-; ADDRESS_REG_B                      ; CLOCK1                                     ; Untyped                                  ;
-; OUTDATA_REG_B                      ; UNREGISTERED                               ; Untyped                                  ;
-; BYTEENA_REG_B                      ; CLOCK1                                     ; Untyped                                  ;
-; INDATA_ACLR_B                      ; NONE                                       ; Untyped                                  ;
-; WRCONTROL_ACLR_B                   ; NONE                                       ; Untyped                                  ;
-; ADDRESS_ACLR_B                     ; NONE                                       ; Untyped                                  ;
-; OUTDATA_ACLR_B                     ; NONE                                       ; Untyped                                  ;
-; RDCONTROL_ACLR_B                   ; NONE                                       ; Untyped                                  ;
-; BYTEENA_ACLR_B                     ; NONE                                       ; Untyped                                  ;
-; WIDTH_BYTEENA_A                    ; 1                                          ; Signed Integer                           ;
-; WIDTH_BYTEENA_B                    ; 1                                          ; Signed Integer                           ;
-; RAM_BLOCK_TYPE                     ; AUTO                                       ; Untyped                                  ;
-; BYTE_SIZE                          ; 8                                          ; Signed Integer                           ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                  ; Untyped                                  ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                       ; Untyped                                  ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                       ; Untyped                                  ;
-; INIT_FILE                          ; ../../../IOP16_Code/TestIOP16B/testLED.mif ; Untyped                                  ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                     ; Untyped                                  ;
-; MAXIMUM_DEPTH                      ; 0                                          ; Signed Integer                           ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                                     ; Untyped                                  ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                                     ; Untyped                                  ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                     ; Untyped                                  ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                     ; Untyped                                  ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                            ; Untyped                                  ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                            ; Untyped                                  ;
-; ENABLE_ECC                         ; FALSE                                      ; Untyped                                  ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                      ; Untyped                                  ;
-; WIDTH_ECCSTATUS                    ; 3                                          ; Signed Integer                           ;
-; DEVICE_FAMILY                      ; Cyclone IV E                               ; Untyped                                  ;
-; CBXI_PARAMETER                     ; altsyncram_1eu3                            ; Untyped                                  ;
-+------------------------------------+--------------------------------------------+------------------------------------------+
++------------------------------------+-----------------------------------------+---------------------------------------------+
+; Parameter Name                     ; Value                                   ; Type                                        ;
++------------------------------------+-----------------------------------------+---------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                       ; Untyped                                     ;
+; AUTO_CARRY_CHAINS                  ; ON                                      ; AUTO_CARRY                                  ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                     ; IGNORE_CARRY                                ;
+; AUTO_CASCADE_CHAINS                ; ON                                      ; AUTO_CASCADE                                ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                     ; IGNORE_CASCADE                              ;
+; WIDTH_BYTEENA                      ; 1                                       ; Untyped                                     ;
+; OPERATION_MODE                     ; ROM                                     ; Untyped                                     ;
+; WIDTH_A                            ; 16                                      ; Signed Integer                              ;
+; WIDTHAD_A                          ; 9                                       ; Signed Integer                              ;
+; NUMWORDS_A                         ; 512                                     ; Signed Integer                              ;
+; OUTDATA_REG_A                      ; UNREGISTERED                            ; Untyped                                     ;
+; ADDRESS_ACLR_A                     ; NONE                                    ; Untyped                                     ;
+; OUTDATA_ACLR_A                     ; NONE                                    ; Untyped                                     ;
+; WRCONTROL_ACLR_A                   ; NONE                                    ; Untyped                                     ;
+; INDATA_ACLR_A                      ; NONE                                    ; Untyped                                     ;
+; BYTEENA_ACLR_A                     ; NONE                                    ; Untyped                                     ;
+; WIDTH_B                            ; 1                                       ; Signed Integer                              ;
+; WIDTHAD_B                          ; 1                                       ; Signed Integer                              ;
+; NUMWORDS_B                         ; 0                                       ; Signed Integer                              ;
+; INDATA_REG_B                       ; CLOCK1                                  ; Untyped                                     ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                  ; Untyped                                     ;
+; RDCONTROL_REG_B                    ; CLOCK1                                  ; Untyped                                     ;
+; ADDRESS_REG_B                      ; CLOCK1                                  ; Untyped                                     ;
+; OUTDATA_REG_B                      ; UNREGISTERED                            ; Untyped                                     ;
+; BYTEENA_REG_B                      ; CLOCK1                                  ; Untyped                                     ;
+; INDATA_ACLR_B                      ; NONE                                    ; Untyped                                     ;
+; WRCONTROL_ACLR_B                   ; NONE                                    ; Untyped                                     ;
+; ADDRESS_ACLR_B                     ; NONE                                    ; Untyped                                     ;
+; OUTDATA_ACLR_B                     ; NONE                                    ; Untyped                                     ;
+; RDCONTROL_ACLR_B                   ; NONE                                    ; Untyped                                     ;
+; BYTEENA_ACLR_B                     ; NONE                                    ; Untyped                                     ;
+; WIDTH_BYTEENA_A                    ; 1                                       ; Signed Integer                              ;
+; WIDTH_BYTEENA_B                    ; 1                                       ; Signed Integer                              ;
+; RAM_BLOCK_TYPE                     ; AUTO                                    ; Untyped                                     ;
+; BYTE_SIZE                          ; 8                                       ; Signed Integer                              ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                               ; Untyped                                     ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                    ; Untyped                                     ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                    ; Untyped                                     ;
+; INIT_FILE                          ; ../../IOP16_Code/TestIOP16B/testLED.mif ; Untyped                                     ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                  ; Untyped                                     ;
+; MAXIMUM_DEPTH                      ; 0                                       ; Signed Integer                              ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                                  ; Untyped                                     ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                  ; Untyped                                     ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                  ; Untyped                                     ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                  ; Untyped                                     ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                         ; Untyped                                     ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                         ; Untyped                                     ;
+; ENABLE_ECC                         ; FALSE                                   ; Untyped                                     ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                   ; Untyped                                     ;
+; WIDTH_ECCSTATUS                    ; 3                                       ; Signed Integer                              ;
+; DEVICE_FAMILY                      ; Cyclone IV E                            ; Untyped                                     ;
+; CBXI_PARAMETER                     ; altsyncram_m9u3                         ; Untyped                                     ;
++------------------------------------+-----------------------------------------+---------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -605,7 +605,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Jul 04 00:48:19 2021
+    Info: Processing started: Sun Jul 04 00:54:13 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestIOP16B -c TestIOP16B
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -663,7 +663,7 @@ Info (12133): Instantiated megafunction "IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:
     Info (12134): Parameter "indata_aclr_a" = "UNUSED"
     Info (12134): Parameter "indata_aclr_b" = "NONE"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "../../../IOP16_Code/TestIOP16B/testLED.mif"
+    Info (12134): Parameter "init_file" = "../../IOP16_Code/TestIOP16B/testLED.mif"
     Info (12134): Parameter "init_file_layout" = "PORT_A"
     Info (12134): Parameter "maximum_depth" = "0"
     Info (12134): Parameter "numwords_a" = "512"
@@ -693,9 +693,9 @@ Info (12133): Instantiated megafunction "IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1eu3.tdf
-    Info (12023): Found entity 1: altsyncram_1eu3 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/db/altsyncram_1eu3.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_1eu3" for hierarchy "IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_1eu3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_m9u3.tdf
+    Info (12023): Found entity 1: altsyncram_m9u3 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/db/altsyncram_m9u3.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_m9u3" for hierarchy "IOP16:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_m9u3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Critical Warning (127005): Memory depth (512) in the design file differs from memory depth (3) in the Memory Initialization File "C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP16_Code/TestIOP16B/testLED.mif" -- setting initial value for remaining addresses to 0 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/IOP_ROM.vhd Line: 60
 Info (12128): Elaborating entity "RegFile8x8" for hierarchy "IOP16:IOP16|RegFile8x8:RegFile" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP16B.vhd Line: 339
 Warning (14284): Synthesized away the following node(s):
@@ -741,9 +741,9 @@ Info (21057): Implemented 311 device resources after synthesis - the final resou
     Info (21061): Implemented 291 logic cells
     Info (21064): Implemented 16 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4809 megabytes
-    Info: Processing ended: Sun Jul 04 00:48:34 2021
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Peak virtual memory: 4808 megabytes
+    Info: Processing ended: Sun Jul 04 00:54:29 2021
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:37
 
 
