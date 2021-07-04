@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE15F23) Path("C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/FrontPanel01/output_files/") File("FrontPanel01.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE15F23) Path("C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/FrontPanel01/output_files/") File("FrontPanel01.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

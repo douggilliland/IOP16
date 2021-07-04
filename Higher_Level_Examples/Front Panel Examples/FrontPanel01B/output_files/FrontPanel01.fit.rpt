@@ -1,5 +1,5 @@
 Fitter report for FrontPanel01
-Sun Jul 04 00:17:41 2021
+Sun Jul 04 07:57:05 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -72,7 +72,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Jul 04 00:17:41 2021       ;
+; Fitter Status                      ; Successful - Sun Jul 04 07:57:05 2021       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; FrontPanel01                                ;
 ; Top-level Entity Name              ; FrontPanel01_test                           ;
@@ -159,14 +159,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.08        ;
+; Average used               ; 1.07        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   2.6%      ;
 ;     Processor 3            ;   2.5%      ;
-;     Processor 4            ;   2.5%      ;
+;     Processor 4            ;   2.4%      ;
 +----------------------------+-------------+
 
 
@@ -226,7 +226,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/FrontPanel01B/output_files/FrontPanel01.pin.
+The pin-out file can be found in C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/FrontPanel01B/output_files/FrontPanel01.pin.
 
 
 +--------------------------------------------------------------------------+
@@ -1600,16 +1600,16 @@ Info (332111): Found 1 clocks
     Info (332111):   Period   Clock Name
     Info (332111): ======== ============
     Info (332111):  100.000 altera_reserved_tck
-Info (176353): Automatically promoted node i_CLOCK_50~input (placed in PIN T2 (CLK2, DIFFCLK_1p)) File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/FrontPanel01B/FrontPanel01_test.vhd Line: 35
+Info (176353): Automatically promoted node i_CLOCK_50~input (placed in PIN T2 (CLK2, DIFFCLK_1p)) File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/FrontPanel01B/FrontPanel01_test.vhd Line: 35
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
 Info (176353): Automatically promoted node altera_internal_jtag~TCKUTAP 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node FrontPanel01:fp01|Debouncer32:debouncePB|i_slowClk~buf0  File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/FrontPanel01B/Components/Debounce32.vhd Line: 11
+Info (176353): Automatically promoted node FrontPanel01:fp01|Debouncer32:debouncePB|i_slowClk~buf0  File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/Components/Debounce32.vhd Line: 11
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
         Info (176357): Destination node sld_signaltap:auto_signaltap_0|acq_data_in_reg[77] File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_signaltap.vhd Line: 407
         Info (176357): Destination node sld_signaltap:auto_signaltap_0|acq_trigger_in_reg[0] File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_signaltap.vhd Line: 407
-Info (176353): Automatically promoted node FrontPanel01:fp01|Debouncer32:debouncePB|o_PinsOut[1]~1  File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/FrontPanel01B/Components/Debounce32.vhd Line: 77
+Info (176353): Automatically promoted node FrontPanel01:fp01|Debouncer32:debouncePB|o_PinsOut[1]~1  File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/Components/Debounce32.vhd Line: 77
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176353): Automatically promoted node sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|reset_all  File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd Line: 882
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
@@ -1660,19 +1660,19 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169177): 6 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin io_I2C_SCL uses I/O standard 3.3-V LVTTL at C22 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/FrontPanel01B/FrontPanel01_test.vhd Line: 43
-    Info (169178): Pin io_I2C_SDA uses I/O standard 3.3-V LVTTL at C21 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/FrontPanel01B/FrontPanel01_test.vhd Line: 44
-    Info (169178): Pin i_CLOCK_50 uses I/O standard 3.3-V LVTTL at T2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/FrontPanel01B/FrontPanel01_test.vhd Line: 35
-    Info (169178): Pin i_key1 uses I/O standard 3.3-V LVTTL at Y13 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/FrontPanel01B/FrontPanel01_test.vhd Line: 38
-    Info (169178): Pin i_I2C_INTn uses I/O standard 3.3-V LVTTL at D22 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/FrontPanel01B/FrontPanel01_test.vhd Line: 45
-    Info (169178): Pin i_n_reset uses I/O standard 3.3-V LVTTL at W13 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/FrontPanel01B/FrontPanel01_test.vhd Line: 36
-Info (144001): Generated suppressed messages file C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/FrontPanel01B/output_files/FrontPanel01.fit.smsg
+    Info (169178): Pin io_I2C_SCL uses I/O standard 3.3-V LVTTL at C22 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/FrontPanel01B/FrontPanel01_test.vhd Line: 43
+    Info (169178): Pin io_I2C_SDA uses I/O standard 3.3-V LVTTL at C21 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/FrontPanel01B/FrontPanel01_test.vhd Line: 44
+    Info (169178): Pin i_CLOCK_50 uses I/O standard 3.3-V LVTTL at T2 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/FrontPanel01B/FrontPanel01_test.vhd Line: 35
+    Info (169178): Pin i_key1 uses I/O standard 3.3-V LVTTL at Y13 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/FrontPanel01B/FrontPanel01_test.vhd Line: 38
+    Info (169178): Pin i_I2C_INTn uses I/O standard 3.3-V LVTTL at D22 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/FrontPanel01B/FrontPanel01_test.vhd Line: 45
+    Info (169178): Pin i_n_reset uses I/O standard 3.3-V LVTTL at W13 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/FrontPanel01B/FrontPanel01_test.vhd Line: 36
+Info (144001): Generated suppressed messages file C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/FrontPanel01B/output_files/FrontPanel01.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 20 warnings
-    Info: Peak virtual memory: 5532 megabytes
-    Info: Processing ended: Sun Jul 04 00:17:42 2021
+    Info: Peak virtual memory: 5530 megabytes
+    Info: Processing ended: Sun Jul 04 07:57:06 2021
     Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:14
 
@@ -1680,6 +1680,6 @@ Info: Quartus Prime Fitter was successful. 0 errors, 20 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/FrontPanel01B/output_files/FrontPanel01.fit.smsg.
+The suppressed messages can be found in C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/FrontPanel01B/output_files/FrontPanel01.fit.smsg.
 
 
