@@ -16,13 +16,14 @@
 -- 	bit 7-1	= Holds the first seven address bits of the I2C slave device
 -- 	bit 0	= I2C 1:read/0:write bit
 
--- Command Register (write):
+-- Command Register (write): signal w_mode
 --	bit 7-2	= Reserved
 --	bit 1-0	= 
 --		00: IDLE
 --		01: START
 --		10: nSTART
 --		11: STOP
+-- 
 -- Status Register (read):
 --	bit 7-2	= Reserved
 --	bit 1 	= ERROR 	(I2C transaction error)
@@ -48,7 +49,26 @@
 --	; Disable sequential operation
 --	lix		r8,0x22
 --	bsr		write_I2C_Data_Address_Reg
-
+--
+-- Example IOP16
+--	0c3 WR_I2C	0x7905	IOW	#0x01	IO_05	ISSUE START COMMAND (0X00)	
+--	0c4			0x0000	NOP							
+--	0c5			0x7004	IOW	Reg0	IO_04	WRITE SLAVE ADDRESS (PASSED IN RO)	
+--	0c6			0xA0E7	JSR	POLLBS		POLL I2C STATUS BUSY	
+--	0c7			0x7805	IOW	#0x00	IO_05	ISSUE IDLE COMMAND	
+--	0c8			0x0000	NOP							
+--	0c9			0x7104	IOW	Reg1	IO_04	WRITE MCP REGISTER TO MCP (PASSED IN R1)	
+--	0ca			0xA0E7	JSR	POLLBS		POLL I2C STATUS BUSY	
+--	0cb			0x2303	LRI	Reg3	0X03	STOP COMMAND VALUE	
+--	0cc			0x7305	IOW	Reg3	IO_05	ISSUE STOP COMMAND	
+--	0cd			0x0000	NOP							
+--	0ce			0x7204	IOW	Reg2	IO_04	WRITE VALUE MCP (PASSED IN R2)	
+--	0cf			0xA0E7	JSR	POLLBS		POLL I2C STATUS BUSY	
+--	0d0			0xB000	RTS							
+--	0e7 POLLBS	0x6705	IOR	Reg7	IO_05	POLL I2C STATUS BUSY	
+--	0e8			0x8701	ARI	Reg7	0X01	MASK BUSY BIT	
+--	0e9			0xDFFE	BNZ	POLLBS		LOOP BACK IF STILL BUSY	
+--	0ea			0xB000	RTS							
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -57,15 +77,16 @@ use ieee.std_logic_unsigned.all;
 entity i2c is
 port (
 	-- CPU Interface Signals
-	i_RESET			: in std_logic := '0';
-	i_CLK				: in std_logic;
-	i_ENA				: in std_logic := '0';
-	i_ADRSEL			: in std_logic := '0';
-	i_WR				: in std_logic := '0';
+	i_RESET			: in std_logic := '0';						-- Active high reset
+	i_CLK				: in std_logic;								-- 50 MHz
+	i_ENA				: in std_logic := '0';						-- One CPU clock wide every 400 Khz
+	i_ADRSEL			: in std_logic := '0';						-- 0 = data in, 1 = control
+	i_WR				: in std_logic := '0';						-- Active High write strobe
 	i_DATA_IN		: in std_logic_vector(7 downto 0);
 	o_DATA_OUT		: out std_logic_vector(7 downto 0);
 	io_I2C_SCL		: inout std_logic;
-	io_I2C_SDA		: inout std_logic);
+	io_I2C_SDA		: inout std_logic)
+	;
 end i2c;
 
 architecture rtc_arch of i2c is
@@ -85,8 +106,18 @@ architecture rtc_arch of i2c is
 	signal w_rw_bit 		: std_logic;
 	signal w_rw_flag		: std_logic;
 
--- attribute syn_keep: boolean;
--- attribute syn_keep of state: signal is true;
+	attribute syn_keep					: boolean;
+	attribute syn_keep of state		: signal is true;
+	attribute syn_keep of i_RESET		: signal is true;
+	attribute syn_keep of i_ENA		: signal is true;
+	attribute syn_keep of i_ADRSEL	: signal is true;
+	attribute syn_keep of i_WR			: signal is true;
+	attribute syn_keep of i_DATA_IN	: signal is true;
+	attribute syn_keep of o_DATA_OUT	: signal is true;
+	attribute syn_keep of w_scl		: signal is true;
+	attribute syn_keep of w_sda		: signal is true;
+	attribute syn_keep of w_go			: signal is true;
+	attribute syn_keep of w_mode		: signal is true;
 
 begin
 
@@ -119,7 +150,7 @@ end process;
 -- Provide data for the CPU to read
 cpu_read : process (i_ADRSEL, state, w_shift_reg, w_ack, w_go)
 begin
-	o_DATA_OUT(7 downto 2) <= "111111";
+	o_DATA_OUT(7 downto 2) <= "000000";
 	if i_ADRSEL = '0' then
 		o_DATA_OUT <= w_shift_reg;
 	else

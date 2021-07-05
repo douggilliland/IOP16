@@ -8,6 +8,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "o_testPts[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_testPts[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_testPts[5]",
+					"strict" : false
+				},
+				{
 					"name" : "io_I2C_SCL",
 					"strict" : false
 				},

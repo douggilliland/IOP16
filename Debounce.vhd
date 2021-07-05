@@ -31,12 +31,12 @@ architecture struct of Debouncer is
 begin
 
 	----------------------------------------------------------------------------
-	-- 50 mS counter
-	-- 2^18 = 256,000, 50MHz/250K = 200 Hz = 5 mS ticks
+	-- 20 mS counter
+	-- 2^20 = 1M counts, 50MHz/1M = 50 Hz = 20 mS ticks
 	-- Used for prescaling pushbuttons
-	-- w_pulse50ms = single 20 nS clock pulse every 200 mSecs
+	-- w_pulse50ms = single 20 nS clock pulse every 20 mSecs
 	----------------------------------------------------------------------------
-	process (i_clk) begin
+	process (i_clk, w_dig_counter) begin
 		if rising_edge(i_clk) then
 			w_dig_counter <= w_dig_counter+1;
 			if w_dig_counter = 0 then
@@ -50,7 +50,7 @@ begin
 		end if;
 	end process;
 
-	process(i_clk, w_pulse50ms)
+	process(i_clk, w_pulse50ms, i_PinIn)
 	begin
 		if(rising_edge(i_clk)) then
 			if w_pulse50ms = '1' then

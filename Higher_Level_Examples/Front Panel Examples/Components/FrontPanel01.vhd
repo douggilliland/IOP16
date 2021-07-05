@@ -40,13 +40,13 @@ entity FrontPanel01 is
 	o_PBRaw						: out std_logic_vector(31 downto 0);
 	o_PBLatched					: out std_logic_vector(31 downto 0);
 	o_PBToggled					: out std_logic_vector(31 downto 0);
---		o_scanStrobe				: out std_logic := '1';
+	o_scanStr					: out std_logic;
 	-- The key and LED on the FPGA card
 	i_key1						: in std_logic := '1';
 	o_UsrLed						: out std_logic := '1';
 	-- External I2C connections
 	io_I2C_SCL					: inout std_logic;
-	io_I2C_SDA					: inout std_logic := '1';
+	io_I2C_SDA					: inout std_logic;
 	i_I2C_INTn					: in std_logic := '1'
 );
 end FrontPanel01;
@@ -60,8 +60,8 @@ architecture struct of FrontPanel01 is
 	signal w_I2CWR					:	std_logic := '0';
 	signal w_periphWr				:	std_logic := '0';
 	signal w_periphRd				:	std_logic := '0';
-	-- I2C Counter = 400 KHz
-	signal w_i2cCount				: std_logic_vector(6 downto 0);
+	-- I2C Counter = 400 KHz X 4
+	signal w_i2cCount				: std_logic_vector(4 downto 0);
 	signal w_i2c_400KHz			: std_logic;
 	-- Strobe Pushbuttons
 	signal w_strPBDataUU			: std_logic;
@@ -134,8 +134,22 @@ begin
 		io_I2C_SCL		=> io_I2C_SCL,			-- Clock to external I2C interface
 		io_I2C_SDA		=> io_I2C_SDA			-- Data to/from external I2C interface
 	);
-		
-		
+			
+	-- 4x 400 KHz I2C clock
+	-- 50.0 MHz / 1.6 MHz = 32 clocks
+	process (i_CLOCK_50)
+	begin
+		if rising_edge(i_CLOCK_50) then
+			if w_i2cCount = "11111" then
+				w_i2cCount <= "00000";
+				w_i2c_400KHz <= '1';
+			else
+				w_i2cCount <= w_i2cCount + 1;
+				w_i2c_400KHz <= '0';
+			end if;
+		end if;
+	end process;
+	
 	o_PBRaw		<= w_rawPBs;
 	o_PBLatched	<= w_latchedPBs;
 	o_PBToggled	<= w_togglePinValues;
@@ -190,7 +204,7 @@ begin
 				w_rawPBs(15 downto 8) <= w_PERIP_DATA_OUT;
 			end if;
 			if w_strPBDataLL = '1' then
-				w_rawPBs(7 downto 00) <= w_PERIP_DATA_OUT;
+				w_rawPBs(7 downto 0) <= w_PERIP_DATA_OUT;
 			end if;
 		end if;
 	end process;
@@ -200,9 +214,11 @@ begin
 	w_strPBDataUM	<= '1' when ((w_periphWr = '1') and (w_periphAdr = x"01")) else '0';
 	w_strPBDataLM	<= '1' when ((w_periphWr = '1') and (w_periphAdr = x"02")) else '0';
 	w_strPBDataLL 	<= '1' when ((w_periphWr = '1') and (w_periphAdr = x"03")) else '0';
-	w_I2CWR 			<= '1' when  (w_periphWr = '1') and (w_periphAdr(7 downto 1) = x"0"&"010") else '0';
+	w_I2CWR 			<= '1' when ((w_periphWr = '1') and (w_periphAdr(7 downto 1) = x"0"&"010")) else '0';
 	w_scanStrobe	<= '1' when ((w_periphWr = '1') and (w_periphAdr = x"06")) else '0';
+	o_scanStr		<= w_scanStrobe;
 
+	-- Control LED (on FPGA card)
 	w_LED <= '1' when ((w_periphWr = '1') and (w_periphAdr = x"07")) else '0';
 	process (i_CLOCK_50, w_LED)
 	begin
@@ -222,20 +238,5 @@ begin
 								"0000000"&(not i_I2C_INTn)		when (w_periphAdr = x"06") else
 								"0000000"&i_key1					when (w_periphAdr = x"07") else
 								x"00";
-	
-	-- 4x400 KHz I2C clock
-	-- 50.0 MHz / 1.6 MHz = 31 clocks
-	process (i_CLOCK_50)
-	begin
-		if rising_edge(i_CLOCK_50) then
-			if w_i2cCount = "011111" then
-				w_i2cCount <= "0000000";
-				w_i2c_400KHz <= '1';
-			else
-				w_i2cCount <= w_i2cCount + 1;
-				w_i2c_400KHz <= '0';
-			end if;
-		end if;
-	end process;
 
 end;

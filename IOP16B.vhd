@@ -79,11 +79,11 @@ ENTITY IOP16 IS
 		i_clk					: IN std_logic;
 		i_resetN				: IN std_logic;
 		-- Peripheral Bus
-		i_periphDataIn		: IN std_logic_vector(7 DOWNTO 0);				-- Data from peripheral
-		o_periphWr			: OUT std_logic := '0';								-- I/O write strobe
-		o_periphRd			: OUT std_logic := '0';								-- I/O read strobe
-		o_periphDataOut	: OUT std_logic_vector(7 DOWNTO 0) := x"00";	-- Data to peripheral
-		o_periphAdr			: OUT std_logic_vector(7 DOWNTO 0) := x"00"	-- Address to peripheral|FrontPanel01_test|FrontPanel01:fp_test	
+		i_periphDataIn		: IN std_logic_vector(7 DOWNTO 0);			-- Data from peripherals
+		o_periphWr			: OUT std_logic;									-- I/O write strobe
+		o_periphRd			: OUT std_logic;									-- I/O read strobe
+		o_periphDataOut	: OUT std_logic_vector(7 DOWNTO 0);			-- Data to peripherals
+		o_periphAdr			: OUT std_logic_vector(7 DOWNTO 0) 			-- Address to peripheral|FrontPanel01_test|FrontPanel01:fp_test	
 
 	);
 END IOP16;
@@ -135,6 +135,8 @@ ARCHITECTURE IOP16_beh OF IOP16 IS
 	attribute syn_keep of w_rtnAddr			: signal is true;
 	attribute syn_keep of w_incPC				: signal is true;
 	attribute syn_keep of w_ldPC				: signal is true;
+	attribute syn_keep of i_periphDataIn	: signal is true;
+	attribute syn_keep of o_periphDataOut	: signal is true;
 	
 
 BEGIN
@@ -200,7 +202,7 @@ BEGIN
 				i_we   	=> (w_OP_JSR and w_StateGC(1) and (not w_StateGC(0))), -- write enable (push)
 				i_data 	=> pcPlus1,			-- written data
 	--			o_full	=> ,
-				i_re		=> (w_OP_RTS and w_StateGC(1) and (not w_StateGC(0))), -- read enable (pop)
+				i_re		=> (w_OP_RTS and w_StateGC(1) and w_StateGC(0)), -- read enable (pop)
 				o_data  	=> w_rtnAddr			-- read data
 		--		o_empty :=>							-- empty LIFO indicator
 			);	
@@ -329,6 +331,8 @@ BEGIN
 								x"AA";
 	
 	-- Peripheral read/write Controls
+--	o_periphWr <=	'1' when ((w_OP_IOW = '1') and (w_StateGC(1) = '1')) else 
+--						'0';
 	o_periphWr <=	'1' when ((w_OP_IOW = '1') and (w_StateGC(1) = '1') and (w_StateGC(0) = '1')) else 
 						'0';
 	o_periphRd <=	'1' when ((w_OP_IOR = '1') and (w_StateGC(1) = '1')) else 
