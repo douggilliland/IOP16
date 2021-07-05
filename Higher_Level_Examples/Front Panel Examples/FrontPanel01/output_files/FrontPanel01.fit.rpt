@@ -1,5 +1,5 @@
 Fitter report for FrontPanel01
-Mon Jul 05 19:12:42 2021
+Mon Jul 05 19:39:49 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -71,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Jul 05 19:12:42 2021       ;
+; Fitter Status                      ; Successful - Mon Jul 05 19:39:49 2021       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; FrontPanel01                                ;
 ; Top-level Entity Name              ; FrontPanel01_test                           ;
@@ -158,14 +158,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.10        ;
+; Average used               ; 1.11        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.4%      ;
-;     Processor 3            ;   3.2%      ;
-;     Processor 4            ;   3.1%      ;
+;     Processor 2            ;   3.9%      ;
+;     Processor 3            ;   3.7%      ;
+;     Processor 4            ;   3.6%      ;
 +----------------------------+-------------+
 
 
@@ -1712,13 +1712,13 @@ Info (170195): Router estimated average interconnect usage is 4% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (11888): Total time spent on timing analysis during the Fitter is 1.02 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (169177): 6 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
     Info (169178): Pin io_I2C_SCL uses I/O standard 3.3-V LVTTL at C22 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/FrontPanel01/FrontPanel01_test.vhd Line: 43
     Info (169178): Pin io_I2C_SDA uses I/O standard 3.3-V LVTTL at C21 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/FrontPanel01/FrontPanel01_test.vhd Line: 44
@@ -1728,10 +1728,10 @@ Warning (169177): 6 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2
     Info (169178): Pin i_n_reset uses I/O standard 3.3-V LVTTL at W13 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/FrontPanel01/FrontPanel01_test.vhd Line: 36
 Info (144001): Generated suppressed messages file C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/Front Panel Examples/FrontPanel01/output_files/FrontPanel01.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 5539 megabytes
-    Info: Processing ended: Mon Jul 05 19:12:44 2021
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Peak virtual memory: 5540 megabytes
+    Info: Processing ended: Mon Jul 05 19:39:51 2021
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +----------------------------+
