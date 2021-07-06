@@ -1,4 +1,4 @@
-INIT	0x0000	NOP					; read pb loopback to LED
-SELF	0x6107	IOR	0X01	0x07	; read pushbutton
-		0x7107	IOW	0X01	0x07	; write LED
-		0xE001	JMP	SELF			; 
+000	INIT	0x0000	NOP					read pb loopback to LED	
+001	SELF	0x6100	IOR	Reg1	IO_00	read pushbutton	
+002			0x7100	IOW	Reg1	IO_00	write LED	
+003			0xE001	JMP	SELF					

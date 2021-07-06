@@ -1,7 +1,7 @@
 --	---------------------------------------------------------------------------------------------------------
 -- Front Panel
 -- I2C to Front Panel
---	Test code that loops back the pushbuttons to the LEDs
+--	Test code that Simulated controlling a CPU
 --	
 -- http://land-boards.com/blwiki/index.php?title=Front_Panel_For_8_Bit_Computers
 -- Small controller for a Front Panel
@@ -12,7 +12,7 @@
 --		8  - Control pusbuttons
 --
 --	IOP16 code
---		https://github.com/douggilliland/MultiComp/tree/ANSI_Terminal_Working/MultiComp%20(VHDL%20Template)/Components/CPU/IOP16
+--		https://github.com/douggilliland/IOP16/tree/main/IOP16_Code/FP01_LOOP4
 --
 -- R32V2020 assembly code example works with this same I2C controller
 --		https://github.com/douggilliland/R32V2020/blob/master/Programs/Common/mcp23008.asm
@@ -38,7 +38,7 @@ entity FrontPanel01_test is
 		i_key1						: in std_logic := '1';		-- KEY1 on the FPGA card
 		o_UsrLed						: out std_logic := '1';		-- USR LED on the FPGA card
 		--
-		o_testPts					: out std_logic_vector(5 downto 0);
+--		o_testPts					: out std_logic_vector(5 downto 0);
 		-- External I2C connections
 		io_I2C_SCL					: inout std_logic;			-- I2C clock to Front Panel card
 		io_I2C_SDA					: inout std_logic;			-- I2C data to/from Front Panel card
@@ -71,14 +71,17 @@ architecture struct of FrontPanel01_test is
 	signal incCounter			:	std_logic;
 	signal incCtrD1			:	std_logic;
 	signal incCtrD2			:	std_logic;
+	signal clrCounter			:	std_logic;
+	signal clrCtrD1			:	std_logic;
+	signal clrCtrD2			:	std_logic;
 	
 	signal w_scanStr			:	std_logic;
 	
 begin
 
-	o_testPts(5) <= io_I2C_SCL;
-	o_testPts(4) <= io_I2C_SDA;
-	o_testPts(3) <= w_scanStr;
+--	o_testPts(5) <= io_I2C_SCL;
+--	o_testPts(4) <= io_I2C_SDA;
+--	o_testPts(3) <= w_scanStr;
 --	o_testPts(2) <= w_ldStrobe2;
 --	o_testPts(1) <= w_loadStrobe;
 --	o_testPts(0) <= '0';
@@ -153,14 +156,19 @@ begin
     IF rising_edge(i_CLOCK_50) THEN
       IF (w_resetClean_n = '0') THEN
         w_AddrCounter <= (OTHERS =>'0');
+      elsif (clrCounter = '1') THEN
+        w_AddrCounter <= (OTHERS =>'0');
 		ELSIF w_PBsToggled(24) = '1' then 
 			w_AddrCounter <= w_PBsToggled(23 downto 8);
       ELSIF (incCounter = '1') THEN
         w_AddrCounter <= w_AddrCounter+1;
       END IF;
-		incCtrD1 <= w_PBLatched(26);							-- PB26
+		incCtrD1 <= w_PBLatched(26);							-- PB26 - Increment address counter
 		incCtrD2 <= incCtrD1;
 		incCounter <= incCtrD1 and (not incCtrD2);		-- Edge detect
+		clrCtrD1 <= w_PBLatched(27);							-- PB27 = Clear address counter
+		clrCtrD2 <= clrCtrD1;
+		clrCounter <= clrCtrD1 and (not clrCtrD2);		-- Edge detect
     END IF;
   END PROCESS;
   

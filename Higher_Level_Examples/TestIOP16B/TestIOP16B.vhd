@@ -1,6 +1,7 @@
 --	---------------------------------------------------------------------------------------------------------
 -- Simple IOP16B CPU Example Code
 --		Run software that reads the pushbutton and writes to LED on the FPGA card.
+--		https://github.com/douggilliland/IOP16/tree/main/IOP16_Code/testLED
 --	
 -- IOP16 CPU
 --		Custom 16 bit I/O Processor
@@ -83,7 +84,7 @@ begin
 		);
 
 	-- Peripheral bus read mux
-	w_periphIn <=	"0000000"&w_keyBuff when (w_periphAdr=x"00") else
+	w_periphIn <=	"0000000"&w_keyBuff when w_periphAdr=x"00" else
 						x"00";
 
 	-- Strobes/Selects
