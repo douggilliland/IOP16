@@ -4,12 +4,6 @@ i_CLOCK_50 => frontpanel01:fp01.i_CLOCK_50
 i_n_reset => debouncer:debounceReset.i_PinIn
 i_key1 => frontpanel01:fp01.i_key1
 o_UsrLed <= frontpanel01:fp01.o_UsrLed
-o_testPts[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
-o_testPts[1] <= o_testPts[1].DB_MAX_OUTPUT_PORT_TYPE
-o_testPts[2] <= o_testPts[2].DB_MAX_OUTPUT_PORT_TYPE
-o_testPts[3] <= o_testPts[3].DB_MAX_OUTPUT_PORT_TYPE
-o_testPts[4] <= o_testPts[4].DB_MAX_OUTPUT_PORT_TYPE
-o_testPts[5] <= o_testPts[5].DB_MAX_OUTPUT_PORT_TYPE
 io_I2C_SCL <> frontpanel01:fp01.io_I2C_SCL
 io_I2C_SDA <> frontpanel01:fp01.io_I2C_SDA
 i_I2C_INTn => frontpanel01:fp01.i_I2C_INTn

@@ -6,21 +6,10 @@
 -- http://land-boards.com/blwiki/index.php?title=Front_Panel_For_8_Bit_Computers
 -- Small controller for a Front Panel
 -- 32 LEDs, 32 pushbuttons
---		16 - Address LEDS/pushbuttons
---		8  - Data LEDS/pushbuttons
---		8  - Status LEDs
---		8  - Control pusbuttons
 --
 --	IOP16 code
---		https://github.com/douggilliland/MultiComp/tree/ANSI_Terminal_Working/MultiComp%20(VHDL%20Template)/Components/CPU/IOP16
+--		https://github.com/douggilliland/IOP16/tree/main/IOP16_Code/FP01_LOOP4
 --
--- R32V2020 assembly code example works with this same I2C controller
---		https://github.com/douggilliland/R32V2020/blob/master/Programs/Common/mcp23008.asm
---		https://github.com/douggilliland/R32V2020/blob/master/Programs/Common/i2c.asm
--- 
--- C code example I wrote for my 3 chip Z80 design (functionally similar, different i2c controller chips)
---		https://github.com/douggilliland/Retro-Computers/blob/master/Z80/PSOC/PSOC_Design_Files/Z80-PSoC-3-Chips_002/Z80_3Chip.cydsn/FrontPanel.c
---		https://github.com/douggilliland/Retro-Computers/blob/master/Z80/PSOC/PSOC_Design_Files/Z80-PSoC-3-Chips_002/Z80_3Chip.cydsn/FrontPanel.h
 --	---------------------------------------------------------------------------------------------------------
 
 library ieee;
@@ -38,7 +27,7 @@ entity FrontPanel01_test is
 		i_key1						: in std_logic := '1';		-- KEY1 on the FPGA card
 		o_UsrLed						: out std_logic := '1';		-- USR LED on the FPGA card
 		--
-		o_testPts					: out std_logic_vector(5 downto 0);
+--		o_testPts					: out std_logic_vector(5 downto 0);
 		-- External I2C connections
 		io_I2C_SCL					: inout std_logic := '0';	-- I2C clock to Front Panel card
 		io_I2C_SDA					: inout std_logic := '1';	-- I2C data to/from Front Panel card
