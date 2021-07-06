@@ -1,5 +1,5 @@
 Flow report for TestIOP16B
-Mon Jul 05 20:54:20 2021
+Tue Jul 06 11:42:34 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Jul 05 20:54:15 2021       ;
+; Flow Status                        ; Successful - Tue Jul 06 11:42:29 2021       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; TestIOP16B                                  ;
 ; Top-level Entity Name              ; TestIOP16B                                  ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE15F23C8                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 264 / 15,408 ( 2 % )                        ;
-;     Total combinational functions  ; 242 / 15,408 ( 2 % )                        ;
-;     Dedicated logic registers      ; 103 / 15,408 ( < 1 % )                      ;
-; Total registers                    ; 103                                         ;
+; Total logic elements               ; 376 / 15,408 ( 2 % )                        ;
+;     Total combinational functions  ; 338 / 15,408 ( 2 % )                        ;
+;     Dedicated logic registers      ; 168 / 15,408 ( 1 % )                        ;
+; Total registers                    ; 168                                         ;
 ; Total pins                         ; 4 / 344 ( 1 % )                             ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 8,192 / 516,096 ( 2 % )                     ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/05/2021 20:53:43 ;
+; Start date & time ; 07/06/2021 11:41:57 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TestIOP16B          ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589187.162553282311200         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 10995770589187.162558611703160         ; --            ; --          ; --         ;
 ; ENABLE_SIGNALTAP                    ; Off                                    ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
@@ -87,7 +87,7 @@ https://fpgasoftware.intel.com/eula.
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
 ; SMART_RECOMPILE                     ; On                                     ; Off           ; --          ; --         ;
-; USE_SIGNALTAP_FILE                  ; output_files/debouncePBs.stp           ; --            ; --          ; --         ;
+; USE_SIGNALTAP_FILE                  ; output_files/TESTtIMER.stp             ; --            ; --          ; --         ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
 
@@ -96,11 +96,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 4816 MB             ; 00:00:40                           ;
-; Fitter               ; 00:00:08     ; 1.0                     ; 5512 MB             ; 00:00:10                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4680 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4763 MB             ; 00:00:03                           ;
-; Total                ; 00:00:33     ; --                      ; --                  ; 00:00:54                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4812 MB             ; 00:00:39                           ;
+; Fitter               ; 00:00:09     ; 1.0                     ; 5515 MB             ; 00:00:11                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4682 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.1                     ; 4771 MB             ; 00:00:03                           ;
+; Total                ; 00:00:33     ; --                      ; --                  ; 00:00:55                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,0 +1,32 @@
+--	---------------------------------------------------------------------------------------------------------
+-- Timer Unit
+--	---------------------------------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+use  IEEE.STD_LOGIC_ARITH.all;
+use  IEEE.STD_LOGIC_UNSIGNED.all;
+
+entity TimerUnit is
+	port
+	(
+		-- Clock and Reset
+		i_clk							: in std_logic := '1';		-- Clock (50 MHz)
+		i_n_reset					: in std_logic := '1';		-- KEY2 on FPGA the card
+		-- The key and LED on the FPGA card 
+		i_dataIn						: in std_logic_vector(7 downto 0);		-- Data In
+		o_dataOut					: out std_logic_vector(7 downto 0)		-- Data Out
+	);
+	end TimerUnit;
+
+architecture struct of TimerUnit is
+
+architecture struct of TestIOP16B is
+	-- 
+	signal w_resetClean_n		:	std_logic;					-- De-bounced reset button
+
+	
+begin
+
+
+end;

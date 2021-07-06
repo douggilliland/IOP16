@@ -42,10 +42,13 @@ architecture struct of TestIOP16B is
 	signal w_periphOut			:	std_logic_vector(7 downto 0);
 	signal w_periphWr				:	std_logic;
 	signal w_periphRd				:	std_logic;
+
+	signal w_timerOut				:	std_logic_vector(7 downto 0);
 	
 	-- Decodes/Strobes
 	signal w_wrLED					:	std_logic;		-- Write strobe - LED
 	signal w_keyBuff				:	std_logic;
+	signal w_timerAdr				:	std_logic;
 	
 	-- Signal Tap Logic Analyzer signals
 --	attribute syn_keep	: boolean;
@@ -62,6 +65,21 @@ begin
 			o_PinOut			=> w_resetClean_n
 		);
 
+	timerUnit : entity work.TimerUnit
+		port map
+		(
+			-- Clock and Reset
+			i_clk					=> i_clk,
+			i_n_reset			=> w_resetClean_n,
+			-- The key and LED on the FPGA card 
+			i_timerSel			=> w_timerAdr,
+			i_writeStrobe		=> w_periphWr,
+			i_regSel				=> w_periphAdr(1 downto 0),
+			i_dataIn				=> w_periphOut,
+			o_dataOut			=> w_timerOut
+		);
+
+	
 	-- I/O Processor
 	-- Set ROM size in generic INST_SRAM_SIZE_PASS (512W uses 1 of 1K Blocks in EP4CE15 FPGA)
 	-- Set stack size in STACK_DEPTH generic
@@ -84,12 +102,13 @@ begin
 		);
 
 	-- Peripheral bus read mux
-	w_periphIn <=	"0000000"&w_keyBuff when w_periphAdr=x"00" else
+	w_periphIn <=	"0000000"&w_keyBuff	when w_periphAdr=x"00"						else
+						w_timerOut				when w_periphAdr(7 downto 2) = "000001" else
 						x"00";
 
 	-- Strobes/Selects
-	w_wrLED	<= '1' when ((w_periphAdr=x"00") and (w_periphWr = '1')) else 
-					'0';
+	w_wrLED		<= '1' when ((w_periphAdr=x"00") 						and (w_periphWr = '1')) else '0';
+	w_timerAdr	<=	'1' when (w_periphAdr(7 downto 2) = "000001")									else '0';
 
 	-- Latch up the LED bit
 	-- Buffer KEY1
@@ -99,7 +118,7 @@ begin
 			if w_wrLED = '1' then
 				o_UsrLed <= w_periphOut(0);
 			END IF;
-			w_keyBuff <= i_key1;
+			w_keyBuff <= i_key1;						-- Buffer K to avoid metastable inputs
 		END IF;
 	END PROCESS;
 	
