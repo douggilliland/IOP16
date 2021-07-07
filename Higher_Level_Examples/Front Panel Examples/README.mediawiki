@@ -1,6 +1,4 @@
-== Front Panel IOP16 Examples ==
-
-<h1>[https://hackaday.io/project/180199-8-bit-computer-front-panel Hackaday Page]</h1>
+<h1>[https://hackaday.io/project/180199-8-bit-computer-front-panel Front Panel Hackaday Page]</h1>
 
 <h1>[http://land-boards.com/blwiki/index.php?title=Front_Panel_for_8_Bit_Computers_V2 Front Panel Wiki Page]</h1>
 
