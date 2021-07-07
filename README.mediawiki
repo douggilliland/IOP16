@@ -1,4 +1,4 @@
-== [https://hackaday.io/project/180452-small-cpu-in-vhdl Hackaday page] ==
+<h1> [https://hackaday.io/project/180452-small-cpu-in-vhdl Hackaday page] </h1>
 
 == IOP16 - I/O Processor with minimal instruction set ==
 
