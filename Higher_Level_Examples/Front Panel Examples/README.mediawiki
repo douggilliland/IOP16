@@ -1,5 +1,5 @@
 == Front Panel IOP16 Examples ==
 
-<img src="https://raw.githubusercontent.com/douggilliland/IOP16/main/Higher_Level_Examples/Front%20Panel%20Examples/FrontPanelDocs/FrontPanel02_P527-cropped-720px.jpg"></img>
-
 <h1>[https://hackaday.io/project/180199-8-bit-computer-front-panel Hackaday Page]</h1>
+
+<img src="https://raw.githubusercontent.com/douggilliland/IOP16/main/Higher_Level_Examples/Front%20Panel%20Examples/FrontPanelDocs/FrontPanel02_P527-cropped-720px.jpg"></img>
