@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TestIOP16B
-Tue Jul 06 12:07:34 2021
+Wed Jul 07 17:15:17 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jul 06 12:07:34 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jul 07 17:15:17 2021       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; TestIOP16B                                  ;
 ; Top-level Entity Name              ; TestIOP16B                                  ;
@@ -182,6 +182,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path                                                       ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                  ; Library ;
 +----------------------------------------------------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
+; ../../IOP_Peripherals/IOP16_Timer_Unit/TimerUnit.vhd                                   ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP_Peripherals/IOP16_Timer_Unit/TimerUnit.vhd          ;         ;
 ; ../../Debounce.vhd                                                                     ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Debounce.vhd                                            ;         ;
 ; ../../n-bit-gray-counter.vhd                                                           ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/n-bit-gray-counter.vhd                                  ;         ;
 ; ../../RegFile8x8.vhd                                                                   ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/RegFile8x8.vhd                                          ;         ;
@@ -189,7 +190,6 @@ https://fpgasoftware.intel.com/eula.
 ; ../../IOP16B.vhd                                                                       ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP16B.vhd                                              ;         ;
 ; IOP_ROM.vhd                                                                            ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/IOP_ROM.vhd            ;         ;
 ; TestIOP16B.vhd                                                                         ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TestIOP16B.vhd         ;         ;
-; TimerUnit.vhd                                                                          ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TimerUnit.vhd          ;         ;
 ; altsyncram.tdf                                                                         ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                         ;         ;
 ; stratix_ram_block.inc                                                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                  ;         ;
 ; lpm_mux.inc                                                                            ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                            ;         ;
@@ -642,10 +642,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Jul 06 12:07:16 2021
+    Info: Processing started: Wed Jul 07 17:14:59 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestIOP16B -c TestIOP16B
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /users/hpz420/documents/github/doug gilliland/iop16/iop_peripherals/iop16_timer_unit/timerunit.vhd
+    Info (12022): Found design unit 1: TimerUnit-struct File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP_Peripherals/IOP16_Timer_Unit/TimerUnit.vhd Line: 35
+    Info (12023): Found entity 1: TimerUnit File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP_Peripherals/IOP16_Timer_Unit/TimerUnit.vhd Line: 20
 Info (12021): Found 2 design units, including 1 entities, in source file /users/hpz420/documents/github/doug gilliland/iop16/debounce.vhd
     Info (12022): Found design unit 1: Debouncer-struct File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Debounce.vhd Line: 21
     Info (12023): Found entity 1: Debouncer File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Debounce.vhd Line: 12
@@ -667,9 +670,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file iop_rom
 Info (12021): Found 2 design units, including 1 entities, in source file testiop16b.vhd
     Info (12022): Found design unit 1: TestIOP16B-struct File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TestIOP16B.vhd Line: 35
     Info (12023): Found entity 1: TestIOP16B File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TestIOP16B.vhd Line: 23
-Info (12021): Found 2 design units, including 1 entities, in source file timerunit.vhd
-    Info (12022): Found design unit 1: TimerUnit-struct File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TimerUnit.vhd Line: 35
-    Info (12023): Found entity 1: TimerUnit File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TimerUnit.vhd Line: 20
 Info (12127): Elaborating entity "TestIOP16B" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at TestIOP16B.vhd(44): object "w_periphRd" assigned a value but never read File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TestIOP16B.vhd Line: 44
 Info (12128): Elaborating entity "Debouncer" for hierarchy "Debouncer:debounceReset" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TestIOP16B.vhd Line: 60
@@ -789,7 +789,7 @@ Info (21057): Implemented 426 device resources after synthesis - the final resou
     Info (21064): Implemented 16 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
     Info: Peak virtual memory: 4809 megabytes
-    Info: Processing ended: Tue Jul 06 12:07:34 2021
+    Info: Processing ended: Wed Jul 07 17:15:17 2021
     Info: Elapsed time: 00:00:18
     Info: Total CPU time (on all processors): 00:00:38
 

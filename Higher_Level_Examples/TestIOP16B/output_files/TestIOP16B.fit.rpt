@@ -1,5 +1,5 @@
 Fitter report for TestIOP16B
-Tue Jul 06 12:07:44 2021
+Wed Jul 07 17:15:28 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Tue Jul 06 12:07:44 2021       ;
+; Fitter Status                      ; Successful - Wed Jul 07 17:15:28 2021       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; TestIOP16B                                  ;
 ; Top-level Entity Name              ; TestIOP16B                                  ;
@@ -155,12 +155,13 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.04        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   1.2%      ;
+;     Processor 2            ;   1.1%      ;
+;     Processors 3-4         ;   1.0%      ;
 +----------------------------+-------------+
 
 
@@ -1360,7 +1361,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.34 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.36 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1372,8 +1373,8 @@ Warning (169177): 3 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2
     Info (169178): Pin i_n_reset uses I/O standard 3.3-V LVTTL at W13 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TestIOP16B.vhd Line: 28
 Info (144001): Generated suppressed messages file C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/output_files/TestIOP16B.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5508 megabytes
-    Info: Processing ended: Tue Jul 06 12:07:45 2021
+    Info: Peak virtual memory: 5516 megabytes
+    Info: Processing ended: Wed Jul 07 17:15:29 2021
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:11
 
