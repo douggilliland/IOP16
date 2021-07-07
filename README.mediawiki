@@ -39,8 +39,7 @@
 
 == Programming Tools ==
 
-* [https://github.com/douggilliland/MultiComp/blob/master/MultiComp%20(VHDL%20Template)/Components/CPU/IOP16/IOP16_ASSEMBLER/pyAssemble_IOP16.py Assembler]
-* [https://github.com/douggilliland/MultiComp/blob/master/MultiComp%20(VHDL%20Template)/Components/CPU/IOP16/IOP16_ASSEMBLER/pyCompile_IOP16.py Compiler] (Macro Assembler)
+* [https://github.com/douggilliland/IOP16/tree/main/IOP16_ASSEMBLER Assembler/Compiler]
 * Tools are written in Python 3
 * Input files are .csv files
 
