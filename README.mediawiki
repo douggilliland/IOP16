@@ -12,7 +12,7 @@
 
 === Block Diagram ===
 
-<img src="https://raw.githubusercontent.com/douggilliland/MultiComp/master/MultiComp%20(VHDL%20Template)/Components/CPU/IOP16/IOP16_Block_Diagram.PNG"></img>
+<img src="https://raw.githubusercontent.com/douggilliland/IOP16/main/docs/IOP16_Block_Diagram.PNG"></img>
 
 === Op Codes ===
 
@@ -26,7 +26,7 @@
 * BNZ - xd - Branch by offset if not equal to zero
 * JMP - xe - Jump to address (12-bits)
 
-<img src="https://raw.githubusercontent.com/douggilliland/MultiComp/master/MultiComp%20(VHDL%20Template)/Components/CPU/IOP16/IOP16_OpCodes.PNG"></img>
+<img src="https://raw.githubusercontent.com/douggilliland/IOP16/main/docs/IOP16_OpCodes.PNG"></img>
 
 === Fields ===
 
