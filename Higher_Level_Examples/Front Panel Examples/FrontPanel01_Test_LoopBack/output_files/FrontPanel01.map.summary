@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Mon Jul 05 19:53:09 2021
+Analysis & Synthesis Status : Successful - Wed Jul 14 12:50:41 2021
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : FrontPanel01
 Top-level Entity Name : FrontPanel01_test
 Family : Cyclone IV E
-Total logic elements : 926
-    Total combinational functions : 806
+Total logic elements : 925
+    Total combinational functions : 805
     Dedicated logic registers : 384
 Total registers : 384
 Total pins : 7
