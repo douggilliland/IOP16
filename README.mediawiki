@@ -1,5 +1,7 @@
 <h1> [https://hackaday.io/project/180452-small-cpu-in-vhdl Hackaday page] </h1>
 
+Replaced with cpu_001 from [https://github.com/douggilliland/Design_A_CPU Design a CPU]
+
 == IOP16 - I/O Processor with minimal instruction set ==
 
 * 16-bit instruction code
