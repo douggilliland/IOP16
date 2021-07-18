@@ -69,12 +69,16 @@ set_global_assignment -name SMART_RECOMPILE ON
 
 set_location_assignment PIN_T2 -to i_clk
 set_global_assignment -name USE_SIGNALTAP_FILE output_files/TESTtIMER.stp
-set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/IOP16_Timer_Unit/TimerUnit.vhd
-set_global_assignment -name VHDL_FILE ../../Debounce.vhd
-set_global_assignment -name VHDL_FILE "../../n-bit-gray-counter.vhd"
-set_global_assignment -name VHDL_FILE ../../RegFile8x8.vhd
-set_global_assignment -name VHDL_FILE ../../lifo.vhd
-set_global_assignment -name VHDL_FILE ../../IOP16B.vhd
+set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Peripherals/IOP16_Timer_Unit/TimerUnit.vhd
+set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Shifter.vhd
+set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/RegisterFile.vhd
+set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/ProgramCounter.vhd
+set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/lifo.vhd
+set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/GreyCode.vhd
+set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Debounce.vhd
+set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/cpu_001_Pkg.vhd
+set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/cpu_001.vhd
+set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/ALU.vhd
 set_global_assignment -name VHDL_FILE IOP_ROM.vhd
 set_global_assignment -name VHDL_FILE TestIOP16B.vhd
 set_global_assignment -name SIGNALTAP_FILE output_files/TESTtIMER.stp

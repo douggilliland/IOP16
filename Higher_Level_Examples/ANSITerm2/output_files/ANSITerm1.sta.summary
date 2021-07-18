@@ -3,62 +3,62 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'i_CLOCK_50'
-Slack : -14.180
-TNS   : -3038.394
+Slack : -14.673
+TNS   : -3030.397
 
-Type  : Slow 1200mV 85C Model Setup 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -8.084
-TNS   : -239.425
+Type  : Slow 1200mV 85C Model Setup 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0'
+Slack : -8.335
+TNS   : -243.421
 
-Type  : Slow 1200mV 85C Model Setup 'IOP16:IOP16|GrayCounter:greyLow|Currstate[0]'
-Slack : -7.635
-TNS   : -158.913
+Type  : Slow 1200mV 85C Model Setup 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[0]~reg0'
+Slack : -7.919
+TNS   : -164.260
 
 Type  : Slow 1200mV 85C Model Setup 'Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result'
-Slack : -0.453
-TNS   : -1.247
-
-Type  : Slow 1200mV 85C Model Hold 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -0.254
-TNS   : -1.650
-
-Type  : Slow 1200mV 85C Model Hold 'IOP16:IOP16|GrayCounter:greyLow|Currstate[0]'
-Slack : 0.418
-TNS   : 0.000
+Slack : -0.209
+TNS   : -0.753
 
 Type  : Slow 1200mV 85C Model Hold 'i_CLOCK_50'
-Slack : 0.433
+Slack : 0.296
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result'
-Slack : 0.513
+Slack : 0.319
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[0]~reg0'
+Slack : 0.890
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'i_CLOCK_50'
-Slack : -1.455
-TNS   : -39.715
+Slack : -1.132
+TNS   : -38.714
 
-Type  : Slow 1200mV 85C Model Recovery 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : 0.183
+Type  : Slow 1200mV 85C Model Recovery 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0'
+Slack : -0.318
+TNS   : -1.971
+
+Type  : Slow 1200mV 85C Model Removal 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0'
+Slack : 0.473
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Removal 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -0.318
-TNS   : -1.754
-
 Type  : Slow 1200mV 85C Model Removal 'i_CLOCK_50'
-Slack : 0.914
+Slack : 1.152
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'i_CLOCK_50'
 Slack : -3.201
-TNS   : -774.737
+TNS   : -776.217
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0'
 Slack : -3.201
 TNS   : -62.681
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'IOP16:IOP16|GrayCounter:greyLow|Currstate[0]'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[0]~reg0'
 Slack : -1.487
 TNS   : -34.201
 
@@ -67,62 +67,62 @@ Slack : -1.487
 TNS   : -16.357
 
 Type  : Slow 1200mV 0C Model Setup 'i_CLOCK_50'
-Slack : -13.023
-TNS   : -2801.293
+Slack : -13.367
+TNS   : -2802.635
 
-Type  : Slow 1200mV 0C Model Setup 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -7.645
-TNS   : -222.676
+Type  : Slow 1200mV 0C Model Setup 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0'
+Slack : -7.896
+TNS   : -225.725
 
-Type  : Slow 1200mV 0C Model Setup 'IOP16:IOP16|GrayCounter:greyLow|Currstate[0]'
-Slack : -7.238
-TNS   : -149.764
+Type  : Slow 1200mV 0C Model Setup 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[0]~reg0'
+Slack : -7.399
+TNS   : -152.104
 
 Type  : Slow 1200mV 0C Model Setup 'Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result'
-Slack : -0.479
-TNS   : -0.826
-
-Type  : Slow 1200mV 0C Model Hold 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -0.418
-TNS   : -3.447
+Slack : -0.103
+TNS   : -0.317
 
 Type  : Slow 1200mV 0C Model Hold 'i_CLOCK_50'
-Slack : 0.383
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'IOP16:IOP16|GrayCounter:greyLow|Currstate[0]'
-Slack : 0.403
+Slack : 0.208
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result'
-Slack : 0.483
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[0]~reg0'
+Slack : 0.665
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'i_CLOCK_50'
-Slack : -1.296
-TNS   : -33.005
+Slack : -0.960
+TNS   : -31.656
 
-Type  : Slow 1200mV 0C Model Recovery 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : 0.265
+Type  : Slow 1200mV 0C Model Recovery 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0'
+Slack : -0.214
+TNS   : -1.258
+
+Type  : Slow 1200mV 0C Model Removal 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0'
+Slack : 0.308
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Removal 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -0.450
-TNS   : -2.784
-
 Type  : Slow 1200mV 0C Model Removal 'i_CLOCK_50'
-Slack : 0.840
+Slack : 1.053
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'i_CLOCK_50'
 Slack : -3.201
-TNS   : -774.784
+TNS   : -776.258
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0'
 Slack : -3.201
-TNS   : -65.867
+TNS   : -62.681
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'IOP16:IOP16|GrayCounter:greyLow|Currstate[0]'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[0]~reg0'
 Slack : -1.487
 TNS   : -34.201
 
@@ -131,62 +131,62 @@ Slack : -1.487
 TNS   : -16.357
 
 Type  : Fast 1200mV 0C Model Setup 'i_CLOCK_50'
-Slack : -5.618
-TNS   : -1067.975
+Slack : -5.818
+TNS   : -1079.841
 
-Type  : Fast 1200mV 0C Model Setup 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -2.954
-TNS   : -81.122
+Type  : Fast 1200mV 0C Model Setup 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0'
+Slack : -3.196
+TNS   : -82.589
 
-Type  : Fast 1200mV 0C Model Setup 'IOP16:IOP16|GrayCounter:greyLow|Currstate[0]'
-Slack : -2.761
-TNS   : -56.405
+Type  : Fast 1200mV 0C Model Setup 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[0]~reg0'
+Slack : -2.815
+TNS   : -54.933
 
 Type  : Fast 1200mV 0C Model Setup 'Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result'
-Slack : 0.265
+Slack : 0.448
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -0.083
-TNS   : -0.267
-
 Type  : Fast 1200mV 0C Model Hold 'i_CLOCK_50'
-Slack : 0.166
+Slack : 0.165
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0|debounce:debounce_ps2_clk|result'
-Slack : 0.197
+Slack : 0.175
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'IOP16:IOP16|GrayCounter:greyLow|Currstate[0]'
-Slack : 0.263
+Type  : Fast 1200mV 0C Model Hold 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[0]~reg0'
+Slack : 0.294
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'i_CLOCK_50'
-Slack : -0.145
-TNS   : -0.820
-
-Type  : Fast 1200mV 0C Model Recovery 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : 0.393
+Slack : 0.007
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Removal 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
-Slack : -0.072
-TNS   : -0.355
+Type  : Fast 1200mV 0C Model Recovery 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0'
+Slack : 0.293
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0'
+Slack : 0.193
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'i_CLOCK_50'
-Slack : 0.406
+Slack : 0.506
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'i_CLOCK_50'
 Slack : -3.000
-TNS   : -629.695
+TNS   : -631.354
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'IOP16:IOP16|GrayCounter:greyLow|Currstate[1]'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0'
 Slack : -1.000
 TNS   : -41.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'IOP16:IOP16|GrayCounter:greyLow|Currstate[0]'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu_001:CPU_001|GreyCode:GreyCodeCounter|o_GreyCode[0]~reg0'
 Slack : -1.000
 TNS   : -23.000
 

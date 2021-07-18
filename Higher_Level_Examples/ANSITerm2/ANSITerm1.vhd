@@ -143,22 +143,22 @@ begin
 	-- I/O Processor
 	-- Set ROM size in generic INST_SRAM_SIZE_PASS (512W uses 1 of 1K Blocks in EP4CE15 FPGA)
 	-- Set stack size in STACK_DEPTH generic
-	IOP16: ENTITY work.IOP16
+	CPU_001 : ENTITY work.CPU_001
 	-- Need to pass down instruction RAM and stack sizes
 		generic map 	( 
-			INST_SRAM_SIZE_PASS	=> 512,	-- Small code size since program is "simple"
+			INST_ROM_SIZE_PASS	=> 512,	-- Small code size since program is "simple"
 			STACK_DEPTH_PASS		=> 1		-- Single level subroutine (not nested)
 		)
 		PORT map
 		(
-			i_clk					=> i_CLOCK_50,
-			i_resetN				=> w_resetClean_n,
+			i_clock					=> i_CLOCK_50,
+			i_resetN					=> w_resetClean_n,
 			-- Peripheral bus signals
-			i_periphDataIn		=> w_periphIn,
-			o_periphWr			=> w_periphWr,
-			o_periphRd			=> w_periphRd,
-			o_periphDataOut	=> w_periphOut,
-			o_periphAdr			=> w_periphAdr
+			i_peripDataToCPU		=> w_periphIn,
+			o_peripWr				=> w_periphWr,
+			o_peripRd				=> w_periphRd,
+			o_peripDataFromCPU	=> w_periphOut,
+			o_peripAdDr				=> w_periphAdr
 		);
 	
 	-- ANSI Display

@@ -1,14 +1,14 @@
-Fitter Status : Successful - Wed Jul 07 17:15:28 2021
+Fitter Status : Successful - Sat Jul 17 20:10:15 2021
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : TestIOP16B
 Top-level Entity Name : TestIOP16B
 Family : Cyclone IV E
 Device : EP4CE15F23C8
 Timing Models : Final
-Total logic elements : 369 / 15,408 ( 2 % )
-    Total combinational functions : 336 / 15,408 ( 2 % )
-    Dedicated logic registers : 152 / 15,408 ( < 1 % )
-Total registers : 152
+Total logic elements : 390 / 15,408 ( 3 % )
+    Total combinational functions : 367 / 15,408 ( 2 % )
+    Dedicated logic registers : 153 / 15,408 ( < 1 % )
+Total registers : 153
 Total pins : 4 / 344 ( 1 % )
 Total virtual pins : 0
 Total memory bits : 8,192 / 516,096 ( 2 % )

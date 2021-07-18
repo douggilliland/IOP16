@@ -1,14 +1,14 @@
-Fitter Status : Successful - Mon Jul 05 20:58:46 2021
+Fitter Status : Successful - Sat Jul 17 20:42:22 2021
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : ANSITerm1
 Top-level Entity Name : ANSITerm1
 Family : Cyclone IV E
 Device : EP4CE15F23C8
 Timing Models : Final
-Total logic elements : 2,161 / 15,408 ( 14 % )
-    Total combinational functions : 2,090 / 15,408 ( 14 % )
-    Dedicated logic registers : 514 / 15,408 ( 3 % )
-Total registers : 514
+Total logic elements : 2,206 / 15,408 ( 14 % )
+    Total combinational functions : 2,137 / 15,408 ( 14 % )
+    Dedicated logic registers : 515 / 15,408 ( 3 % )
+Total registers : 515
 Total pins : 89 / 344 ( 26 % )
 Total virtual pins : 0
 Total memory bits : 49,280 / 516,096 ( 10 % )
