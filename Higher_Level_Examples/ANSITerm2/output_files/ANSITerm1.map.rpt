@@ -1,6 +1,6 @@
 Analysis & Synthesis report for ANSITerm1
-Sat Jul 17 20:42:01 2021
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Sun Apr 10 13:23:07 2022
+Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
 ---------------------
@@ -65,7 +65,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2021  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -85,8 +85,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jul 17 20:42:00 2021       ;
-; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr 10 13:23:07 2022       ;
+; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; ANSITerm1                                   ;
 ; Top-level Entity Name              ; ANSITerm1                                   ;
 ; Family                             ; Cyclone IV E                                ;
@@ -207,59 +207,59 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                     ;
-+------------------------------------------------------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                                                         ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                               ; Library ;
-+------------------------------------------------------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; ../../../Design_A_CPU/Shifter.vhd                                                        ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/Shifter.vhd                                                   ;         ;
-; ../../../Design_A_CPU/RegisterFile.vhd                                                   ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/RegisterFile.vhd                                              ;         ;
-; ../../../Design_A_CPU/ProgramCounter.vhd                                                 ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/ProgramCounter.vhd                                            ;         ;
-; ../../../Design_A_CPU/lifo.vhd                                                           ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/lifo.vhd                                                      ;         ;
-; ../../../Design_A_CPU/GreyCode.vhd                                                       ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/GreyCode.vhd                                                  ;         ;
-; ../../../Design_A_CPU/Debounce.vhd                                                       ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/Debounce.vhd                                                  ;         ;
-; ../../../Design_A_CPU/cpu_001_Pkg.vhd                                                    ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001_Pkg.vhd                                               ;         ;
-; ../../../Design_A_CPU/cpu_001.vhd                                                        ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd                                                   ;         ;
-; ../../../Design_A_CPU/ALU.vhd                                                            ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/ALU.vhd                                                       ;         ;
-; Components/SansFontBoldReduced.HEX                                                       ; yes             ; User Hexadecimal (Intel-Format) File   ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansFontBoldReduced.HEX   ;         ;
-; Components/debounce.vhd                                                                  ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/debounce.vhd              ;         ;
-; Components/DisplayRam2K.vhd                                                              ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/DisplayRam2K.vhd          ;         ;
-; Components/DisplayRam1K.vhd                                                              ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/DisplayRam1K.vhd          ;         ;
-; Components/SansBoldRomReduced.vhd                                                        ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansBoldRomReduced.vhd    ;         ;
-; Components/SansBoldRom.vhd                                                               ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansBoldRom.vhd           ;         ;
-; Components/CGABoldRomReduced.vhd                                                         ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/CGABoldRomReduced.vhd     ;         ;
-; Components/CGABoldRom.vhd                                                                ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/CGABoldRom.vhd            ;         ;
-; Components/ANSIDisplayVGA.vhd                                                            ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ANSIDisplayVGA.vhd        ;         ;
-; Components/bufferedUART.vhd                                                              ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/bufferedUART.vhd          ;         ;
-; Components/BaudRate6850.vhd                                                              ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/BaudRate6850.vhd          ;         ;
-; Components/Wrap_Keyboard.vhd                                                             ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/Wrap_Keyboard.vhd         ;         ;
-; Components/ps2_keyboard_to_ascii.vhd                                                     ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ps2_keyboard_to_ascii.vhd ;         ;
-; Components/ps2_keyboard.vhd                                                              ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ps2_keyboard.vhd          ;         ;
-; ANSITerm1.vhd                                                                            ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd                        ;         ;
-; IOP_ROM.vhd                                                                              ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/IOP_ROM.vhd                          ;         ;
-; altsyncram.tdf                                                                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                                      ;         ;
-; stratix_ram_block.inc                                                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                               ;         ;
-; lpm_mux.inc                                                                              ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                         ;         ;
-; lpm_decode.inc                                                                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                                      ;         ;
-; aglobal201.inc                                                                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                      ;         ;
-; a_rdenreg.inc                                                                            ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                       ;         ;
-; altrom.inc                                                                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                          ;         ;
-; altram.inc                                                                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                          ;         ;
-; altdpram.inc                                                                             ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                        ;         ;
-; db/altsyncram_7ku3.tdf                                                                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_7ku3.tdf               ;         ;
-; /users/hpz420/documents/github/doug gilliland/iop16/iop16_code/ansiterm03/ansiterm03.mif ; yes             ; Auto-Found Memory Initialization File  ; /users/hpz420/documents/github/doug gilliland/iop16/iop16_code/ansiterm03/ansiterm03.mif                                   ;         ;
-; db/altsyncram_ljs3.tdf                                                                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_ljs3.tdf               ;         ;
-; db/altsyncram_ldr3.tdf                                                                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_ldr3.tdf               ;         ;
-; db/altsyncram_3ce1.tdf                                                                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_3ce1.tdf               ;         ;
-; lpm_divide.tdf                                                                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                      ;         ;
-; abs_divider.inc                                                                          ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                                                     ;         ;
-; sign_div_unsign.inc                                                                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                 ;         ;
-; db/lpm_divide_icm.tdf                                                                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/lpm_divide_icm.tdf                ;         ;
-; db/sign_div_unsign_7nh.tdf                                                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/sign_div_unsign_7nh.tdf           ;         ;
-; db/alt_u_div_2af.tdf                                                                     ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/alt_u_div_2af.tdf                 ;         ;
-; db/add_sub_7pc.tdf                                                                       ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/add_sub_7pc.tdf                   ;         ;
-; db/add_sub_8pc.tdf                                                                       ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/add_sub_8pc.tdf                   ;         ;
-+------------------------------------------------------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                          ;
++-----------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path              ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                               ; Library ;
++-----------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
+; ../../../Design_A_CPU/Shifter.vhd             ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/Shifter.vhd                                                   ;         ;
+; ../../../Design_A_CPU/RegisterFile.vhd        ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/RegisterFile.vhd                                              ;         ;
+; ../../../Design_A_CPU/ProgramCounter.vhd      ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/ProgramCounter.vhd                                            ;         ;
+; ../../../Design_A_CPU/lifo.vhd                ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/lifo.vhd                                                      ;         ;
+; ../../../Design_A_CPU/GreyCode.vhd            ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/GreyCode.vhd                                                  ;         ;
+; ../../../Design_A_CPU/Debounce.vhd            ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/Debounce.vhd                                                  ;         ;
+; ../../../Design_A_CPU/cpu_001_Pkg.vhd         ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001_Pkg.vhd                                               ;         ;
+; ../../../Design_A_CPU/cpu_001.vhd             ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd                                                   ;         ;
+; ../../../Design_A_CPU/ALU.vhd                 ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/ALU.vhd                                                       ;         ;
+; Components/SansFontBoldReduced.HEX            ; yes             ; User Hexadecimal (Intel-Format) File   ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansFontBoldReduced.HEX   ;         ;
+; Components/debounce.vhd                       ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/debounce.vhd              ;         ;
+; Components/DisplayRam2K.vhd                   ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/DisplayRam2K.vhd          ;         ;
+; Components/DisplayRam1K.vhd                   ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/DisplayRam1K.vhd          ;         ;
+; Components/SansBoldRomReduced.vhd             ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansBoldRomReduced.vhd    ;         ;
+; Components/SansBoldRom.vhd                    ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansBoldRom.vhd           ;         ;
+; Components/CGABoldRomReduced.vhd              ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/CGABoldRomReduced.vhd     ;         ;
+; Components/CGABoldRom.vhd                     ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/CGABoldRom.vhd            ;         ;
+; Components/ANSIDisplayVGA.vhd                 ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ANSIDisplayVGA.vhd        ;         ;
+; Components/bufferedUART.vhd                   ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/bufferedUART.vhd          ;         ;
+; Components/BaudRate6850.vhd                   ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/BaudRate6850.vhd          ;         ;
+; Components/Wrap_Keyboard.vhd                  ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/Wrap_Keyboard.vhd         ;         ;
+; Components/ps2_keyboard_to_ascii.vhd          ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ps2_keyboard_to_ascii.vhd ;         ;
+; Components/ps2_keyboard.vhd                   ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ps2_keyboard.vhd          ;         ;
+; ANSITerm1.vhd                                 ; yes             ; User VHDL File                         ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd                        ;         ;
+; IOP_ROM.vhd                                   ; yes             ; User Wizard-Generated File             ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/IOP_ROM.vhd                          ;         ;
+; altsyncram.tdf                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf                                                      ;         ;
+; stratix_ram_block.inc                         ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                               ;         ;
+; lpm_mux.inc                                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.inc                                                         ;         ;
+; lpm_decode.inc                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_decode.inc                                                      ;         ;
+; aglobal211.inc                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/aglobal211.inc                                                      ;         ;
+; a_rdenreg.inc                                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                       ;         ;
+; altrom.inc                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altrom.inc                                                          ;         ;
+; altram.inc                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altram.inc                                                          ;         ;
+; altdpram.inc                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altdpram.inc                                                        ;         ;
+; db/altsyncram_7ku3.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_7ku3.tdf               ;         ;
+; ../../../IOP16_Code/ANSITerm03/ANSITerm03.mif ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP16_Code/ANSITerm03/ANSITerm03.mif                                 ;         ;
+; db/altsyncram_ljs3.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_ljs3.tdf               ;         ;
+; db/altsyncram_ldr3.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_ldr3.tdf               ;         ;
+; db/altsyncram_3ce1.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_3ce1.tdf               ;         ;
+; lpm_divide.tdf                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                      ;         ;
+; abs_divider.inc                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/abs_divider.inc                                                     ;         ;
+; sign_div_unsign.inc                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                 ;         ;
+; db/lpm_divide_icm.tdf                         ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/lpm_divide_icm.tdf                ;         ;
+; db/sign_div_unsign_7nh.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/sign_div_unsign_7nh.tdf           ;         ;
+; db/alt_u_div_2af.tdf                          ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/alt_u_div_2af.tdf                 ;         ;
+; db/add_sub_7pc.tdf                            ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/add_sub_7pc.tdf                   ;         ;
+; db/add_sub_8pc.tdf                            ; yes             ; Auto-Generated Megafunction            ; C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/add_sub_8pc.tdf                   ;         ;
++-----------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------+
@@ -1467,7 +1467,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:14     ;
+; Top            ; 00:00:16     ;
 +----------------+--------------+
 
 
@@ -1476,8 +1476,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Jul 17 20:41:32 2021
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Processing started: Sun Apr 10 13:22:34 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ANSITerm1 -c ANSITerm1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1502,8 +1502,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file /users/
 Info (12021): Found 1 design units, including 0 entities, in source file /users/hpz420/documents/github/doug gilliland/design_a_cpu/cpu_001_pkg.vhd
     Info (12022): Found design unit 1: cpu_001_Pkg File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001_Pkg.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file /users/hpz420/documents/github/doug gilliland/design_a_cpu/cpu_001.vhd
-    Info (12022): Found design unit 1: cpu_001-beh File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 40
-    Info (12023): Found entity 1: cpu_001 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 22
+    Info (12022): Found design unit 1: cpu_001-beh File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 41
+    Info (12023): Found entity 1: cpu_001 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 23
 Info (12021): Found 2 design units, including 1 entities, in source file /users/hpz420/documents/github/doug gilliland/design_a_cpu/alu.vhd
     Info (12022): Found design unit 1: ALU_Unit-beh File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/ALU.vhd Line: 27
     Info (12023): Found entity 1: ALU_Unit File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/ALU.vhd Line: 9
@@ -1572,10 +1572,10 @@ Warning (10540): VHDL Signal Declaration warning at ANSITerm1.vhd(77): used expl
 Warning (10540): VHDL Signal Declaration warning at ANSITerm1.vhd(78): used explicit default value for signal "sdRamAddr" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 78
 Info (12128): Elaborating entity "Debouncer" for hierarchy "Debouncer:debounceReset" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 135
 Info (12128): Elaborating entity "cpu_001" for hierarchy "cpu_001:CPU_001" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 146
-Info (12128): Elaborating entity "ProgramCounter" for hierarchy "cpu_001:CPU_001|ProgramCounter:progCtr" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 145
-Info (12128): Elaborating entity "RegisterFile" for hierarchy "cpu_001:CPU_001|RegisterFile:RegFile" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 208
-Info (12128): Elaborating entity "Shifter" for hierarchy "cpu_001:CPU_001|Shifter:Shifter" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 234
-Info (12128): Elaborating entity "IOP_ROM" for hierarchy "cpu_001:CPU_001|IOP_ROM:\GEN_512W_INST_ROM:IopRom" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 263
+Info (12128): Elaborating entity "ProgramCounter" for hierarchy "cpu_001:CPU_001|ProgramCounter:progCtr" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 146
+Info (12128): Elaborating entity "RegisterFile" for hierarchy "cpu_001:CPU_001|RegisterFile:RegFile" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 209
+Info (12128): Elaborating entity "Shifter" for hierarchy "cpu_001:CPU_001|Shifter:Shifter" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 235
+Info (12128): Elaborating entity "IOP_ROM" for hierarchy "cpu_001:CPU_001|IOP_ROM:\GEN_512W_INST_ROM:IopRom" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 264
 Info (12128): Elaborating entity "altsyncram" for hierarchy "cpu_001:CPU_001|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/IOP_ROM.vhd Line: 60
 Info (12130): Elaborated megafunction instantiation "cpu_001:CPU_001|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/IOP_ROM.vhd Line: 60
 Info (12133): Instantiated megafunction "cpu_001:CPU_001|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/IOP_ROM.vhd Line: 60
@@ -1631,9 +1631,10 @@ Info (12133): Instantiated megafunction "cpu_001:CPU_001|IOP_ROM:\GEN_512W_INST_
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7ku3.tdf
     Info (12023): Found entity 1: altsyncram_7ku3 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_7ku3.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_7ku3" for hierarchy "cpu_001:CPU_001|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_7ku3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "GreyCode" for hierarchy "cpu_001:CPU_001|GreyCode:GreyCodeCounter" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 308
-Info (12128): Elaborating entity "ALU_Unit" for hierarchy "cpu_001:CPU_001|ALU_Unit:ALU_Unit" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 317
+Info (12128): Elaborating entity "altsyncram_7ku3" for hierarchy "cpu_001:CPU_001|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_7ku3:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Critical Warning (127005): Memory depth (512) in the design file differs from memory depth (44) in the Memory Initialization File "C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP16_Code/ANSITerm03/ANSITerm03.mif" -- setting initial value for remaining addresses to 0 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/IOP_ROM.vhd Line: 60
+Info (12128): Elaborating entity "GreyCode" for hierarchy "cpu_001:CPU_001|GreyCode:GreyCodeCounter" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 309
+Info (12128): Elaborating entity "ALU_Unit" for hierarchy "cpu_001:CPU_001|ALU_Unit:ALU_Unit" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 318
 Info (12128): Elaborating entity "ANSIDisplayVGA" for hierarchy "ANSIDisplayVGA:ANSIDisplay" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 166
 Warning (10036): Verilog HDL or VHDL warning at ANSIDisplayVGA.vhd(112): object "func_reset" assigned a value but never read File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ANSIDisplayVGA.vhd Line: 112
 Info (12128): Elaborating entity "SansBoldRomReduced" for hierarchy "ANSIDisplayVGA:ANSIDisplay|SansBoldRomReduced:\GEN_REDUCED_SCHARS:fontRom" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ANSIDisplayVGA.vhd Line: 239
@@ -1692,7 +1693,18 @@ Info (12133): Instantiated megafunction "ANSIDisplayVGA:ANSIDisplay|SansBoldRomR
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ljs3.tdf
     Info (12023): Found entity 1: altsyncram_ljs3 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_ljs3.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_ljs3" for hierarchy "ANSIDisplayVGA:ANSIDisplay|SansBoldRomReduced:\GEN_REDUCED_SCHARS:fontRom|altsyncram:altsyncram_component|altsyncram_ljs3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "altsyncram_ljs3" for hierarchy "ANSIDisplayVGA:ANSIDisplay|SansBoldRomReduced:\GEN_REDUCED_SCHARS:fontRom|altsyncram:altsyncram_component|altsyncram_ljs3:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Warning (113015): Width of data items in "SansFontBoldReduced.HEX" is greater than the memory width. Wrapping data items to subsequent addresses. Found 32 warnings, reporting 10 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansFontBoldReduced.HEX Line: 1
+    Warning (113009): Data at line (1) of memory initialization file "SansFontBoldReduced.HEX" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansFontBoldReduced.HEX Line: 1
+    Warning (113009): Data at line (2) of memory initialization file "SansFontBoldReduced.HEX" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansFontBoldReduced.HEX Line: 2
+    Warning (113009): Data at line (3) of memory initialization file "SansFontBoldReduced.HEX" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansFontBoldReduced.HEX Line: 3
+    Warning (113009): Data at line (4) of memory initialization file "SansFontBoldReduced.HEX" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansFontBoldReduced.HEX Line: 4
+    Warning (113009): Data at line (5) of memory initialization file "SansFontBoldReduced.HEX" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansFontBoldReduced.HEX Line: 5
+    Warning (113009): Data at line (6) of memory initialization file "SansFontBoldReduced.HEX" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansFontBoldReduced.HEX Line: 6
+    Warning (113009): Data at line (7) of memory initialization file "SansFontBoldReduced.HEX" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansFontBoldReduced.HEX Line: 7
+    Warning (113009): Data at line (8) of memory initialization file "SansFontBoldReduced.HEX" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansFontBoldReduced.HEX Line: 8
+    Warning (113009): Data at line (9) of memory initialization file "SansFontBoldReduced.HEX" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansFontBoldReduced.HEX Line: 9
+    Warning (113009): Data at line (10) of memory initialization file "SansFontBoldReduced.HEX" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/SansFontBoldReduced.HEX Line: 10
 Info (12128): Elaborating entity "DisplayRam2K" for hierarchy "ANSIDisplayVGA:ANSIDisplay|DisplayRam2K:\GEN_2KRAM:dispCharRam" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ANSIDisplayVGA.vhd Line: 250
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ANSIDisplayVGA:ANSIDisplay|DisplayRam2K:\GEN_2KRAM:dispCharRam|altsyncram:altsyncram_component" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/DisplayRam2K.vhd Line: 67
 Info (12130): Elaborated megafunction instantiation "ANSIDisplayVGA:ANSIDisplay|DisplayRam2K:\GEN_2KRAM:dispCharRam|altsyncram:altsyncram_component" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/DisplayRam2K.vhd Line: 67
@@ -1749,7 +1761,7 @@ Info (12133): Instantiated megafunction "ANSIDisplayVGA:ANSIDisplay|DisplayRam2K
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ldr3.tdf
     Info (12023): Found entity 1: altsyncram_ldr3 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/db/altsyncram_ldr3.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_ldr3" for hierarchy "ANSIDisplayVGA:ANSIDisplay|DisplayRam2K:\GEN_2KRAM:dispCharRam|altsyncram:altsyncram_component|altsyncram_ldr3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "altsyncram_ldr3" for hierarchy "ANSIDisplayVGA:ANSIDisplay|DisplayRam2K:\GEN_2KRAM:dispCharRam|altsyncram:altsyncram_component|altsyncram_ldr3:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "Wrap_Keyboard" for hierarchy "Wrap_Keyboard:KEYBOARD" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 199
 Info (12128): Elaborating entity "ps2_keyboard_to_ascii" for hierarchy "Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/Wrap_Keyboard.vhd Line: 41
 Info (12128): Elaborating entity "ps2_keyboard" for hierarchy "Wrap_Keyboard:KEYBOARD|ps2_keyboard_to_ascii:ps2Keyboard|ps2_keyboard:ps2_keyboard_0" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/ps2_keyboard_to_ascii.vhd Line: 70
@@ -1759,9 +1771,9 @@ Info (12128): Elaborating entity "bufferedUART" for hierarchy "bufferedUART:UART
 Warning (276027): Inferred dual-clock RAM node "bufferedUART:UART|rxBuffer_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following LCELL buffer node(s):
-        Warning (14320): Synthesized away node "cpu_001:CPU_001|w_ProgCtr[9]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 45
-        Warning (14320): Synthesized away node "cpu_001:CPU_001|w_ProgCtr[10]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 45
-        Warning (14320): Synthesized away node "cpu_001:CPU_001|w_ProgCtr[11]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 45
+        Warning (14320): Synthesized away node "cpu_001:CPU_001|w_ProgCtr[9]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
+        Warning (14320): Synthesized away node "cpu_001:CPU_001|w_ProgCtr[10]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
+        Warning (14320): Synthesized away node "cpu_001:CPU_001|w_ProgCtr[11]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "bufferedUART:UART|rxBuffer_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -1880,10 +1892,10 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "w_periphAdr[0]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 88
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[9]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[10]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[8]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[11]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[9]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[10]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[8]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[11]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
     Info (17048): Logic cell "w_periphAdr[7]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 88
     Info (17048): Logic cell "w_periphAdr[6]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 88
     Info (17048): Logic cell "w_periphAdr[5]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 88
@@ -1891,33 +1903,33 @@ Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "w_periphAdr[1]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 88
     Info (17048): Logic cell "w_periphAdr[2]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 88
     Info (17048): Logic cell "w_periphAdr[3]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 88
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[0]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[1]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[14]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[15]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[12]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[13]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[3]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[4]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[7]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[6]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[5]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
-    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[2]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 60
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[0]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[1]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[14]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[15]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[12]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[13]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[3]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[4]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[7]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[6]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[5]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:CPU_001|w_romData[2]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
     Info (17048): Logic cell "cpu_001:CPU_001|Shifter:Shifter|i_ShiftL0R1~buf0" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/Shifter.vhd Line: 22
     Info (17048): Logic cell "cpu_001:CPU_001|Shifter:Shifter|i_ShiftCount[2]~buf0" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/Shifter.vhd Line: 23
     Info (17048): Logic cell "cpu_001:CPU_001|Shifter:Shifter|i_ShiftCount[1]~buf0" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/Shifter.vhd Line: 23
     Info (17048): Logic cell "cpu_001:CPU_001|Shifter:Shifter|i_ShiftCount[0]~buf0" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/Shifter.vhd Line: 23
     Info (17048): Logic cell "cpu_001:CPU_001|ALU_Unit:ALU_Unit|i_ALU_B_In[1]~buf0" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/ALU.vhd Line: 14
     Info (17048): Logic cell "cpu_001:CPU_001|ALU_Unit:ALU_Unit|i_ALU_B_In[0]~buf0" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/ALU.vhd Line: 14
-    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[0]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 45
-    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[1]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 45
-    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[2]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 45
-    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[3]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 45
-    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[4]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 45
-    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[5]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 45
-    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[6]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 45
-    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[7]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 45
-    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[8]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 45
+    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[0]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
+    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[1]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
+    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[2]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
+    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[3]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
+    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[4]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
+    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[5]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
+    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[6]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
+    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[7]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
+    Info (17048): Logic cell "cpu_001:CPU_001|w_ProgCtr[8]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
     Info (17048): Logic cell "cpu_001:CPU_001|Shifter:Shifter|i_Shift0Rot1~buf0" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/Shifter.vhd Line: 21
     Info (17048): Logic cell "Wrap_Keyboard:KEYBOARD|W_kbDataValid" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/Components/Wrap_Keyboard.vhd Line: 27
     Info (17048): Logic cell "cpu_001:CPU_001|ALU_Unit:ALU_Unit|i_ALU_B_In[4]~buf0" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/ALU.vhd Line: 14
@@ -1953,10 +1965,10 @@ Info (21057): Implemented 2441 device resources after synthesis - the final reso
     Info (21060): Implemented 10 bidirectional pins
     Info (21061): Implemented 2304 logic cells
     Info (21064): Implemented 48 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 100 warnings
-    Info: Peak virtual memory: 4832 megabytes
-    Info: Processing ended: Sat Jul 17 20:42:01 2021
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:49
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 112 warnings
+    Info: Peak virtual memory: 4850 megabytes
+    Info: Processing ended: Sun Apr 10 13:23:07 2022
+    Info: Elapsed time: 00:00:33
+    Info: Total CPU time (on all processors): 00:00:55
 
 

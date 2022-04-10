@@ -1,6 +1,6 @@
 Fitter report for ANSITerm1
-Sat Jul 17 20:42:22 2021
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Sun Apr 10 13:23:29 2022
+Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
 ---------------------
@@ -53,7 +53,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2021  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -73,8 +73,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Jul 17 20:42:22 2021       ;
-; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Fitter Status                      ; Successful - Sun Apr 10 13:23:29 2022       ;
+; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; ANSITerm1                                   ;
 ; Top-level Entity Name              ; ANSITerm1                                   ;
 ; Family                             ; Cyclone IV E                                ;
@@ -160,14 +160,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.10        ;
+; Average used               ; 1.09        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   4.0%      ;
-;     Processor 3            ;   3.2%      ;
-;     Processor 4            ;   3.0%      ;
+;     Processor 2            ;   3.4%      ;
+;     Processor 3            ;   2.7%      ;
+;     Processor 4            ;   2.6%      ;
 +----------------------------+-------------+
 
 
@@ -2169,7 +2169,7 @@ Info (170195): Router estimated average interconnect usage is 3% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:06
-Info (11888): Total time spent on timing analysis during the Fitter is 2.95 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 2.67 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2222,10 +2222,10 @@ Warning (169064): Following 10 pins have no output enable or a GND or VCC output
     Info (169065): Pin io_PS2_DAT has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/ANSITerm1.vhd Line: 55
 Info (144001): Generated suppressed messages file C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/ANSITerm2/output_files/ANSITerm1.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 5542 megabytes
-    Info: Processing ended: Sat Jul 17 20:42:23 2021
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Peak virtual memory: 5539 megabytes
+    Info: Processing ended: Sun Apr 10 13:23:30 2022
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:32
 
 
 +----------------------------+
