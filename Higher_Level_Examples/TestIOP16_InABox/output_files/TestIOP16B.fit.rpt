@@ -1,5 +1,5 @@
 Fitter report for TestIOP16B
-Sun Apr 10 20:01:33 2022
+Sun Apr 10 20:22:24 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -11,35 +11,34 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   3. Fitter Settings
   4. Parallel Compilation
   5. Fitter Netlist Optimizations
-  6. Ignored Assignments
-  7. Incremental Compilation Preservation Summary
-  8. Incremental Compilation Partition Settings
-  9. Incremental Compilation Placement Preservation
- 10. Pin-Out File
- 11. Fitter Resource Usage Summary
- 12. Fitter Partition Statistics
- 13. Input Pins
- 14. Output Pins
- 15. Bidir Pins
- 16. I/O Bank Usage
- 17. All Package Pins
- 18. I/O Assignment Warnings
- 19. Fitter Resource Utilization by Entity
- 20. Delay Chain Summary
- 21. Pad To Core Delay Chain Fanout
- 22. Control Signals
- 23. Global & Other Fast Signals
- 24. Fitter RAM Summary
- 25. Routing Usage Summary
- 26. I/O Rules Summary
- 27. I/O Rules Details
- 28. I/O Rules Matrix
- 29. Fitter Device Options
- 30. Operating Settings and Conditions
- 31. Estimated Delay Added for Hold Timing Summary
- 32. Estimated Delay Added for Hold Timing Details
- 33. Fitter Messages
- 34. Fitter Suppressed Messages
+  6. Incremental Compilation Preservation Summary
+  7. Incremental Compilation Partition Settings
+  8. Incremental Compilation Placement Preservation
+  9. Pin-Out File
+ 10. Fitter Resource Usage Summary
+ 11. Fitter Partition Statistics
+ 12. Input Pins
+ 13. Output Pins
+ 14. Bidir Pins
+ 15. I/O Bank Usage
+ 16. All Package Pins
+ 17. I/O Assignment Warnings
+ 18. Fitter Resource Utilization by Entity
+ 19. Delay Chain Summary
+ 20. Pad To Core Delay Chain Fanout
+ 21. Control Signals
+ 22. Global & Other Fast Signals
+ 23. Fitter RAM Summary
+ 24. Routing Usage Summary
+ 25. I/O Rules Summary
+ 26. I/O Rules Details
+ 27. I/O Rules Matrix
+ 28. Fitter Device Options
+ 29. Operating Settings and Conditions
+ 30. Estimated Delay Added for Hold Timing Summary
+ 31. Estimated Delay Added for Hold Timing Details
+ 32. Fitter Messages
+ 33. Fitter Suppressed Messages
 
 
 
@@ -66,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Sun Apr 10 20:01:33 2022       ;
+; Fitter Status                   ; Successful - Sun Apr 10 20:22:24 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; TestIOP16B                                  ;
 ; Top-level Entity Name           ; TestIOP16B                                  ;
@@ -162,8 +161,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.1%      ;
-;     Processor 3            ;   1.1%      ;
+;     Processor 2            ;   1.2%      ;
+;     Processor 3            ;   1.2%      ;
 ;     Processor 4            ;   1.1%      ;
 +----------------------------+-------------+
 
@@ -203,15 +202,6 @@ https://fpgasoftware.intel.com/eula.
 ; cpu_001:IOP16|GreyCode:GreyCodeCounter|o_GreyCode[0]~reg0 ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; cpu_001:IOP16|GreyCode:GreyCodeCounter|o_GreyCode[0]~reg0DUPLICATE ;                  ;                       ;
 ; cpu_001:IOP16|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0 ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; cpu_001:IOP16|GreyCode:GreyCodeCounter|o_GreyCode[1]~reg0DUPLICATE ;                  ;                       ;
 +-----------------------------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+--------------------------------------------------------------------+------------------+-----------------------+
-
-
-+----------------------------------------------------------------------------------------+
-; Ignored Assignments                                                                    ;
-+----------+----------------+--------------+------------+---------------+----------------+
-; Name     ; Ignored Entity ; Ignored From ; Ignored To ; Ignored Value ; Ignored Source ;
-+----------+----------------+--------------+------------+---------------+----------------+
-; Location ;                ;              ; driveLED   ; PIN_D17       ; QSF Assignment ;
-+----------+----------------+--------------+------------+---------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -1824,8 +1814,6 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Warning (15705): Ignored locations or region assignments to the following nodes
-    Warning (15706): Node "driveLED" is assigned to location or region, but does not exist in design
 Info (11798): Fitter preparation operations ending: elapsed time is 00:00:07
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
@@ -1839,13 +1827,12 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
-Info (11888): Total time spent on timing analysis during the Fitter is 1.31 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 1.34 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:08
-Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:09
 Warning (169064): Following 10 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
     Info (169065): Pin ps2Clk has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 52
     Info (169065): Pin ps2Data has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 53
@@ -1858,11 +1845,11 @@ Warning (169064): Following 10 pins have no output enable or a GND or VCC output
     Info (169065): Pin sramData[6] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
     Info (169065): Pin sramData[7] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
 Info (144001): Generated suppressed messages file C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/output_files/TestIOP16B.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 6306 megabytes
-    Info: Processing ended: Sun Apr 10 20:01:34 2022
+Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 6303 megabytes
+    Info: Processing ended: Sun Apr 10 20:22:25 2022
     Info: Elapsed time: 00:00:39
-    Info: Total CPU time (on all processors): 00:01:09
+    Info: Total CPU time (on all processors): 00:01:08
 
 
 +----------------------------+

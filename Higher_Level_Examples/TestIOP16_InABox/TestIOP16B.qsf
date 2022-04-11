@@ -61,6 +61,7 @@ set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to i_n_reset
 # KEY, LED
 set_location_assignment PIN_AB13 -to i_key1
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to i_key1
+set_location_assignment PIN_D17 -to o_UsrLed
 # Serial
 set_location_assignment PIN_B11 -to cts1
 set_location_assignment PIN_F10 -to rts1
