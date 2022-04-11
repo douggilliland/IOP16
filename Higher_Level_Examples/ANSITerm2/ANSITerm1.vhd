@@ -17,11 +17,11 @@
 --
 -- IOP16 Memory Map
 --		0X00 - UART (c/S) (r/w)
--- 	0X01 - UART (Data) (r/w)
--- 	0X02 - DISPLAY (c/S) (w)
--- 	0X03 - DISPLAY (Data) (w)
--- 	0X04 - KBD (c/S) (r)
--- 	0X05 - KBD (Data) (r) 
+--		0X01 - UART (Data) (r/w)
+--		0X02 - DISPLAY (c/S) (w)
+--		0X03 - DISPLAY (Data) (w)
+--		0X04 - KBD (c/S) (r)
+--		0X05 - KBD (Data) (r) 
  
 --	---------------------------------------------------------------------------------------------------------
 

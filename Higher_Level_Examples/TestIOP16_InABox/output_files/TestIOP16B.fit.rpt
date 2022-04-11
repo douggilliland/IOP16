@@ -1,5 +1,5 @@
 Fitter report for TestIOP16B
-Sun Apr 10 20:22:24 2022
+Mon Apr 11 08:26:06 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Sun Apr 10 20:22:24 2022       ;
+; Fitter Status                   ; Successful - Mon Apr 11 08:26:05 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; TestIOP16B                                  ;
 ; Top-level Entity Name           ; TestIOP16B                                  ;
@@ -161,9 +161,9 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.2%      ;
-;     Processor 3            ;   1.2%      ;
-;     Processor 4            ;   1.1%      ;
+;     Processor 2            ;   1.0%      ;
+;     Processor 3            ;   1.0%      ;
+;     Processor 4            ;   1.0%      ;
 +----------------------------+-------------+
 
 
@@ -1814,7 +1814,7 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:07
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:09
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:03
@@ -1827,29 +1827,29 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
-Info (11888): Total time spent on timing analysis during the Fitter is 1.34 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 1.44 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:09
 Warning (169064): Following 10 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
-    Info (169065): Pin ps2Clk has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 52
-    Info (169065): Pin ps2Data has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 53
-    Info (169065): Pin sramData[0] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
-    Info (169065): Pin sramData[1] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
-    Info (169065): Pin sramData[2] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
-    Info (169065): Pin sramData[3] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
-    Info (169065): Pin sramData[4] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
-    Info (169065): Pin sramData[5] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
-    Info (169065): Pin sramData[6] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
-    Info (169065): Pin sramData[7] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
+    Info (169065): Pin ps2Clk has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 54
+    Info (169065): Pin ps2Data has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
+    Info (169065): Pin sramData[0] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
+    Info (169065): Pin sramData[1] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
+    Info (169065): Pin sramData[2] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
+    Info (169065): Pin sramData[3] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
+    Info (169065): Pin sramData[4] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
+    Info (169065): Pin sramData[5] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
+    Info (169065): Pin sramData[6] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
+    Info (169065): Pin sramData[7] has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
 Info (144001): Generated suppressed messages file C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/output_files/TestIOP16B.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6303 megabytes
-    Info: Processing ended: Sun Apr 10 20:22:25 2022
-    Info: Elapsed time: 00:00:39
-    Info: Total CPU time (on all processors): 00:01:08
+    Info: Peak virtual memory: 6301 megabytes
+    Info: Processing ended: Mon Apr 11 08:26:06 2022
+    Info: Elapsed time: 00:00:43
+    Info: Total CPU time (on all processors): 00:01:13
 
 
 +----------------------------+

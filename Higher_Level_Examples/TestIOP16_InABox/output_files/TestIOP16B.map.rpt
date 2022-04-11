@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TestIOP16B
-Sun Apr 10 20:00:54 2022
+Mon Apr 11 08:25:22 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Apr 10 20:00:54 2022       ;
+; Analysis & Synthesis Status     ; Successful - Mon Apr 11 08:25:22 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; TestIOP16B                                  ;
 ; Top-level Entity Name           ; TestIOP16B                                  ;
@@ -672,7 +672,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -682,7 +682,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Sun Apr 10 20:00:38 2022
+    Info: Processing started: Mon Apr 11 08:25:05 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestIOP16B -c TestIOP16B
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -719,38 +719,38 @@ Info (12021): Found 2 design units, including 1 entities, in source file iop_rom
     Info (12022): Found design unit 1: iop_rom-SYN File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/IOP_ROM.vhd Line: 53
     Info (12023): Found entity 1: IOP_ROM File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/IOP_ROM.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file testiop16b.vhd
-    Info (12022): Found design unit 1: TestIOP16B-struct File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 83
-    Info (12023): Found entity 1: TestIOP16B File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 25
+    Info (12022): Found design unit 1: TestIOP16B-struct File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 85
+    Info (12023): Found entity 1: TestIOP16B File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 27
 Info (12127): Elaborating entity "TestIOP16B" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at TestIOP16B.vhd(36): used implicit default value for signal "txd1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 36
-Warning (10541): VHDL Signal Declaration warning at TestIOP16B.vhd(38): used implicit default value for signal "rts1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 38
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(42): used explicit default value for signal "videoR0" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 42
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(43): used explicit default value for signal "videoG0" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 43
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(44): used explicit default value for signal "videoB0" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 44
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(45): used explicit default value for signal "videoR1" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 45
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(46): used explicit default value for signal "videoG1" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 46
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(47): used explicit default value for signal "videoB1" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 47
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(48): used explicit default value for signal "hSync" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 48
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(49): used explicit default value for signal "vSync" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 49
-Warning (10541): VHDL Signal Declaration warning at TestIOP16B.vhd(55): used implicit default value for signal "IO_PIN" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-Warning (10541): VHDL Signal Declaration warning at TestIOP16B.vhd(59): used implicit default value for signal "sramAddress" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(60): used explicit default value for signal "n_sRamWE" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(61): used explicit default value for signal "n_sRamCS" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(62): used explicit default value for signal "n_sRamOE" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 62
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(65): used explicit default value for signal "n_sdRamCas" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 65
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(66): used explicit default value for signal "n_sdRamRas" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 66
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(67): used explicit default value for signal "n_sdRamWe" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 67
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(68): used explicit default value for signal "n_sdRamCe" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 68
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(69): used explicit default value for signal "sdRamClk" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 69
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(70): used explicit default value for signal "sdRamClkEn" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 70
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(71): used explicit default value for signal "sdRamAddr" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(75): used explicit default value for signal "sdCS" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 75
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(76): used explicit default value for signal "sdMOSI" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 76
-Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(78): used explicit default value for signal "sdSCLK" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 78
-Warning (10036): Verilog HDL or VHDL warning at TestIOP16B.vhd(92): object "w_periphRd" assigned a value but never read File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 92
-Info (12128): Elaborating entity "Debouncer" for hierarchy "Debouncer:debounceReset" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 108
-Info (12128): Elaborating entity "TimerUnit" for hierarchy "TimerUnit:timerUnit" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 116
-Info (12128): Elaborating entity "cpu_001" for hierarchy "cpu_001:IOP16" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 134
+Warning (10541): VHDL Signal Declaration warning at TestIOP16B.vhd(38): used implicit default value for signal "txd1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 38
+Warning (10541): VHDL Signal Declaration warning at TestIOP16B.vhd(40): used implicit default value for signal "rts1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 40
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(44): used explicit default value for signal "videoR0" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 44
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(45): used explicit default value for signal "videoG0" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 45
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(46): used explicit default value for signal "videoB0" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 46
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(47): used explicit default value for signal "videoR1" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 47
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(48): used explicit default value for signal "videoG1" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 48
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(49): used explicit default value for signal "videoB1" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 49
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(50): used explicit default value for signal "hSync" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 50
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(51): used explicit default value for signal "vSync" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 51
+Warning (10541): VHDL Signal Declaration warning at TestIOP16B.vhd(57): used implicit default value for signal "IO_PIN" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+Warning (10541): VHDL Signal Declaration warning at TestIOP16B.vhd(61): used implicit default value for signal "sramAddress" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(62): used explicit default value for signal "n_sRamWE" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 62
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(63): used explicit default value for signal "n_sRamCS" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 63
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(64): used explicit default value for signal "n_sRamOE" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 64
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(67): used explicit default value for signal "n_sdRamCas" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 67
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(68): used explicit default value for signal "n_sdRamRas" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 68
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(69): used explicit default value for signal "n_sdRamWe" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 69
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(70): used explicit default value for signal "n_sdRamCe" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 70
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(71): used explicit default value for signal "sdRamClk" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(72): used explicit default value for signal "sdRamClkEn" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(73): used explicit default value for signal "sdRamAddr" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(77): used explicit default value for signal "sdCS" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 77
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(78): used explicit default value for signal "sdMOSI" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 78
+Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(80): used explicit default value for signal "sdSCLK" because signal was never assigned a value File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 80
+Warning (10036): Verilog HDL or VHDL warning at TestIOP16B.vhd(94): object "w_periphRd" assigned a value but never read File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 94
+Info (12128): Elaborating entity "Debouncer" for hierarchy "Debouncer:debounceReset" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 110
+Info (12128): Elaborating entity "TimerUnit" for hierarchy "TimerUnit:timerUnit" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 118
+Info (12128): Elaborating entity "cpu_001" for hierarchy "cpu_001:IOP16" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 136
 Warning (10541): VHDL Signal Declaration warning at cpu_001.vhd(50): used implicit default value for signal "w_rtnAddr" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 50
 Info (12128): Elaborating entity "ProgramCounter" for hierarchy "cpu_001:IOP16|ProgramCounter:progCtr" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 146
 Info (12128): Elaborating entity "RegisterFile" for hierarchy "cpu_001:IOP16|RegisterFile:RegFile" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 209
@@ -815,120 +815,120 @@ Info (12128): Elaborating entity "altsyncram_2o44" for hierarchy "cpu_001:IOP16|
 Info (12128): Elaborating entity "GreyCode" for hierarchy "cpu_001:IOP16|GreyCode:GreyCodeCounter" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 309
 Info (12128): Elaborating entity "ALU_Unit" for hierarchy "cpu_001:IOP16|ALU_Unit:ALU_Unit" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 318
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "ps2Clk" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 52
-    Warning (13040): bidirectional pin "ps2Data" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 53
-    Warning (13040): bidirectional pin "sramData[0]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
-    Warning (13040): bidirectional pin "sramData[1]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
-    Warning (13040): bidirectional pin "sramData[2]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
-    Warning (13040): bidirectional pin "sramData[3]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
-    Warning (13040): bidirectional pin "sramData[4]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
-    Warning (13040): bidirectional pin "sramData[5]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
-    Warning (13040): bidirectional pin "sramData[6]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
-    Warning (13040): bidirectional pin "sramData[7]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 58
+    Warning (13040): bidirectional pin "ps2Clk" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 54
+    Warning (13040): bidirectional pin "ps2Data" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
+    Warning (13040): bidirectional pin "sramData[0]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
+    Warning (13040): bidirectional pin "sramData[1]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
+    Warning (13040): bidirectional pin "sramData[2]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
+    Warning (13040): bidirectional pin "sramData[3]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
+    Warning (13040): bidirectional pin "sramData[4]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
+    Warning (13040): bidirectional pin "sramData[5]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
+    Warning (13040): bidirectional pin "sramData[6]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
+    Warning (13040): bidirectional pin "sramData[7]" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "txd1" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 36
-    Warning (13410): Pin "rts1" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 38
-    Warning (13410): Pin "videoR0" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 42
-    Warning (13410): Pin "videoG0" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 43
-    Warning (13410): Pin "videoB0" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 44
-    Warning (13410): Pin "videoR1" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 45
-    Warning (13410): Pin "videoG1" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 46
-    Warning (13410): Pin "videoB1" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 47
-    Warning (13410): Pin "hSync" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 48
-    Warning (13410): Pin "vSync" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 49
-    Warning (13410): Pin "IO_PIN[3]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[4]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[5]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[6]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[7]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[8]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[9]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[10]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[11]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[12]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[13]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[14]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[15]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[16]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[17]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[18]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[19]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[20]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[21]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[22]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[23]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[24]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[25]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[26]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[27]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[28]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[29]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[30]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[31]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[32]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[33]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[34]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[35]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[36]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[37]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[38]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[39]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[40]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[41]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[42]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[43]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[44]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[45]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[46]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[47]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "IO_PIN[48]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
-    Warning (13410): Pin "sramAddress[0]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[1]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[2]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[3]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[4]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[5]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[6]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[7]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[8]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[9]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[10]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[11]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[12]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[13]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[14]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[15]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[16]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[17]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[18]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "sramAddress[19]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 59
-    Warning (13410): Pin "n_sRamWE" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 60
-    Warning (13410): Pin "n_sRamCS" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
-    Warning (13410): Pin "n_sRamOE" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 62
-    Warning (13410): Pin "n_sdRamCas" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 65
-    Warning (13410): Pin "n_sdRamRas" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 66
-    Warning (13410): Pin "n_sdRamWe" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 67
-    Warning (13410): Pin "n_sdRamCe" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 68
-    Warning (13410): Pin "sdRamClk" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 69
-    Warning (13410): Pin "sdRamClkEn" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 70
-    Warning (13410): Pin "sdRamAddr[0]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-    Warning (13410): Pin "sdRamAddr[1]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-    Warning (13410): Pin "sdRamAddr[2]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-    Warning (13410): Pin "sdRamAddr[3]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-    Warning (13410): Pin "sdRamAddr[4]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-    Warning (13410): Pin "sdRamAddr[5]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-    Warning (13410): Pin "sdRamAddr[6]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-    Warning (13410): Pin "sdRamAddr[7]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-    Warning (13410): Pin "sdRamAddr[8]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-    Warning (13410): Pin "sdRamAddr[9]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-    Warning (13410): Pin "sdRamAddr[10]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-    Warning (13410): Pin "sdRamAddr[11]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-    Warning (13410): Pin "sdRamAddr[12]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-    Warning (13410): Pin "sdRamAddr[13]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-    Warning (13410): Pin "sdRamAddr[14]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
-    Warning (13410): Pin "sdCS" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 75
-    Warning (13410): Pin "sdMOSI" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 76
-    Warning (13410): Pin "sdSCLK" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 78
+    Warning (13410): Pin "txd1" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 38
+    Warning (13410): Pin "rts1" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 40
+    Warning (13410): Pin "videoR0" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 44
+    Warning (13410): Pin "videoG0" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 45
+    Warning (13410): Pin "videoB0" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 46
+    Warning (13410): Pin "videoR1" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 47
+    Warning (13410): Pin "videoG1" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 48
+    Warning (13410): Pin "videoB1" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 49
+    Warning (13410): Pin "hSync" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 50
+    Warning (13410): Pin "vSync" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 51
+    Warning (13410): Pin "IO_PIN[3]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[4]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[5]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[6]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[7]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[8]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[9]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[10]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[11]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[12]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[13]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[14]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[15]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[16]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[17]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[18]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[19]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[20]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[21]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[22]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[23]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[24]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[25]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[26]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[27]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[28]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[29]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[30]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[31]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[32]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[33]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[34]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[35]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[36]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[37]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[38]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[39]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[40]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[41]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[42]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[43]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[44]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[45]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[46]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[47]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "IO_PIN[48]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 57
+    Warning (13410): Pin "sramAddress[0]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[1]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[2]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[3]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[4]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[5]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[6]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[7]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[8]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[9]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[10]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[11]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[12]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[13]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[14]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[15]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[16]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[17]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[18]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "sramAddress[19]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 61
+    Warning (13410): Pin "n_sRamWE" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 62
+    Warning (13410): Pin "n_sRamCS" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 63
+    Warning (13410): Pin "n_sRamOE" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 64
+    Warning (13410): Pin "n_sdRamCas" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 67
+    Warning (13410): Pin "n_sdRamRas" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 68
+    Warning (13410): Pin "n_sdRamWe" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 69
+    Warning (13410): Pin "n_sdRamCe" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 70
+    Warning (13410): Pin "sdRamClk" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 71
+    Warning (13410): Pin "sdRamClkEn" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
+    Warning (13410): Pin "sdRamAddr[0]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+    Warning (13410): Pin "sdRamAddr[1]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+    Warning (13410): Pin "sdRamAddr[2]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+    Warning (13410): Pin "sdRamAddr[3]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+    Warning (13410): Pin "sdRamAddr[4]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+    Warning (13410): Pin "sdRamAddr[5]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+    Warning (13410): Pin "sdRamAddr[6]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+    Warning (13410): Pin "sdRamAddr[7]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+    Warning (13410): Pin "sdRamAddr[8]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+    Warning (13410): Pin "sdRamAddr[9]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+    Warning (13410): Pin "sdRamAddr[10]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+    Warning (13410): Pin "sdRamAddr[11]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+    Warning (13410): Pin "sdRamAddr[12]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+    Warning (13410): Pin "sdRamAddr[13]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+    Warning (13410): Pin "sdRamAddr[14]" is stuck at GND File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 73
+    Warning (13410): Pin "sdCS" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 77
+    Warning (13410): Pin "sdMOSI" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 78
+    Warning (13410): Pin "sdSCLK" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 80
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
@@ -973,26 +973,26 @@ Info (17016): Found the following redundant logic cells in design
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 20 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "rxd1" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 35
-    Warning (15610): No output dependent on input pin "cts1" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 37
-    Warning (15610): No output dependent on input pin "serSelect" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 39
-    Warning (15610): No output dependent on input pin "sdRamData[0]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdRamData[1]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdRamData[2]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdRamData[3]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdRamData[4]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdRamData[5]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdRamData[6]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdRamData[7]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdRamData[8]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdRamData[9]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdRamData[10]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdRamData[11]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdRamData[12]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdRamData[13]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdRamData[14]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdRamData[15]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 72
-    Warning (15610): No output dependent on input pin "sdMISO" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 77
+    Warning (15610): No output dependent on input pin "rxd1" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 37
+    Warning (15610): No output dependent on input pin "cts1" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 39
+    Warning (15610): No output dependent on input pin "serSelect" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 41
+    Warning (15610): No output dependent on input pin "sdRamData[0]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdRamData[1]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdRamData[2]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdRamData[3]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdRamData[4]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdRamData[5]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdRamData[6]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdRamData[7]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdRamData[8]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdRamData[9]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdRamData[10]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdRamData[11]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdRamData[12]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdRamData[13]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdRamData[14]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdRamData[15]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
+    Warning (15610): No output dependent on input pin "sdMISO" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 79
 Info (21057): Implemented 511 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 104 output pins
@@ -1000,9 +1000,9 @@ Info (21057): Implemented 511 device resources after synthesis - the final resou
     Info (21061): Implemented 358 logic cells
     Info (21064): Implemented 16 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 164 warnings
-    Info: Peak virtual memory: 4897 megabytes
-    Info: Processing ended: Sun Apr 10 20:00:54 2022
-    Info: Elapsed time: 00:00:16
+    Info: Peak virtual memory: 4899 megabytes
+    Info: Processing ended: Mon Apr 11 08:25:22 2022
+    Info: Elapsed time: 00:00:17
     Info: Total CPU time (on all processors): 00:00:38
 
 
