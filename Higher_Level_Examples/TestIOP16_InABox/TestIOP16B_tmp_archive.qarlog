@@ -1,0 +1,35 @@
+Quartus Prime Archive log --	C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TestIOP16B_tmp_archive.qarlog
+
+Archive:	C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TestIOP16B_tmp_archive.qar
+Date:		Sun Apr 10 15:53:56 2022
+Quartus Prime		21.1.0 Build 842 10/21/2021 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/ALU.vhd
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/Debounce.vhd
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/GreyCode.vhd
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/Peripherals/IOP16_Timer_Unit/TimerUnit.vhd
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/ProgramCounter.vhd
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/RegisterFile.vhd
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/Shifter.vhd
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001_Pkg.vhd
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/lifo.vhd
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/IOP_ROM.vhd
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TestIOP16B.qpf
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TestIOP16B.qsf
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TestIOP16B.vhd
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TestIOP16B_assignment_defaults.qdf
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/output_files/TESTtIMER.stp
+C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/output_files/output_file.cof
+C:/users/hpz420/documents/github/doug gilliland/iop16/iop16_code/testtimer/testtimer.mif
+	======= Total: 18 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sun Apr 10 15:53:58 2022
+Source archive file:	C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16B/TestIOP16B_tmp_archive.qar
+Archive was extracted into	C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/
+		 - successfully.
