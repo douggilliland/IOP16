@@ -1,0 +1,20 @@
+Fitter Status : Successful - Sun Apr 10 21:37:04 2022
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Revision Name : TestIOP16B
+Top-level Entity Name : TestIOP16B
+Family : Cyclone V
+Device : 5CEFA2F23I7
+Timing Models : Final
+Logic utilization (in ALMs) : 169 / 9,430 ( 2 % )
+Total registers : 181
+Total pins : 137 / 224 ( 61 % )
+Total virtual pins : 0
+Total block memory bits : 8,192 / 1,802,240 ( < 1 % )
+Total RAM Blocks : 1 / 176 ( < 1 % )
+Total DSP Blocks : 0 / 25 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

@@ -15,7 +15,7 @@
 --		Minimal Intruction set (enough for basic I/O)
 --		8 Clocks per instruction at 50 MHz = 6.25 MIPS
 --
--- IOP16 mEMORY mAP
+-- IOP16 Memory Map
 --		0X00 - UART (c/S) (r/w)
 -- 	0X01 - UART (Data) (r/w)
 -- 	0X02 - DISPLAY (c/S) (w)
