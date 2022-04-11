@@ -4,6 +4,8 @@
 <img src="http://land-boards.com/tindie/tindie-larges-v2.png" alt="Tindie Logo">
 </img></a> 
 
+* Minimal IOP16 build for 5CEFA2F23I7 FPGA
+
 <img src="http://land-boards.com/blwiki/images/8/8f/RETRO-EP4CE15-REV4-BLACK-P1464-720PX.jpg"></img>
 
 === VHDL Code ===
