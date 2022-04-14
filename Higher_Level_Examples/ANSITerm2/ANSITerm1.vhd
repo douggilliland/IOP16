@@ -94,7 +94,7 @@ architecture struct of ANSITerm1 is
 	-- Decodes/Strobes
 	signal w_wrUart				:	std_logic;
 	signal w_rdUart				:	std_logic;
-	signal W_kbcs					:	std_logic;
+	signal w_kbcs					:	std_logic;
 	signal w_wrTerm				:	std_logic;
 	signal w_rdTerm				:	std_logic;
 	
@@ -109,7 +109,7 @@ architecture struct of ANSITerm1 is
 
 	-- Signal Tap Logic Analyzer signals
 	attribute syn_keep	: boolean;
-	attribute syn_keep of W_kbcs			: signal is true;
+	attribute syn_keep of w_kbcs			: signal is true;
 	attribute syn_keep of w_periphIn		: signal is true;
 	attribute syn_keep of w_periphOut	: signal is true;
 	attribute syn_keep of w_periphWr		: signal is true;
@@ -129,7 +129,7 @@ begin
 	w_rdUart		<= '1' when ((w_periphAdr(7 downto 1)="000"&x"0") and (w_periphRd = '1')) else '0';
 	w_wrTerm		<= '1' when ((w_periphAdr(7 downto 1)="000"&x"1") and (w_periphWr = '1')) else '0';
 	w_rdTerm		<= '1' when ((w_periphAdr(7 downto 1)="000"&x"1") and (w_periphRd = '1')) else '0';
-	W_kbcs		<= '1' when ((w_periphAdr(7 downto 1)="000"&x"2") and (w_periphRd = '1')) else '0';
+	w_kbcs		<= '1' when ((w_periphAdr(7 downto 1)="000"&x"2") and (w_periphRd = '1')) else '0';
 	
 	-- Debounce/sync reset to 50 MHz FPGA clock
 	debounceReset : entity work.Debouncer
@@ -200,9 +200,9 @@ begin
 		port MAP (
 			i_CLOCK_50		=> i_CLOCK_50,
 			i_n_reset		=> w_resetClean_n,
-			i_kbCS			=> W_kbcs,
+			i_kbCS			=> w_kbcs,
 			i_RegSel			=> w_periphAdr(0),
-			i_rd_Kbd			=> W_kbcs,
+			i_rd_Kbd			=> w_kbcs,
 			i_ps2_clk		=> io_PS2_CLK,
 			i_ps2_data		=> io_PS2_DAT,
 			o_kbdDat			=> w_KbdData

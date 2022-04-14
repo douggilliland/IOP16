@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Apr 14 05:53:40 2022
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Revision Name : TestIOP16B
+Top-level Entity Name : TestIOP16B
+Family : Cyclone 10 LP
+Total logic elements : 428
+    Total combinational functions : 367
+    Dedicated logic registers : 153
+Total registers : 153
+Total pins : 91
+Total virtual pins : 0
+Total memory bits : 8,192
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
