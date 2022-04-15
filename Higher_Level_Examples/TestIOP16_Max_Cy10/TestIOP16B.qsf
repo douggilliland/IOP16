@@ -164,40 +164,6 @@ set_location_assignment PIN_B10 -to rts1
 set_location_assignment PIN_D12 -to rxd1
 set_location_assignment PIN_D11 -to cts1
 set_location_assignment PIN_A10 -to txd1
-set_global_assignment -name VHDL_FILE "../../../MultiComp/MultiComp (VHDL Template)/Components/COUNTER/CounterLdCnt.vhd"
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Peripherals/PS2KB/Wrap_Keyboard.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Peripherals/PS2KB/ps2_keyboard_to_ascii.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Peripherals/PS2KB/ps2_keyboard.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Peripherals/PS2KB/debounce.vhd
-set_global_assignment -name HEX_FILE ../../../Design_A_CPU/Peripherals/ANSIDisplay/SansFontBoldReduced.HEX
-set_global_assignment -name HEX_FILE ../../../Design_A_CPU/Peripherals/ANSIDisplay/SansFontBold.HEX
-set_global_assignment -name HEX_FILE ../../../Design_A_CPU/Peripherals/ANSIDisplay/CGAFontBoldReduced.HEX
-set_global_assignment -name HEX_FILE ../../../Design_A_CPU/Peripherals/ANSIDisplay/CGAFontBold.HEX
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Peripherals/ANSIDisplay/SansBoldRomReduced.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Peripherals/ANSIDisplay/SansBoldRom.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Peripherals/ANSIDisplay/DisplayRam2K.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Peripherals/ANSIDisplay/DisplayRam1K.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Peripherals/ANSIDisplay/CGABoldRomReduced.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Peripherals/ANSIDisplay/CGABoldRom.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Peripherals/ANSIDisplay/ANSIDisplayVGA.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Peripherals/UART/bufferedUART.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Peripherals/UART/BaudRate6850.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Peripherals/IOP16_Timer_Unit/TimerUnit.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Shifter.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/RegisterFile.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/ProgramCounter.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/lifo.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/GreyCode.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/Debounce.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/cpu_001_Pkg.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/cpu_001.vhd
-set_global_assignment -name VHDL_FILE ../../../Design_A_CPU/ALU.vhd
-set_global_assignment -name VHDL_FILE IOP_ROM.vhd
-set_global_assignment -name VHDL_FILE TestIOP16B.vhd
-set_global_assignment -name SIGNALTAP_FILE output_files/TESTtIMER.stp
-set_global_assignment -name CDF_FILE output_files/TestIOP16B_JIC.cdf
-set_global_assignment -name QIP_FILE ../../IOP_Peripherals/Constants_ROM/ConstantsROM_256B.qip
-set_global_assignment -name SIGNALTAP_FILE SignalTap/STLA_consts.stp
 set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to i_clk -section_id auto_signaltap_0
@@ -295,6 +261,34 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=36" -se
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=36" -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/IOP16_Timer_Unit/TimerUnit.vhd
+set_global_assignment -name VHDL_FILE ../../IOP16_CPU/Shifter.vhd
+set_global_assignment -name VHDL_FILE ../../IOP16_CPU/RegisterFile.vhd
+set_global_assignment -name VHDL_FILE ../../IOP16_CPU/ProgramCounter.vhd
+set_global_assignment -name VHDL_FILE ../../IOP16_CPU/lifo.vhd
+set_global_assignment -name VHDL_FILE ../../IOP16_CPU/GreyCode.vhd
+set_global_assignment -name VHDL_FILE ../../IOP16_CPU/Debounce.vhd
+set_global_assignment -name VHDL_FILE ../../IOP16_CPU/cpu_001_Pkg.vhd
+set_global_assignment -name VHDL_FILE ../../IOP16_CPU/cpu_001.vhd
+set_global_assignment -name VHDL_FILE ../../IOP16_CPU/ALU.vhd
+set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/UART/bufferedUART.vhd
+set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/UART/BaudRate6850.vhd
+set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/ANSIDisplay/SansBoldRomReduced.vhd
+set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/ANSIDisplay/SansBoldRom.vhd
+set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/ANSIDisplay/DisplayRam2K.vhd
+set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/ANSIDisplay/DisplayRam1K.vhd
+set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/ANSIDisplay/CGABoldRomReduced.vhd
+set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/ANSIDisplay/CGABoldRom.vhd
+set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/ANSIDisplay/ANSIDisplayVGA.vhd
+set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/COUNTER/CounterLdCnt.vhd
+set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/PS2KB/Wrap_Keyboard.vhd
+set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/PS2KB/ps2_keyboard_to_ascii.vhd
+set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/PS2KB/ps2_keyboard.vhd
+set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/PS2KB/debounce.vhd
+set_global_assignment -name VHDL_FILE IOP_ROM.vhd
+set_global_assignment -name VHDL_FILE TestIOP16B.vhd
+set_global_assignment -name QIP_FILE ../../IOP_Peripherals/Constants_ROM/ConstantsROM_256B.qip
 set_global_assignment -name VHDL_FILE ../../IOP_Peripherals/Constants_ROM/ConstantsUnit.vhd
+set_global_assignment -name SIGNALTAP_FILE SignalTap/STLA_consts.stp
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE db/STLA_consts_auto_stripped.stp

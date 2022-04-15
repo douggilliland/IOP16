@@ -8,8 +8,8 @@
 --		Custom 16 bit I/O Processor
 --		Test Intruction set (enough for basic I/O)
 --		4 Clocks per instruction at 50 MHz = 12.5 MIPS
---		Uses 174 ALMs, 109 are in the IOP16
---		Uses 1 M9K SRAM blocks
+--		Uses 420 ALMs, 127 are in the IOP16
+--		Uses 2 M9K SRAM blocks
 --
 -- IOP16 MEMORY mAP
 --		0X00 			- KEY1 Pushbutton (R)
@@ -252,11 +252,11 @@ begin
 	-- Video Display Unit (VDU)
 	VDU : entity work.ANSIDisplayVGA
 	GENERIC map (
-		EXTENDED_CHARSET    => 0,	-- 1 = 256 chars
+		EXTENDED_CHARSET    => 1,	-- 1 = 256 chars
 											-- 0 = 128 chars
 		COLOUR_ATTS_ENABLED => 0,	-- 1 = Color for each character
 											-- 0 = Color applied to whole display
-		SANS_SERIF_FONT     => 1	-- 0 => use conventional CGA font
+		SANS_SERIF_FONT     => 0	-- 0 => use conventional CGA font
 											-- 1 => use san serif font
 	)
 	port map (
