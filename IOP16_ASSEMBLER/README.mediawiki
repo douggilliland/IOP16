@@ -2,9 +2,9 @@
 
 * The CPU has an Assembler
 * The Assembler is written in Python 3
-** [https://github.com/douggilliland/Design_A_CPU/tree/main/Assembler Python code is located here]
+** [https://github.com/douggilliland/IOP16/blob/main/IOP16_ASSEMBLER/pyAssemble_cpu_001.py Python code is located here]
 * There's also a Windows executable if you don't have Python 3 installed on your computer
-** [https://github.com/douggilliland/Design_A_CPU/tree/main/Assembler/dist Executable located here]
+** [https://github.com/douggilliland/IOP16/tree/main/IOP16_ASSEMBLER/dist Executable located here]
 
 == Assembler - Windows executable ==
 
