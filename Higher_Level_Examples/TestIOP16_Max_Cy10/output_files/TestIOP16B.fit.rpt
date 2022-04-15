@@ -1,5 +1,5 @@
 Fitter report for TestIOP16B
-Thu Apr 14 17:37:26 2022
+Thu Apr 14 20:14:32 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -73,7 +73,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Apr 14 17:37:26 2022       ;
+; Fitter Status                      ; Successful - Thu Apr 14 20:14:32 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; TestIOP16B                                  ;
 ; Top-level Entity Name              ; TestIOP16B                                  ;
@@ -160,14 +160,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.20        ;
+; Average used               ; 1.21        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   6.6%      ;
-;     Processor 3            ;   6.6%      ;
-;     Processor 4            ;   6.5%      ;
+;     Processor 2            ;   6.9%      ;
+;     Processor 3            ;   6.9%      ;
+;     Processor 4            ;   6.8%      ;
 +----------------------------+-------------+
 
 
@@ -2056,7 +2056,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has 3.3V VCCIO pins. 4 total pin(s) used --  10 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has 3.3V VCCIO pins. 17 total pin(s) used --  9 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has 3.3V VCCIO pins. 21 total pin(s) used --  4 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
@@ -2069,13 +2069,13 @@ Info (170195): Router estimated average interconnect usage is 5% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.76 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
+Info (11888): Total time spent on timing analysis during the Fitter is 0.83 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
 Warning (169177): 33 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone 10 LP Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
     Info (169178): Pin serSelect uses I/O standard 3.3-V LVTTL at F6 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/TestIOP16B.vhd Line: 49
     Info (169178): Pin sdRamData[0] uses I/O standard 3.3-V LVTTL at K5 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/TestIOP16B.vhd Line: 82
@@ -2123,10 +2123,10 @@ Warning (169064): Following 10 pins have no output enable or a GND or VCC output
     Info (169065): Pin ps2Data has a permanently disabled output enable File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/TestIOP16B.vhd Line: 63
 Info (144001): Generated suppressed messages file C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/output_files/TestIOP16B.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 5450 megabytes
-    Info: Processing ended: Thu Apr 14 17:37:27 2022
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 5448 megabytes
+    Info: Processing ended: Thu Apr 14 20:14:33 2022
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:20
 
 
 +----------------------------+

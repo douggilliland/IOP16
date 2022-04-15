@@ -1,5 +1,5 @@
 Flow report for TestIOP16B
-Thu Apr 14 17:37:36 2022
+Thu Apr 14 20:14:43 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Apr 14 17:37:31 2022       ;
+; Flow Status                        ; Successful - Thu Apr 14 20:14:37 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; TestIOP16B                                  ;
 ; Top-level Entity Name              ; TestIOP16B                                  ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/14/2022 17:36:24 ;
+; Start date & time ; 04/14/2022 20:13:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TestIOP16B          ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+-----------------------------------------------------------+---------------+-------------+------------------+
 ; Assignment Name                     ; Value                                                     ; Default Value ; Entity Name ; Section Id       ;
 +-------------------------------------+-----------------------------------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589187.164997218428480                            ; --            ; --          ; --               ;
+; COMPILER_SIGNATURE_ID               ; 10995770589187.164998160532284                            ; --            ; --          ; --               ;
 ; ENABLE_SIGNALTAP                    ; On                                                        ; --            ; --          ; --               ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                        ; --            ; --          ; --               ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                         ; --            ; --          ; --               ;
@@ -125,11 +125,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:47     ; 1.0                     ; 4942 MB             ; 00:01:32                           ;
-; Fitter               ; 00:00:13     ; 1.2                     ; 5450 MB             ; 00:00:18                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4705 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.2                     ; 4811 MB             ; 00:00:04                           ;
-; Total                ; 00:01:07     ; --                      ; --                  ; 00:01:57                           ;
+; Analysis & Synthesis ; 00:00:50     ; 1.0                     ; 4911 MB             ; 00:01:33                           ;
+; Fitter               ; 00:00:14     ; 1.2                     ; 5448 MB             ; 00:00:19                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4713 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.2                     ; 4819 MB             ; 00:00:05                           ;
+; Total                ; 00:01:10     ; --                      ; --                  ; 00:02:00                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

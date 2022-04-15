@@ -295,11 +295,11 @@ begin
 	-- Constants Unit
 	CONST_UNIT : entity work.ConstantsUnit
 	port map (	
-		i_clock		=> i_clk,
-		i_dataIn		=> w_periphOut,
-		i_ldStr		=> w_ldConAdr,
-		i_rdStr		=> w_rdConAdr,
-		o_constData	=> w_ConstsData
+		i_clock		=> i_clk,			-- 50 MHz clock
+		i_dataIn		=> w_periphOut,	-- Data from IOP CPU
+		i_ldStr		=> w_ldConAdr,		-- Write load address strobe
+		i_rdStr		=> w_rdConAdr,		-- Strobe to read data from ROM
+		o_constData	=> w_ConstsData	-- Data from ROM
 	);
 
 end;
