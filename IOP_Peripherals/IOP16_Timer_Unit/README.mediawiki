@@ -1,0 +1,54 @@
+== Timer Unit ==
+
+* Operates as a One-shot counter with single value
+* Count uS, mSec or secs (allows for different resolutions)
+* Write to count value starts timer
+* Poll timer status
+<pre>
+Address Value      Read/Write Data
+0       uSec Count Write      0-255 uS count - write starts timer
+1       mSec Count Write      0-255 mS count - write starts timer 
+2       Sec Count  Write      0-255 sec count - write starts timer
+3       Not Used   Write      Not used
+0-3     Status     Read       1 = Count In progresss
+                              0 = Done
+</pre>
+
+== Timer Unit Subroutines ==
+
+* Wait for 1 second
+
+<pre>
+	LRI	0X00	0X01	TIME 1 SEC
+	IOW	0X00	0X06	STORE TO START TIMER
+WAITDUN	IOR	0X01	0X04	READ TIMER
+	ARI	0X01	0X01	CHECK BUSY
+	BNZ	WAITDUN		
+</pre>
+
+== Entity ==
+
+<pre>
+-- ____________________________________________________________________________________
+-- Timer Unit
+w_timerAdr	<=	'1' when (w_peripAddr(7 downto 2) = "000010") else '0';
+timerUnit : entity work.TimerUnit
+  port map
+  (
+    -- Clock and Reset
+    i_clk         => i_clock,
+    i_n_reset     => w_resetClean_n,
+    -- The key and LED on the FPGA card 
+    i_timerSel    => w_timerAdr,
+    i_writeStrobe => w_peripWr,
+    i_regSel      => w_peripAddr(1 downto 0),
+    i_dataIn      => w_peripDataFromCPU,
+    o_dataOut    => w_timerOut
+);
+</pre>
+
+== Resources (EP4CE15) ==
+
+* Logic Cells: 89
+* Registers: 49
+* Memory Bits: 0
