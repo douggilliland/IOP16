@@ -15,7 +15,9 @@
 pyinstaller --onefile pyAssemble_cpu_001.py
 </pre>
 
-== Input fileName.csv ==
+== Files ==
+
+=== Input fileName.csv ===
 
 * Input file is tightly constrained in CSV file
 ** Input File Header has to be
@@ -24,7 +26,7 @@ pyinstaller --onefile pyAssemble_cpu_001.py
 ['LABEL', 'OPCODE', 'REG_LABEL', 'OFFSET_ADDR', 'COMMENT']
 </pre>
 
-== Memory Map File ==
+=== Memory Map File ===
 
 * Optional File named: fileName_MMAP.csv
 ** Memory map file Header has to be
@@ -36,7 +38,7 @@ pyinstaller --onefile pyAssemble_cpu_001.py
 * DIR = R, W, or RW
 ** Ex: ['0X00','R','LED_RD']
 
-== Constants file ==
+=== Constants file ===
 
 * Optional File named: fileName_CONST.csv
 * Constants file Header has to be -
