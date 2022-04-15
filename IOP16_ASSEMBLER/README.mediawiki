@@ -46,7 +46,7 @@ pyinstaller --onefile pyAssemble_cpu_001.py
 ['LABEL','STRING']
 </pre>
 
-== Output files ==
+=== Output files ===
 
 * .mif file - Quartus II ROM Memory Initialization File
 * .lst file - Listing file (with addresses)
