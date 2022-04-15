@@ -76,11 +76,11 @@ port map (
 
 == Constants Compiler ==
 
-* Program - [https://github.com/douggilliland/Design_A_CPU/blob/main/Assembler/pyConstants_cpu_001.py pyConstants_cpu_001.py]
+* [https://github.com/douggilliland/IOP16/blob/main/IOP16_ASSEMBLER/pyAssemble_cpu_001.py Assembler] takes the Constants as an input file
 ** Python 3
 ** Prompts for input file
-* Creates two output files
-** Cross reference list of LABEL, address
+* Creates output file
+** Cross reference list included in Assembler listing
 ** .MIF file with ROM contents
 *** Load ROM file by double-clickjng  ConstantsROM_256B below ConstantsUnit
 * Input file is CSV
@@ -94,13 +94,13 @@ port map (
 * Writes to VDU
 
 <pre>
-PRSTR	IOW	0X01	0X0E	LOAD CONSTANTS ADDRESS
-PRSTR2	IOR	0X01	0X0E	READ CHAR (NEXT)
-	CMP	0X01	0X00	IS END OF STRING?
-	BNE	SKIPPS		NOT END OF STRING
-	RTS			RETURN IF END
-SKIPPS	JSR	WR2VDU		PRINT TO VDU
-	JMP	PRSTR2		LOOP UNTIL NULL TERM
+02e	PRSTR	0x710E	IOW	Reg1,LD_CON_ADR	// LOAD CONSTANTS ADDRESS
+02f	PRSTR2	0x610E	IOR	Reg1,RD_CON_DAT	// READ CHAR (NEXT)
+030		0x5100	CMP	Reg1,0X00	// IS END OF STRING?
+031		0xF033	BNE	SKIPPS		// NOT END OF STRING
+032		0x3008	RTS			// RETURN IF END
+033	SKIPPS	0xC029	JSR	WR2VDU		// PRINT TO VDU
+034		0xD02F	JMP	PRSTR2		// LOOP UNTIL NULL TERM
 </pre>
 
 == Resources ==
