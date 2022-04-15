@@ -235,7 +235,7 @@ sdRamData[1]                 : L3        : input  : 3.3-V LVTTL       :         
 sdRamData[2]                 : L4        : input  : 3.3-V LVTTL       :         : 2         : Y              
 VCCA1                        : L5        : power  :                   : 2.5V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L6        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L7        :        :                   :         : 3         :                
+serSelect                    : L7        : input  : 3.3-V LVTTL       :         : 3         : N              
 sdRamAddr[14]                : L8        : output : 3.3-V LVTTL       :         : 3         : Y              
 o_UsrLed                     : L9        : output : 3.3-V LVTTL       :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : L10       :        :                   :         : 4         :                
@@ -274,7 +274,7 @@ GND                          : N10       : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : N11       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N12       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N13       :        :                   :         : 5         :                
-serSelect                    : N14       : input  : 3.3-V LVTTL       :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N14       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N15       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N16       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P1        :        :                   :         : 2         :                

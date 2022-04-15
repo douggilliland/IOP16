@@ -12,7 +12,6 @@
 --		Uses 2 M9K SRAM blocks
 --
 -- IOP16 MEMORY mAP
---		0X00 			- KEY1 Pushbutton (R)
 --		0X00			- User LED (R/W)
 --		0X01			- User Key (R)
 --		0x04-0x07 	- Timer Unit
