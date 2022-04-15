@@ -1,13 +1,66 @@
-== Assembler and Macro Compiler of the IOP16 ==
+== IOP16 Assembler ==
 
-=== pyAssemble_IOP16.py ===
+* The CPU has an Assembler
+* The Assembler is written in Python 3
+** [https://github.com/douggilliland/Design_A_CPU/tree/main/Assembler Python code is located here]
+* There's also a Windows executable if you don't have Python 3 installed on your computer
+** [https://github.com/douggilliland/Design_A_CPU/tree/main/Assembler/dist Executable located here]
 
-* Assembly language assembler
+== Assembler - Windows executable ==
 
-=== pyCompiler_IOP16.py ===
+* Windows executable is [https://github.com/douggilliland/Design_A_CPU/tree/main/Assembler/dist in this folder]
+* Useful for people who don't have Python 3 installed
+* Compiled to executable using
+<pre>
+pyinstaller --onefile pyAssemble_cpu_001.py
+</pre>
 
-* Macro code compiler
+== Input fileName.csv ==
 
-== Examples ==
+* Input file is tightly constrained in CSV file
+** Input File Header has to be
 
-* FP01_LOOP1 - Loopback pushbutton to LEDs
+<pre>
+['LABEL', 'OPCODE', 'REG_LABEL', 'OFFSET_ADDR', 'COMMENT']
+</pre>
+
+== Memory Map File ==
+
+* Optional File named: fileName_MMAP.csv
+** Memory map file Header has to be
+
+<pre>
+#	['IO_ADDR','DIR','MNEUMONIC']
+</pre>
+* IO_ADDR = 0XNN
+* DIR = R, W, or RW
+** Ex: ['0X00','R','LED_RD']
+
+== Output files ==
+
+* .mif file - Quartus II ROM Memory Initialization File
+* .lst file - Listing file (with addresses)
+
+== Assembler Psuedo-opcodes ==
+
+* NOP - No operation
+* HLT - Halt (Jump to self)
+* BEQ - Branch if equal (same as BEZ)
+* BNE - Branch if not equal (Aame as BNZ)
+
+== Error Messages ==
+
+* Error messages are pretty rudimentary.
+* Dialog box notes that error messages are printed to the command window.
+* The line with the error is printed as a list of the line.
+* Missing labels are presented as a message.
+* Only one error at a time is presented.
+
+== Assembler opcodes ==
+
+[[file:Opcodes.PNG]]
+
+== Documentation ==
+
+* [https://www.youtube.com/watch?v=ZtEJHF-pVU0&list=PLn__0BqzWEWNspQ0xkG5h-oSJ21EAet8H YouTube Video Series].
+* [https://github.com/douggilliland/Design_A_CPU/tree/main/Docs Documentation slides are here] (LibreOffice Impress Open document format).
