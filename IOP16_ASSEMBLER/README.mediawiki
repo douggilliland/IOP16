@@ -51,13 +51,6 @@ pyinstaller --onefile pyAssemble_cpu_001.py
 * .mif file - Quartus II ROM Memory Initialization File
 * .lst file - Listing file (with addresses)
 
-== Assembler Psuedo-opcodes ==
-
-* NOP - No operation
-* HLT - Halt (Jump to self)
-* BEQ - Branch if equal (same as BEZ)
-* BNE - Branch if not equal (Aame as BNZ)
-
 == Error Messages ==
 
 * Error messages are pretty rudimentary.
@@ -69,6 +62,13 @@ pyinstaller --onefile pyAssemble_cpu_001.py
 == Assembler opcodes ==
 
 [[file:Opcodes.PNG]]
+
+== Assembler Psuedo-opcodes ==
+
+* NOP - No operation
+* HLT - Halt (Jump to self)
+* BEQ - Branch if equal (same as BEZ)
+* BNE - Branch if not equal (Aame as BNZ)
 
 == Documentation ==
 
