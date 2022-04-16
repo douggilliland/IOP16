@@ -18,6 +18,9 @@
 
 == Read Keyboard ==
 
+* Returns keyboard ASCII character in Reg0
+* Destroys Reg1
+
 <pre>
 RDKBD	JSR	WTKBRX		WAIT FOR KBD RX CHAR
 	IOR	0X01	0X0D	READ KBD CHAR
@@ -29,6 +32,30 @@ WTKBRX	IOR	0X00	0X0C	READ KBD STATUS
 </pre>
 
 == Poll keyboard Status ==
+
+* Returns keyboard status in Reg0
+** 0x00 = No char
+** 0x01 - Char present
+
+<pre>
+POLLKBD	IOR	0X00	0X0C
+	RTS		
+</pre>
+
+== Check keyboard for CTRL-C ==
+
+<pre>
+CHKCTLC	IOR	0X01	0X0C	READ KBD STATUS
+	CMP	0x01	0X00	
+	BEQ	DONCTLC		KEY WAS NOT PRESSED
+SKPCTLC	IOR	0X00	0X0D	READ KBD DATA
+	CMP	0X00	0X03	IS CTRL-C
+	BNE	DONCTLC		
+	LRI	0X00	0X01	RETURNS 1 IF CTRL-C
+	JMP	EXITCTLC		
+DONCTLC	LRI	0X00	0X00	
+EXITCTLC	RTS			
+</pre>
 
 
 = VHDL Entity =
