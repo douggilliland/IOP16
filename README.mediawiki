@@ -14,7 +14,7 @@ Replaced with cpu_001 from [https://github.com/douggilliland/Design_A_CPU Design
 
 === Block Diagram ===
 
-<img src="https://raw.githubusercontent.com/douggilliland/IOP16/main/docs/IOP16_Block_Diagram.PNG"></img>
+<img src="http://land-boards.com/blwiki/images/8/8b/IOP16_Block-Diagram.png"></img>
 
 === Op Codes ===
 
