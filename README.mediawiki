@@ -1,7 +1,6 @@
-[https://hackaday.io/project/180452-small-cpu-in-vhdl Hackaday page]
-
 == IOP16 - I/O Processor with minimal instruction set ==
 
+* [https://hackaday.io/project/180452-small-cpu-in-vhdl Hackaday page]
 * 16-bit instruction code
 * 12-bits address (up to 4096 instructions stored in FPGA ROM)
 * Useful for for polled I/O
