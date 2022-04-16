@@ -2,9 +2,9 @@
 
 * The CPU has an Assembler
 * The Assembler is written in Python 3
-** [https://github.com/douggilliland/Design_A_CPU/tree/main/Assembler Python code is located here]
+** [https://github.com/douggilliland/IOP16/blob/main/IOP16_ASSEMBLER/pyAssemble_cpu_001.py Python code is located here]
 * There's also a Windows executable if you don't have Python 3 installed on your computer
-** [https://github.com/douggilliland/Design_A_CPU/tree/main/Assembler/dist Executable located here]
+** [https://github.com/douggilliland/IOP16/tree/main/IOP16_ASSEMBLER/dist Executable located here]
 
 == Assembler - Windows executable ==
 
@@ -15,7 +15,9 @@
 pyinstaller --onefile pyAssemble_cpu_001.py
 </pre>
 
-== Input fileName.csv ==
+== Files ==
+
+=== Input fileName.csv ===
 
 * Input file is tightly constrained in CSV file
 ** Input File Header has to be
@@ -24,7 +26,7 @@ pyinstaller --onefile pyAssemble_cpu_001.py
 ['LABEL', 'OPCODE', 'REG_LABEL', 'OFFSET_ADDR', 'COMMENT']
 </pre>
 
-== Memory Map File ==
+=== Memory Map File ===
 
 * Optional File named: fileName_MMAP.csv
 ** Memory map file Header has to be
@@ -36,7 +38,7 @@ pyinstaller --onefile pyAssemble_cpu_001.py
 * DIR = R, W, or RW
 ** Ex: ['0X00','R','LED_RD']
 
-== Constants file ==
+=== Constants file ===
 
 * Optional File named: fileName_CONST.csv
 * Constants file Header has to be -
@@ -44,17 +46,10 @@ pyinstaller --onefile pyAssemble_cpu_001.py
 ['LABEL','STRING']
 </pre>
 
-== Output files ==
+=== Output files ===
 
 * .mif file - Quartus II ROM Memory Initialization File
 * .lst file - Listing file (with addresses)
-
-== Assembler Psuedo-opcodes ==
-
-* NOP - No operation
-* HLT - Halt (Jump to self)
-* BEQ - Branch if equal (same as BEZ)
-* BNE - Branch if not equal (Aame as BNZ)
 
 == Error Messages ==
 
@@ -67,6 +62,13 @@ pyinstaller --onefile pyAssemble_cpu_001.py
 == Assembler opcodes ==
 
 [[file:Opcodes.PNG]]
+
+== Assembler Psuedo-opcodes ==
+
+* NOP - No operation
+* HLT - Halt (Jump to self)
+* BEQ - Branch if equal (same as BEZ)
+* BNE - Branch if not equal (Aame as BNZ)
 
 == Documentation ==
 

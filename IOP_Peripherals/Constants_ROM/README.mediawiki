@@ -1,0 +1,111 @@
+== Constants ROM with Address Counter ==
+
+A Constants ROM can be used to store strings. This is useful for printing strings to the VDU and UART.
+
+* Constants ROM
+** 256-byte (max)
+** Null-terminated strings
+** ROM "assembler" creates .MIF file and Symbol table
+* 8-bit Address Counter
+** Loadable with start address
+** Auto-increment address
+
+== Programming ==
+
+* Single address from the IOP Peripheral spave
+* Load transfer start address (W)
+* Read Data (R)
+
+== Hook-up ==
+
+* Add to Top Level VHDL code
+
+=== Pins ===
+
+* None - all internal
+
+=== Signals ===
+
+<pre>
+-- Decodes/Strobes
+...
+  signal w_ldConAdr				:	std_logic;
+  signal w_rdConAdr				:	std_logic;
+...
+-- Interfaces
+...
+signal w_ConstsData			:	std_logic_vector(7 downto 0);
+</pre>
+
+=== VHDL Instance ===
+
+* Add this entity instance code to the IOP16 top file
+
+<pre>
+-- Constants Unit
+CONST_UNIT : entity work.ConstantsUnit
+port map (	
+  i_clock     => i_clk,       -- 50 MHz clock
+  i_dataIn    => w_periphOut, -- Data from IOP CPU
+  i_ldStr     => w_ldConAdr,  -- Write load address strobe
+  i_rdStr     => w_rdConAdr,  -- Strobe to read data from ROM
+  o_constData => w_ConstsData -- Data from ROM
+);
+</pre>
+
+=== Hook-up Strobes/Read Mux ===
+
+* Strobes
+
+<pre>
+-- Add Strobes/Selects
+..
+  w_ldConAdr <= '1' when (w_periphAdr=x"0E") and (w_periphWr = '1') else '0';
+  w_rdConAdr <= '1' when (w_periphAdr=x"0E") and (w_periphRd = '1') else '0';
+...
+</pre>
+
+*  Add to Read Mux
+
+<pre>
+-- Peripheral bus read mux
+  w_periphIn <=	...
+    w_ConstsData when w_periphAdr = x"0E" else -- Read Constants ROM
+...
+</pre>
+
+== Constants Compiler ==
+
+* [https://github.com/douggilliland/IOP16/blob/main/IOP16_ASSEMBLER/pyAssemble_cpu_001.py Assembler] takes the Constants as an input file
+** Python 3
+** Prompts for input file
+* Creates output file
+** Cross reference list included in Assembler listing
+** .MIF file with ROM contents
+*** Load ROM file by double-clickjng  ConstantsROM_256B below ConstantsUnit
+* Input file is CSV
+** Header line - ['LABEL','STRING']
+
+=== Constants Subroutine ===
+
+* Routine handles constants
+* Sets constants address
+* Reads from constants ROM
+* Writes to VDU
+
+<pre>
+02e	PRSTR	0x710E	IOW	Reg1,LD_CON_ADR	// LOAD CONSTANTS ADDRESS
+02f	PRSTR2	0x610E	IOR	Reg1,RD_CON_DAT	// READ CHAR (NEXT)
+030		0x5100	CMP	Reg1,0X00	// IS END OF STRING?
+031		0xF033	BNE	SKIPPS		// NOT END OF STRING
+032		0x3008	RTS			// RETURN IF END
+033	SKIPPS	0xC029	JSR	WR2VDU		// PRINT TO VDU
+034		0xD02F	JMP	PRSTR2		// LOOP UNTIL NULL TERM
+</pre>
+
+== Resources ==
+
+* Logic Cells: 74
+* Registers: 46
+* Memory Bits: 2048
+* M9Ks: 1

@@ -39,14 +39,107 @@ d7    = Interrupt Enable (1=enable interrupts)
 * Assumes 50 MHz clock
 * Pass Baud Rate in BAUD_RATE generic as integer value (300, 9600, 115,200)
 ** Legal values are 115200, 38400, 19200, 9600, 4800, 2400, 1200, 600, 300
-* Call with
+
+== UART and Baud Rate Generator VHDL Entities ==
+
+* Code to add UART to the IOP16 top file
+
+=== Pins ===
+
+* Add to top level entity
+
 <pre>
+-- UART
+rxd1      : in std_logic := '1';  -- Hardware Handshake needed
+txd1      : out std_logic;
+cts1      : in std_logic := '1';
+rts1      : out std_logic;
+serSelect : in std_logic := '1';  -- Jumper with pullup in FPGA for selecting serial between ACIA (installed) and VDU (removed)
+</pre>
+
+=== Signals ===
+
+* Add signals to architecture section
+
+<pre>
+-- Decodes/Strobes
+...
+  signal w_wrUart				:	std_logic;
+  signal w_rdUart				:	std_logic;
+
+-- Interfaces
+..
+  signal w_UartDataOut			:	std_logic_vector(7 downto 0);
+
+-- Serial clock enable
+  signal W_serialEn      		: std_logic;		-- 16x baud rate clock	
+</pre>
+
+=== UART Entity ===
+
+<pre>
+-- 6850 style UART
+UART: entity work.bufferedUART
+  port map (
+    clk     => i_clk,
+    -- Strobes
+    n_wr    => not w_wrUart,
+    n_rd    => not w_rdUart,
+    -- CPU 
+    regSel  => w_periphAdr(0),
+    dataIn  => w_periphOut,
+    dataOut => w_UartDataOut,
+    -- Clock strobes
+    rxClkEn => serialEn,
+    txClkEn => serialEn,
+   -- Serial I/F
+    rxd     => rxd1,
+    txd     => txd1,
+    n_rts   => rts1,
+    n_cts   => cts1
+  );
+</pre>
+
+=== Baud Rate Generator Entity ===
+
+<pre>
+-- ____________________________________________________________________________________
+-- Baud Rate Generator as an entity with passed baud rate
+-- Legal BAUD_RATE values are 115200, 38400, 19200, 9600, 4800, 2400, 1200, 600, 300
 BaudRateGen : entity work.BaudRate6850
-GENERIC map (
-	BAUD_RATE	=>  115200
-)
-PORT map (
-	i_CLOCK_50	=> i_CLOCK_50,
-	o_serialEn	=> serialEn
+  GENERIC map (
+    BAUD_RATE	=>  115200
+  )
+  PORT map (
+    i_CLOCK_50	=> i_clk,
+    o_serialEn	=> w_serialEn
 );
 </pre>
+
+=== Add Code ===
+
+<pre>
+-- Peripheral bus read mux
+  w_periphIn <=	...
+...
+   w_UartDataOut when w_periphAdr(7 downto 1) = "0000100" else
+---
+
+-- Strobes/Selects
+ ...
+  w_wrUart <= '1' when ((w_periphAdr(7 downto 1)="0000100") and (w_periphWr = '1')) else '0';
+  w_rdUart <= '1' when ((w_periphAdr(7 downto 1)="0000100") and (w_periphRd = '1')) else '0';
+</pre>
+
+== FPGA Resources (EP4CE15) ==
+
+* UART
+** Logic Cells: 183
+** Registers: 94
+** Memory Bits: 128
+** M9Ks: 1
+* Baud Rate Generator
+** Logic Cells: 14
+** Registers: 13
+** Memory Bits: 0
+** M9Ks: 0
