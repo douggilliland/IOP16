@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['pyAssemble_cpu_001.py'],
-             pathex=['C:\\Users\\HPz420\\Documents\\GitHub\\Doug Gilliland\\Design_A_CPU\\Assembler'],
+             pathex=['C:\\Users\\HPz420\\Documents\\GitHub\\Doug Gilliland\\IOP16\\IOP16_ASSEMBLER'],
              binaries=[],
              datas=[],
              hiddenimports=[],

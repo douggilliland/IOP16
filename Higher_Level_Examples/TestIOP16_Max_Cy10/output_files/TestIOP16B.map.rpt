@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TestIOP16B
-Sat Apr 16 11:06:51 2022
+Sat Apr 16 15:36:47 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -93,7 +93,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 16 11:06:51 2022       ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 16 15:36:46 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; TestIOP16B                                  ;
 ; Top-level Entity Name              ; TestIOP16B                                  ;
@@ -204,7 +204,7 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -1787,7 +1787,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:13     ;
+; Top            ; 00:00:16     ;
 +----------------+--------------+
 
 
@@ -1875,7 +1875,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Sat Apr 16 11:06:00 2022
+    Info: Processing started: Sat Apr 16 15:35:55 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestIOP16B -c TestIOP16B
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -2044,7 +2044,7 @@ Info (12128): Elaborating entity "altsyncram_mt04" for hierarchy "cpu_001:IOP16|
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mc13.tdf
     Info (12023): Found entity 1: altsyncram_mc13 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/db/altsyncram_mc13.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_mc13" for hierarchy "cpu_001:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_mt04:auto_generated|altsyncram_mc13:altsyncram1" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/db/altsyncram_mt04.tdf Line: 35
-Critical Warning (127005): Memory depth (512) in the design file differs from memory depth (196) in the Memory Initialization File "C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP16_Code/IOP16_Menu/IOP16_Menu_ROM.mif" -- setting initial value for remaining addresses to 0 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/IOP_ROM.vhd Line: 60
+Critical Warning (127005): Memory depth (512) in the design file differs from memory depth (212) in the Memory Initialization File "C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP16_Code/IOP16_Menu/IOP16_Menu_ROM.mif" -- setting initial value for remaining addresses to 0 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/IOP_ROM.vhd Line: 60
 Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "cpu_001:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_mt04:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/db/altsyncram_mt04.tdf Line: 36
 Info (12130): Elaborated megafunction instantiation "cpu_001:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_mt04:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/db/altsyncram_mt04.tdf Line: 36
 Info (12133): Instantiated megafunction "cpu_001:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_mt04:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/db/altsyncram_mt04.tdf Line: 36
@@ -2258,7 +2258,7 @@ Info (12128): Elaborating entity "altsyncram_dn14" for hierarchy "ConstantsUnit:
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_v423.tdf
     Info (12023): Found entity 1: altsyncram_v423 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/db/altsyncram_v423.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_v423" for hierarchy "ConstantsUnit:CONST_UNIT|ConstantsROM_256B:CONST_ROM|altsyncram:altsyncram_component|altsyncram_dn14:auto_generated|altsyncram_v423:altsyncram1" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/db/altsyncram_dn14.tdf Line: 35
-Critical Warning (127005): Memory depth (256) in the design file differs from memory depth (134) in the Memory Initialization File "C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP16_Code/IOP16_Menu/IOP16_Menu_CONST_const.mif" -- setting initial value for remaining addresses to 0 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP_Peripherals/Constants_ROM/ConstantsROM_256B.vhd Line: 60
+Critical Warning (127005): Memory depth (256) in the design file differs from memory depth (144) in the Memory Initialization File "C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP16_Code/IOP16_Menu/IOP16_Menu_CONST_const.mif" -- setting initial value for remaining addresses to 0 File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/IOP_Peripherals/Constants_ROM/ConstantsROM_256B.vhd Line: 60
 Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "ConstantsUnit:CONST_UNIT|ConstantsROM_256B:CONST_ROM|altsyncram:altsyncram_component|altsyncram_dn14:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/db/altsyncram_dn14.tdf Line: 36
 Info (12130): Elaborated megafunction instantiation "ConstantsUnit:CONST_UNIT|ConstantsROM_256B:CONST_ROM|altsyncram:altsyncram_component|altsyncram_dn14:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/db/altsyncram_dn14.tdf Line: 36
 Info (12133): Instantiated megafunction "ConstantsUnit:CONST_UNIT|ConstantsROM_256B:CONST_ROM|altsyncram:altsyncram_component|altsyncram_dn14:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/db/altsyncram_dn14.tdf Line: 36
@@ -2293,7 +2293,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_ggc File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_Max_Cy10/db/cmpr_ggc.tdf Line: 23
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2022.04.16.11:06:26 Progress: Loading sldc2c1ab8c/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2022.04.16.15:36:19 Progress: Loading sldc2c1ab8c/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -2547,9 +2547,9 @@ Info (21057): Implemented 3649 device resources after synthesis - the final reso
     Info (21061): Implemented 3460 logic cells
     Info (21064): Implemented 93 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 120 warnings
-    Info: Peak virtual memory: 4913 megabytes
-    Info: Processing ended: Sat Apr 16 11:06:51 2022
-    Info: Elapsed time: 00:00:51
-    Info: Total CPU time (on all processors): 00:01:33
+    Info: Peak virtual memory: 4923 megabytes
+    Info: Processing ended: Sat Apr 16 15:36:47 2022
+    Info: Elapsed time: 00:00:52
+    Info: Total CPU time (on all processors): 00:01:34
 
 

@@ -651,7 +651,7 @@ class ControlClass:
 		outAsciiVals = self.makeAsciiValsConstants(longOutStr)
 		# print("processConstantsFile: outAsciiVals",outAsciiVals)
 		contsAsciiTable = self.makeACSIITableConstants(outAsciiVals)
-		print("processConstantsFile: contsAsciiTable",contsAsciiTable)
+		# print("processConstantsFile: contsAsciiTable",contsAsciiTable)
 		# print('processConstantsFile: inFileName',inFileName)
 		self.outConstantsStuff(inFileName,contsAsciiTable,constantsList)
 			
@@ -699,7 +699,7 @@ class ControlClass:
 			if char != '~':
 				hex_str = self.ascii_to_hexConstants(char)
 				outAsciiVals.append(hex_str)
-				print(hex_str)
+				# print(hex_str)
 			else:
 				outAsciiVals.append([0,0])
 		# print()
