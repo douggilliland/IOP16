@@ -39,6 +39,8 @@ Interface mimics ACIA software interface address/control/status contents
 
 == Example Code ==
 
+* Initialize the VDU
+
 <pre>
 INITVDU	LRI	0X00	0X03	RESET TERMINAL COMMAND
 	IOW	0X00	0X0A	WRITE VDU CMD REG
@@ -59,6 +61,8 @@ YELLOW	LRI	0X01	0X1B	ESC SEQ FOR YELLOW CHARS
 	RTS			
 </pre>
 
+* Wite out Reg0 to VDU
+
 <pre>
 WRVDU	JSR	WTVDUTXRDY		WAIT VDU TX READY
 	IOW	0X01	0X0B	WRITE OUT R1 TO SCREEN
@@ -68,6 +72,8 @@ WTVDUTXRDY	IOR	0X00	0X0A	READ VDU STATUS
 	BEZ	WTVDUTXRDY		WAIT UNTIL TX EMPTY
 	RTS			
 </pre>
+
+* Write CR-LF to VDU
 
 <pre>
 VDUCRLF	LRI	0X01	0X0D	CR
