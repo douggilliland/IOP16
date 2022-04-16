@@ -89,6 +89,8 @@ asmList = []
 labelsList = []
 annotatedSource = []
 
+verbose = True
+
 class ControlClass:
 	"""Methods to assemble IOP16 software.
 	"""
@@ -218,12 +220,17 @@ class ControlClass:
 		global memMapList
 		# print("getMemMapStr: memMapList",memMapList, '\nioAddr', ioAddr)
 		# assert False,"getMemMapStr"
+		if not memMapList:
+			return ''
 		for row in memMapList[1:]:
 			if row[0] == ioAddr:
-				if ioRd and ((row[1] == 'R') or (row[1] == 'RW')):
+				if row[1] == 'RW':
 					return row[2]
-				if ioWr and (row[1] == 'W'):
+				elif ioRd and (row[1] == 'R'):
 					return row[2]
+				elif ioWr and (row[1] == 'W'):
+					return row[2]
+		print("getMemMapStr: Didnt find ioAddr",ioAddr)
 		return ''
 	
 	def makeProgram(self):
@@ -232,11 +239,13 @@ class ControlClass:
 		global constantsList
 		global labelsList
 		global asmList
+		global verbose
 		progCounter = 0
 		program = []
 		# print("makeProgram: constantsList",constantsList)
 		for row in asmList[1:]:
-			# print("makeProgram: row ",row)
+			if verbose:
+				print("makeProgram: row ",row)
 			row[1] = row[1].upper()
 			if row[1] != '':
 				if row[1] == 'SLL':
@@ -633,6 +642,7 @@ class ControlClass:
 			# print('processConstantsFile: header ok')
 			pass
 		inFileName = myCSVFileReadClass.getLastPathFileName()
+		# print("processConstantsFile: constants list",inList)
 		decConstantsList = self.makeAddressTableConstants(inList)
 		constantsList = self.turnItAround(decConstantsList)
 		# print("processConstantsFile: constantsList",constantsList)
@@ -641,7 +651,7 @@ class ControlClass:
 		outAsciiVals = self.makeAsciiValsConstants(longOutStr)
 		# print("processConstantsFile: outAsciiVals",outAsciiVals)
 		contsAsciiTable = self.makeACSIITableConstants(outAsciiVals)
-		# print("processConstantsFile: contsAsciiTable",contsAsciiTable)
+		print("processConstantsFile: contsAsciiTable",contsAsciiTable)
 		# print('processConstantsFile: inFileName',inFileName)
 		self.outConstantsStuff(inFileName,contsAsciiTable,constantsList)
 			
@@ -683,12 +693,16 @@ class ControlClass:
 
 	def makeAsciiValsConstants(self, longOutStr):
 		outAsciiVals = []
+		# print("makeAsciiValsConstants: longOutStr",longOutStr)
 		for char in longOutStr:
+			# print(char,end='')
 			if char != '~':
 				hex_str = self.ascii_to_hexConstants(char)
 				outAsciiVals.append(hex_str)
+				print(hex_str)
 			else:
 				outAsciiVals.append([0,0])
+		# print()
 		return outAsciiVals
 	
 	def makeAddressTableConstants(self, inList):
@@ -698,6 +712,7 @@ class ControlClass:
 		for line in inList[1:]:
 			addressTable.append([line[0],address])
 			address += len(line[1]) + 1
+		# print("makeAddressTableConstants: addressTable",addressTable)
 		return addressTable
 
 	def makeOutStrConstants(self, inList):
@@ -738,12 +753,14 @@ class ControlClass:
 			if lineCount < 7:
 				outStr += ' '
 			lineCount += 1
-			addrCount += 1	
 			if lineCount == 8:
 				lineCount = 0
 				outStr += ';'
 				outList.append(outStr)
 				outStr = ''
+				addrCount += 8
+		if outStr != '':
+			outList.append(outStr + ';')
 		outList.append('END;')
 		# for line in outList:
 			# print(line)

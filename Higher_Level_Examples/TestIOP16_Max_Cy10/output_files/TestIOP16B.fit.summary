@@ -1,12 +1,12 @@
-Fitter Status : Successful - Fri Apr 15 14:02:00 2022
+Fitter Status : Successful - Sat Apr 16 11:07:07 2022
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : TestIOP16B
 Top-level Entity Name : TestIOP16B
 Family : Cyclone 10 LP
 Device : 10CL006YU256C8G
 Timing Models : Final
-Total logic elements : 3,332 / 6,272 ( 53 % )
-    Total combinational functions : 2,944 / 6,272 ( 47 % )
+Total logic elements : 3,336 / 6,272 ( 53 % )
+    Total combinational functions : 2,942 / 6,272 ( 47 % )
     Dedicated logic registers : 1,342 / 6,272 ( 21 % )
 Total registers : 1342
 Total pins : 91 / 177 ( 51 % )
