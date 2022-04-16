@@ -44,6 +44,10 @@ POLLKBD	IOR	0X00	0X0C
 
 == Check keyboard for CTRL-C ==
 
+* Returns CTRL-c Status
+** 0x00 - No key pressed or not Ctrl-C key
+** 0x01 - CTRL-C was pressed
+
 <pre>
 CHKCTLC	IOR	0X01	0X0C	READ KBD STATUS
 	CMP	0x01	0X00	
