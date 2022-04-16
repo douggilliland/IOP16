@@ -14,6 +14,23 @@
 
 * ASCII Data
 
+= Software Examples =
+
+== Read Keyboard ==
+
+<pre>
+RDKBD	JSR	WTKBRX		WAIT FOR KBD RX CHAR
+	IOR	0X01	0X0D	READ KBD CHAR
+	RTS			
+WTKBRX	IOR	0X00	0X0C	READ KBD STATUS
+	ARI	0X00	0X01	RX RDY BIT
+	BEZ	WTKBRX		LOOP UNTIL CHAR PRESENT
+	RTS			
+</pre>
+
+== Poll keyboard Status ==
+
+
 = VHDL Entity =
 
 <pre>
