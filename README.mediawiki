@@ -1,4 +1,4 @@
-= IOP16 - I/O Processor with minimal instruction set =
+=== IOP16 - I/O Processor with minimal instruction set ===
 
 * [https://hackaday.io/project/180452-small-cpu-in-vhdl Hackaday page]
 * [https://github.com/douggilliland/IOP16/wiki Wiki page] on GitHub
