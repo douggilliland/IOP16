@@ -1,20 +1,68 @@
-== PS/2 Keyboard ==
+= PS/2 Keyboard =
 
 * Wrapper for PS/2 keyboard interfaces
 * PS/2 to ASCII conversion
 
-=== Software Interface ===
+= Software Interface =
 
-==== Address i_RegSel - Register Select = 0  - Status register ====
+== Address i_RegSel - Register Select = 0  - Status register ==
 
 * Value = 0x00, No data present
 * Value = 0x01, Data present
 
-==== Address i_RegSel - Register Select = 0  - Data register ====
+== Address i_RegSel - Register Select = 0  - Data register ==
 
 * ASCII Data
 
-=== VHDL Entity ===
+= Software Examples =
+
+== Read Keyboard ==
+
+* Returns keyboard ASCII character in Reg0
+* Destroys Reg1
+
+<pre>
+RDKBD	JSR	WTKBRX		WAIT FOR KBD RX CHAR
+	IOR	0X01	0X0D	READ KBD CHAR
+	RTS			
+WTKBRX	IOR	0X00	0X0C	READ KBD STATUS
+	ARI	0X00	0X01	RX RDY BIT
+	BEZ	WTKBRX		LOOP UNTIL CHAR PRESENT
+	RTS			
+</pre>
+
+== Poll keyboard Status ==
+
+* Returns keyboard status in Reg0
+** 0x00 = No char
+** 0x01 - Char present
+
+<pre>
+POLLKBD	IOR	0X00	0X0C
+	RTS		
+</pre>
+
+== Check keyboard for CTRL-C ==
+
+* Returns CTRL-c Status
+** 0x00 - No key pressed or not Ctrl-C key
+** 0x01 - CTRL-C was pressed
+
+<pre>
+CHKCTLC	IOR	0X01	0X0C	READ KBD STATUS
+	CMP	0x01	0X00	
+	BEQ	DONCTLC		KEY WAS NOT PRESSED
+SKPCTLC	IOR	0X00	0X0D	READ KBD DATA
+	CMP	0X00	0X03	IS CTRL-C
+	BNE	DONCTLC		
+	LRI	0X00	0X01	RETURNS 1 IF CTRL-C
+	JMP	EXITCTLC		
+DONCTLC	LRI	0X00	0X00	
+EXITCTLC	RTS			
+</pre>
+
+
+= VHDL Entity =
 
 <pre>
 ENTITY Wrap_Keyboard IS

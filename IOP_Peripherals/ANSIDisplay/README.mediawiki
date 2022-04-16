@@ -37,6 +37,60 @@ Interface mimics ACIA software interface address/control/status contents
 <img src="http://land-boards.com/blwiki/images/4/44/ANSI_001.PNG"></img>
 <img src="http://land-boards.com/blwiki/images/7/7d/ANSI_002.PNG"></img>
 
+== Example Code ==
+
+* Initialize the VDU
+** Init VDU hardware
+** Clear the screen
+** Set text color to yellow
+** Pass value to functions in Reg1
+** Returns value from runction in Reg0
+* Destroys Reg0, Reg1
+
+<pre>
+INITVDU	LRI	0X00	0X03	RESET TERMINAL COMMAND
+	IOW	0X00	0X0A	WRITE VDU CMD REG
+	LRI	0X00	0X20	TX CTRLS RTS
+	IOW	0X00	0X0A	WRITE VDU CMD REG
+CLRSCR	LRI	0X01	0X0C	ANSI CLEAR THE SCREEN CMD
+	JSR	WRVDU		WRITE OUT CHAR IN R1
+YELLOW	LRI	0X01	0X1B	ESC SEQ FOR YELLOW CHARS
+	JSR	WRVDU		WRITE OUT CHAR IN R1
+	LRI	0X01	0X5B	[
+	JSR	WRVDU		WRITE OUT CHAR IN R1
+	LRI	0X01	0X33	3
+	JSR	WRVDU		WRITE OUT CHAR IN R1
+	LRI	0X01	0X33	3
+	JSR	WRVDU		WRITE OUT CHAR IN R1
+	LRI	0X01	0X6D	m 
+	JSR	WRVDU		WRITE OUT CHAR IN R1
+	RTS			
+</pre>
+
+* Write out char in Reg0 to VDU
+* Destroys Reg1
+
+<pre>
+WRVDU	JSR	WTVDUTXRDY		WAIT VDU TX READY
+	IOW	0X01	0X0B		WRITE OUT R1 TO SCREEN
+	RTS			
+WTVDUTXRDY	IOR	0X00	0X0A	READ VDU STATUS
+	ARI	0X00	0X02		TX EMPTY FLAG
+	BEZ	WTVDUTXRDY		WAIT UNTIL TX EMPTY
+	RTS			
+</pre>
+
+* Write CR-LF to VDU
+* Destroys Reg1
+
+<pre>
+VDUCRLF	LRI	0X01	0X0D	CR
+	JSR	WRVDU		
+	LRI	0X01	0X0A	LF
+	JSR	WRVDU		
+	RTS			
+</pre>
+
 == Acknowledgments ==
 
 These files are from [https://github.com/nealcrook/multicomp6809/tree/master/multicomp/Components/TERMINAL Neal Crook's port of the VHDL code to support VGA files] (as snagged 2019-04-08) for [http://searle.hostei.com/grant/Multicomp/index.html Grant Searle's Multicomp] Retro-Computer. [https://github.com/nealcrook/multicomp6809/wiki/VDU-Modifications Neal describes the enhancements here].

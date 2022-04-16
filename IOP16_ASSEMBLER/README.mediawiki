@@ -61,7 +61,7 @@ pyinstaller --onefile pyAssemble_cpu_001.py
 
 == Assembler opcodes ==
 
-[[file:Opcodes.PNG]]
+<img src="http://land-boards.com/blwiki/images/6/6d/Opcodes.PNG"></img>
 
 == Assembler Psuedo-opcodes ==
 

@@ -40,6 +40,39 @@ d7    = Interrupt Enable (1=enable interrupts)
 * Pass Baud Rate in BAUD_RATE generic as integer value (300, 9600, 115,200)
 ** Legal values are 115200, 38400, 19200, 9600, 4800, 2400, 1200, 600, 300
 
+== Example Code ==
+
+=== Read from UART ===
+
+* Returns character in Reg1
+* Blocks until character is received
+
+<pre>
+RDUART	JSR	WTUARTRXRDY	WAIT FOR UART RX CHAR
+	IOR	0X01	0X09	READ UART CHAR
+	RTS			RETURN KBD DATA IN REG1
+WTUARTRXRDY	IOR	0X00	0X08	READ UART STATUS
+	ARI	0X00	0X01	RX RDY BIT
+	BEZ	WTUARTRXRDY	LOOP UNTIL CHAR PRESENT
+	RTS			
+</pre>
+
+=== Write Code to UART ===
+
+* Pass character to write in Reg0
+* Destroys Reg1
+* Blocks until character can be written
+
+<pre>
+WRUART	JSR	WTUARTTXBSY		WRITE REG1 TO THE UART TX
+	IOW	0X01	0X09	
+	RTS			
+WTUARTTXBSY	IOR	0X00	0X08	WRITE REG1 OUT UART
+	ARI	0X00	0X02		TX EMPTY BIT
+	BEZ	WTUARTTXBSY		LOOP WHILE NOT EMPTY
+	RTS			
+</pre>
+
 == UART and Baud Rate Generator VHDL Entities ==
 
 * Code to add UART to the IOP16 top file

@@ -16,14 +16,18 @@ Address Value      Read/Write Data
 
 == Timer Unit Subroutines ==
 
-* Wait for 1 second
+=== Seconds Timer ===
+
+* Wait for seconds
+** Pass number of seconds to wait in Reg0
+** Destroys Reg1
 
 <pre>
-	LRI	0X00	0X01	TIME 1 SEC
-	IOW	0X00	0X06	STORE TO START TIMER
-WAITDUN	IOR	0X01	0X04	READ TIMER
+WAITSECS	IOW	0X00	0X06	STORE REG0 TO START TIMER
+WTLPSEC	IOR	0X01	0X04	READ TIMER
 	ARI	0X01	0X01	CHECK BUSY
-	BNZ	WAITDUN		
+	BNZ	WTLPSEC		
+	RTS			
 </pre>
 
 == Entity ==
