@@ -1,0 +1,145 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "txd1",
+					"strict" : false
+				},
+				{
+					"name" : "rts1",
+					"strict" : false
+				},
+				{
+					"name" : "videoR0",
+					"strict" : false
+				},
+				{
+					"name" : "videoG0",
+					"strict" : false
+				},
+				{
+					"name" : "videoB0",
+					"strict" : false
+				},
+				{
+					"name" : "videoR1",
+					"strict" : false
+				},
+				{
+					"name" : "videoG1",
+					"strict" : false
+				},
+				{
+					"name" : "videoB1",
+					"strict" : false
+				},
+				{
+					"name" : "hSync",
+					"strict" : false
+				},
+				{
+					"name" : "vSync",
+					"strict" : false
+				},
+				{
+					"name" : "gpio3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio3[7]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio4[7]",
+					"strict" : false
+				},
+				{
+					"name" : "o_UsrLed",
+					"strict" : false
+				},
+				{
+					"name" : "ps2Clk",
+					"strict" : false
+				},
+				{
+					"name" : "ps2Data",
+					"strict" : false
+				},
+				{
+					"name" : "cts1",
+					"strict" : false
+				},
+				{
+					"name" : "i_clk",
+					"strict" : false
+				},
+				{
+					"name" : "i_key1",
+					"strict" : false
+				},
+				{
+					"name" : "rxd1",
+					"strict" : false
+				},
+				{
+					"name" : "i_n_reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

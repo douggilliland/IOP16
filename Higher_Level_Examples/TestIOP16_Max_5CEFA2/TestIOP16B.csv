@@ -1,0 +1,117 @@
+# Copyright (C) 2021  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+
+# Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+# File: C:\Users\HPz420\Documents\GitHub\Doug Gilliland\IOP16\Higher_Level_Examples\TestIOP16_Max_5CEFA2\TestIOP16B.csv
+# Generated on: Sun Apr 17 07:20:17 2022
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Weak Pull-Up Resistor
+altera_reserved_tck,Input,,,,PIN_V5,,,,,
+altera_reserved_tdi,Input,,,,PIN_W5,,,,,
+altera_reserved_tdo,Output,,,,PIN_M5,,,,,
+altera_reserved_tms,Input,,,,PIN_P5,,,,,
+cts1,Input,PIN_B11,7A,B7A_N0,PIN_B11,3.3-V LVTTL,,,,
+hSync,Output,PIN_A15,7A,B7A_N0,PIN_A15,3.3-V LVTTL,,,,
+i_clk,Input,PIN_M9,3B,B3B_N0,PIN_M9,3.3-V LVTTL,,,,
+i_key1,Input,PIN_AB13,4A,B4A_N0,PIN_AB13,3.3-V LVTTL,,,,on
+i_n_reset,Input,PIN_V18,4A,B4A_N0,PIN_V18,3.3-V LVTTL,,,,on
+n_sdRamCas,Output,PIN_AA7,3B,B3B_N0,PIN_AA7,3.3-V LVTTL,,,,
+n_sdRamCe,Output,PIN_AB5,3B,B3B_N0,PIN_AB5,3.3-V LVTTL,,,,
+n_sdRamRas,Output,PIN_AB6,3B,B3B_N0,PIN_AB6,3.3-V LVTTL,,,,
+n_sdRamWe,Output,PIN_W9,3A,B3A_N0,PIN_W9,3.3-V LVTTL,,,,
+n_sRamCS,Output,PIN_E2,2A,B2A_N0,PIN_E2,3.3-V LVTTL,,,,
+n_sRamOE,Output,PIN_L2,2A,B2A_N0,PIN_L2,3.3-V LVTTL,,,,
+n_sRamWE,Output,PIN_D6,8A,B8A_N0,PIN_D6,3.3-V LVTTL,,,,
+o_UsrLed,Output,PIN_D17,7A,B7A_N0,PIN_D17,3.3-V LVTTL,,,,
+ps2Clk,Bidir,PIN_AA2,2A,B2A_N0,PIN_AA2,3.3-V LVTTL,,,,on
+ps2Data,Bidir,PIN_AA1,2A,B2A_N0,PIN_AA1,3.3-V LVTTL,,,,on
+rts1,Output,PIN_F10,8A,B8A_N0,PIN_F10,3.3-V LVTTL,,,,
+rxd1,Input,PIN_C11,7A,B7A_N0,PIN_G10,3.3-V LVTTL,,,,
+sdCS,Output,PIN_B15,7A,B7A_N0,PIN_B15,3.3-V LVTTL,,,,
+sdMISO,Input,PIN_B16,7A,B7A_N0,PIN_B16,3.3-V LVTTL,,,,on
+sdMOSI,Output,PIN_C15,7A,B7A_N0,PIN_C15,3.3-V LVTTL,,,,
+sdRamAddr[14],Output,PIN_P9,3B,B3B_N0,PIN_P9,3.3-V LVTTL,,,,
+sdRamAddr[13],Output,PIN_T7,3A,B3A_N0,PIN_T7,3.3-V LVTTL,,,,
+sdRamAddr[12],Output,PIN_Y9,3B,B3B_N0,PIN_Y9,3.3-V LVTTL,,,,
+sdRamAddr[11],Output,PIN_T9,3B,B3B_N0,PIN_T9,3.3-V LVTTL,,,,
+sdRamAddr[10],Output,PIN_R6,3A,B3A_N0,PIN_R6,3.3-V LVTTL,,,,
+sdRamAddr[9],Output,PIN_W8,3A,B3A_N0,PIN_W8,3.3-V LVTTL,,,,
+sdRamAddr[8],Output,PIN_T8,3A,B3A_N0,PIN_T8,3.3-V LVTTL,,,,
+sdRamAddr[7],Output,PIN_U8,3A,B3A_N0,PIN_U8,3.3-V LVTTL,,,,
+sdRamAddr[6],Output,PIN_V6,3A,B3A_N0,PIN_V6,3.3-V LVTTL,,,,
+sdRamAddr[5],Output,PIN_U7,3A,B3A_N0,PIN_U7,3.3-V LVTTL,,,,
+sdRamAddr[4],Output,PIN_U6,3A,B3A_N0,PIN_U6,3.3-V LVTTL,,,,
+sdRamAddr[3],Output,PIN_N6,3A,B3A_N0,PIN_N6,3.3-V LVTTL,,,,
+sdRamAddr[2],Output,PIN_N8,3B,B3B_N0,PIN_N8,3.3-V LVTTL,,,,
+sdRamAddr[1],Output,PIN_P7,3A,B3A_N0,PIN_P7,3.3-V LVTTL,,,,
+sdRamAddr[0],Output,PIN_P8,3B,B3B_N0,PIN_P8,3.3-V LVTTL,,,,
+sdRamClk,Output,PIN_AB11,3B,B3B_N0,PIN_AB11,3.3-V LVTTL,,,,
+sdRamClkEn,Output,PIN_V9,3B,B3B_N0,PIN_V9,3.3-V LVTTL,,,,
+sdRamData[15],Input,PIN_P12,3B,B3B_N0,PIN_P12,3.3-V LVTTL,,,,
+sdRamData[14],Input,PIN_R12,3B,B3B_N0,PIN_R12,3.3-V LVTTL,,,,
+sdRamData[13],Input,PIN_U12,3B,B3B_N0,PIN_U12,3.3-V LVTTL,,,,
+sdRamData[12],Input,PIN_R11,3B,B3B_N0,PIN_R11,3.3-V LVTTL,,,,
+sdRamData[11],Input,PIN_R10,3B,B3B_N0,PIN_R10,3.3-V LVTTL,,,,
+sdRamData[10],Input,PIN_U11,3B,B3B_N0,PIN_U11,3.3-V LVTTL,,,,
+sdRamData[9],Input,PIN_T10,3B,B3B_N0,PIN_T10,3.3-V LVTTL,,,,
+sdRamData[8],Input,PIN_U10,3B,B3B_N0,PIN_U10,3.3-V LVTTL,,,,
+sdRamData[7],Input,PIN_AA8,3B,B3B_N0,PIN_AA8,3.3-V LVTTL,,,,
+sdRamData[6],Input,PIN_AB8,3B,B3B_N0,PIN_AB8,3.3-V LVTTL,,,,
+sdRamData[5],Input,PIN_AA9,3B,B3B_N0,PIN_AA9,3.3-V LVTTL,,,,
+sdRamData[4],Input,PIN_Y10,3B,B3B_N0,PIN_Y10,3.3-V LVTTL,,,,
+sdRamData[3],Input,PIN_AB10,3B,B3B_N0,PIN_AB10,3.3-V LVTTL,,,,
+sdRamData[2],Input,PIN_AA10,3B,B3B_N0,PIN_AA10,3.3-V LVTTL,,,,
+sdRamData[1],Input,PIN_Y11,3B,B3B_N0,PIN_Y11,3.3-V LVTTL,,,,
+sdRamData[0],Input,PIN_AA12,3B,B3B_N0,PIN_AA12,3.3-V LVTTL,,,,
+sdSCLK,Output,PIN_C16,7A,B7A_N0,PIN_C16,3.3-V LVTTL,,,,
+serSelect,Input,PIN_L17,5B,B5B_N0,PIN_L17,3.3-V LVTTL,,,,
+sramAddress[19],Output,PIN_E9,8A,B8A_N0,PIN_E9,3.3-V LVTTL,,,,
+sramAddress[18],Output,PIN_B5,8A,B8A_N0,PIN_B5,3.3-V LVTTL,,,,
+sramAddress[17],Output,PIN_B6,8A,B8A_N0,PIN_B6,3.3-V LVTTL,,,,
+sramAddress[16],Output,PIN_A7,8A,B8A_N0,PIN_A7,3.3-V LVTTL,,,,
+sramAddress[15],Output,PIN_A10,8A,B8A_N0,PIN_A10,3.3-V LVTTL,,,,
+sramAddress[14],Output,PIN_A8,8A,B8A_N0,PIN_A8,3.3-V LVTTL,,,,
+sramAddress[13],Output,PIN_B7,8A,B8A_N0,PIN_B7,3.3-V LVTTL,,,,
+sramAddress[12],Output,PIN_A5,8A,B8A_N0,PIN_A5,3.3-V LVTTL,,,,
+sramAddress[11],Output,PIN_D9,8A,B8A_N0,PIN_D9,3.3-V LVTTL,,,,
+sramAddress[10],Output,PIN_C6,8A,B8A_N0,PIN_C6,3.3-V LVTTL,,,,
+sramAddress[9],Output,PIN_E7,8A,B8A_N0,PIN_E7,3.3-V LVTTL,,,,
+sramAddress[8],Output,PIN_G2,2A,B2A_N0,PIN_G2,3.3-V LVTTL,,,,
+sramAddress[7],Output,PIN_N2,2A,B2A_N0,PIN_N2,3.3-V LVTTL,,,,
+sramAddress[6],Output,PIN_U2,2A,B2A_N0,PIN_U2,3.3-V LVTTL,,,,
+sramAddress[5],Output,PIN_W2,2A,B2A_N0,PIN_W2,3.3-V LVTTL,,,,
+sramAddress[4],Output,PIN_Y3,2A,B2A_N0,PIN_Y3,3.3-V LVTTL,,,,
+sramAddress[3],Output,PIN_U1,2A,B2A_N0,PIN_U1,3.3-V LVTTL,,,,
+sramAddress[2],Output,PIN_N1,2A,B2A_N0,PIN_N1,3.3-V LVTTL,,,,
+sramAddress[1],Output,PIN_L1,2A,B2A_N0,PIN_L1,3.3-V LVTTL,,,,
+sramAddress[0],Output,PIN_G1,2A,B2A_N0,PIN_G1,3.3-V LVTTL,,,,
+sramData[7],Bidir,PIN_D3,2A,B2A_N0,PIN_D3,3.3-V LVTTL,,,,
+sramData[6],Bidir,PIN_C2,2A,B2A_N0,PIN_C2,3.3-V LVTTL,,,,
+sramData[5],Bidir,PIN_H6,8A,B8A_N0,PIN_H6,3.3-V LVTTL,,,,
+sramData[4],Bidir,PIN_H8,8A,B8A_N0,PIN_H8,3.3-V LVTTL,,,,
+sramData[3],Bidir,PIN_F7,8A,B8A_N0,PIN_F7,3.3-V LVTTL,,,,
+sramData[2],Bidir,PIN_G8,8A,B8A_N0,PIN_G8,3.3-V LVTTL,,,,
+sramData[1],Bidir,PIN_G6,8A,B8A_N0,PIN_G6,3.3-V LVTTL,,,,
+sramData[0],Bidir,PIN_C1,2A,B2A_N0,PIN_C1,3.3-V LVTTL,,,,
+txd1,Output,PIN_G10,8A,B8A_N0,PIN_C11,3.3-V LVTTL,,,,
+videoB0,Output,PIN_B13,7A,B7A_N0,PIN_B13,3.3-V LVTTL,,,,
+videoB1,Output,PIN_A13,7A,B7A_N0,PIN_A13,3.3-V LVTTL,,,,
+videoG0,Output,PIN_D13,7A,B7A_N0,PIN_D13,3.3-V LVTTL,,,,
+videoG1,Output,PIN_C13,7A,B7A_N0,PIN_C13,3.3-V LVTTL,,,,
+videoR0,Output,PIN_E12,7A,B7A_N0,PIN_E12,3.3-V LVTTL,,,,
+videoR1,Output,PIN_D12,7A,B7A_N0,PIN_D12,3.3-V LVTTL,,,,
+vSync,Output,PIN_A14,7A,B7A_N0,PIN_A14,3.3-V LVTTL,,,,
