@@ -3,6 +3,8 @@
 --		Run software that reads the pushbutton and writes to LED on the FPGA card.
 --		https://github.com/douggilliland/IOP16/tree/main/IOP16_Code/testLED
 --		Runs on RETRO-EP4CE15
+--		Runs in MultiComp in a Box
+--			http://land-boards.com/blwiki/index.php?title=Multicomp_in_a_Box
 --	
 -- IOP16 CPU
 --		Custom 16 bit I/O Processor

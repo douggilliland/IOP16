@@ -1,0 +1,87 @@
+{| class="wikitable"
+! To
+! Direction
+! Location
+! Weak Pull-Up Resistor
+|-
+| gpio3[7]
+| Output
+| PIN_M18
+| 
+|-
+| gpio3[6]
+| Output
+| PIN_N19
+| 
+|-
+| gpio3[5]
+| Output
+| PIN_M21
+| 
+|-
+| gpio3[4]
+| Output
+| PIN_M20
+| 
+|-
+| gpio3[3]
+| Output
+| PIN_N20
+| 
+|-
+| gpio3[2]
+| Output
+| PIN_N21
+| 
+|-
+| gpio3[1]
+| Output
+| PIN_P16
+| 
+|-
+| gpio3[0]
+| Output
+| PIN_P17
+| 
+|-
+| gpio4[7]
+| Output
+| PIN_T20
+| 
+|-
+| gpio4[6]
+| Output
+| PIN_T19
+| 
+|-
+| gpio4[5]
+| Output
+| PIN_P22
+| 
+|-
+| gpio4[4]
+| Output
+| PIN_R21
+| 
+|-
+| gpio4[3]
+| Output
+| PIN_R22
+| 
+|-
+| gpio4[2]
+| Output
+| PIN_T22
+| 
+|-
+| gpio4[1]
+| Output
+| PIN_U21
+| 
+|-
+| gpio4[0]
+| Output
+| PIN_U20
+| 
+|-
+|}
