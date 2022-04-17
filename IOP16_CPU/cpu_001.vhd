@@ -207,6 +207,9 @@ BEGIN
 	-- Register File
 	-- Supports up to 16 of 8-bit registers
 	RegFile : ENTITY work.RegisterFile
+	GENERIC map (
+		NUM_REGS => 4	-- 4, 8. or 16
+	)
 	PORT MAP (
 		i_clock		=> i_clock,
 		i_ldRegF		=> w_ldRegF,

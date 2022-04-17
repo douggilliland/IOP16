@@ -1,17 +1,20 @@
 --	---------------------------------------------------------------------------------------------------------
 -- Maximal IOP16 CPU Example Code
---		Run software that reads the pushbutton and writes to LED on the FPGA card.
---		https://github.com/douggilliland/IOP16/tree/main/IOP16_Code/testLED
---		Runs on RETRO-EP4CE15
+--		Demo software
+--			https://github.com/douggilliland/IOP16/tree/main/IOP16_Code/IOP16_Menu
 --		Runs in MultiComp in a Box
 --			http://land-boards.com/blwiki/index.php?title=Multicomp_in_a_Box
+--		Runs on QMTech Cyclone V FPGA Board
+--			http://land-boards.com/blwiki/index.php?title=QM_Tech_Cyclone_V_FPGA_Board
+--		Base card
+--			http://land-boards.com/blwiki/index.php?title=RETRO-EP4CE15
 --	
 -- IOP16 CPU
 --		Custom 16 bit I/O Processor
 --		Test Intruction set (enough for basic I/O)
 --		4 Clocks per instruction at 50 MHz = 12.5 MIPS
---		Uses 420 ALMs, 127 are in the IOP16
---		Uses 2 M9K SRAM blocks
+--		Uses 1233 ALMs, 221 are in the IOP16
+--		Uses 2 M9K SRAM blocks for IOP16 CPU
 --
 -- IOP16 MEMORY mAP
 --		0X00			- User LED (R/W)

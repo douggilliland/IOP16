@@ -223,15 +223,36 @@ class ControlClass:
 		if not memMapList:
 			return ''
 		for row in memMapList[1:]:
-			if row[0] == ioAddr:
+			if row[2] == ioAddr:
 				if row[1] == 'RW':
 					return row[2]
 				elif ioRd and (row[1] == 'R'):
 					return row[2]
 				elif ioWr and (row[1] == 'W'):
 					return row[2]
+		print("getMemMapStr: memMapList",memMapList)
 		print("getMemMapStr: Didnt find ioAddr",ioAddr)
+		assert False,"Memory Map error"
 		return ''
+	
+	def getMapAddr(self,ioAddrName,ioRd,ioWr):
+		""" getMapAddr
+		memMapList [
+		['IO_ADDR', 'DIR', 'MNEUMONIC'], 
+		['0x00', 'RW', 'USR_LED']
+		"""
+		global memMapList
+		for row in memMapList[1:]:
+			if row[2] == ioAddrName:
+				if row[1] == 'RW':
+					return row[0]
+				elif (row[1] == 'W') and ioWr:
+					return row[0]
+				elif (row[1] == 'R') and ioRd:
+					return row[0]
+		print("getMapAddr: memMapList",memMapList)
+		print("getMapAddr: ioAddr",ioAddrName,"not found in memory map")
+		assert False,"Memory Map error"
 	
 	def makeProgram(self):
 		""" makeProgram
@@ -313,12 +334,20 @@ class ControlClass:
 				elif row[1] == 'IOR':
 					vecStr = '0x6'
 					vecStr += row[2][-1]
-					vecStr += row[3][-2:]
+					if row[3][0:2] == "0X":
+						vecStr += row[3][-2:]
+					else:
+						retAddr = self.getMapAddr(row[3],True,False)
+						vecStr += retAddr[-2:]
 					program.append(vecStr)
 				elif row[1] == 'IOW':
 					vecStr = '0x7'
 					vecStr += row[2][-1]
-					vecStr += row[3][-2:]
+					if row[3][0:2] == "0X":
+						vecStr += row[3][-2:]
+					else:
+						retAddr = self.getMapAddr(row[3],False,True)
+						vecStr += retAddr[-2:]
 					program.append(vecStr)
 				elif row[1] == 'XRI':
 					vecStr = '0x8'
@@ -391,7 +420,7 @@ class ControlClass:
 					print('makeProgram: bad instr', row)
 					assert False,'bad instr'
 				progCounter += 1
-		# print('makeProgram: program',program)
+		print('makeProgram: program',program)
 		return program
 	
 	def findConstantsString(self,addrHexStr):
