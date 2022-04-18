@@ -52,7 +52,6 @@ entity TestIOP16B is
 		txd1			: out std_logic;
 		cts1			: in std_logic := '1';
 		rts1			: out std_logic;
-		serSelect	: in std_logic := '1';		-- Jumper with pullup in FPGA for selecting serial between ACIA (installed) and VDU (removed)
 		
 		-- VGA
 		videoR0		: out std_logic := '1';
@@ -95,7 +94,8 @@ entity TestIOP16B is
 		sdMISO		: in std_logic := '1';
 		sdSCLK		: out std_logic := '1';
 		-- -- driveLED		: out std_logic :='1'		-- D5 LED
-		o_UsrLed						: out std_logic := '1'		-- USR LED on the FPGA card
+		
+		o_UsrLed		: out std_logic := '1'		-- USR LED on the FPGA card
 	);
 	end TestIOP16B;
 

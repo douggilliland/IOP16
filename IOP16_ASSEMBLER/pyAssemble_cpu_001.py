@@ -420,7 +420,7 @@ class ControlClass:
 					print('makeProgram: bad instr', row)
 					assert False,'bad instr'
 				progCounter += 1
-		print('makeProgram: program',program)
+		# print('makeProgram: program',program)
 		return program
 	
 	def findConstantsString(self,addrHexStr):

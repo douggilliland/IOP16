@@ -166,7 +166,7 @@ BEGIN
 						x"01"	when i_regSel = x"9" else
 						regA	when i_regSel = x"A" else
 						regB	when i_regSel = x"B" else
-						regB	when i_regSel = x"C" else
+						regC	when i_regSel = x"C" else
 						regD	when i_regSel = x"D" else
 						regE	when i_regSel = x"E" else
 						x"FF"	when i_regSel = x"F";

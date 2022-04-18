@@ -16,7 +16,6 @@ rxd1 => buffereduart:UART.rxd
 txd1 <= buffereduart:UART.txd
 cts1 => buffereduart:UART.n_cts
 rts1 <= buffereduart:UART.n_rts
-serSelect => ~NO_FANOUT~
 videoR0 <= ansidisplayvga:VDU.videoR0
 videoG0 <= ansidisplayvga:VDU.videoG0
 videoB0 <= ansidisplayvga:VDU.videoB0
