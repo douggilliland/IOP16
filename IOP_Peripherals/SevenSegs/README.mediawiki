@@ -1,6 +1,1 @@
-== Seven Segment Displays ==
-
-* Three versions
-** 3 digits
-** 4 digits
-** 8 digits
+[https://github.com/douggilliland/IOP16/wiki/IOP-16-Seven-Segment-3-4-8-digit-display Seven Segment Wiki page]
