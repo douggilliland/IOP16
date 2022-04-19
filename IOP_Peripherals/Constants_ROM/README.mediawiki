@@ -1,6 +1,5 @@
 == Constants ROM with Address Counter ==
 
-* [https://github.com/douggilliland/IOP16/tree/main/IOP_Peripherals/Constants_ROM VHDL code]
 * A Constants ROM can be used to store strings
 * This is useful for printing strings to the VDU and UART.
 
