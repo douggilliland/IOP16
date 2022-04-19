@@ -1,1 +1,1 @@
-[https://github.com/douggilliland/IOP16/wiki/IOP-16-I2C I2c Wiki page]
+[https://github.com/douggilliland/IOP16/wiki/IOP-16-I2C I2C Wiki page]
