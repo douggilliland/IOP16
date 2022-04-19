@@ -1,5 +1,7 @@
 == General-purpose I/O ==
 
+<img src="http://land-boards.com/blwiki/images/e/e2/IOP-16_LEDs_P18125_720px.jpg"></a>
+
 From [https://github.com/nealcrook/multicomp6809/blob/master/multicomp/Components/GPIO/gpio.vhd Neal Crook's simple GPIO unit].
 
 * A simple GPIO unit for a 6809 multicomp. 
