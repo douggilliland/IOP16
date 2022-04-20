@@ -1,16 +1,1 @@
-== Peripherals Set ==
-
-Peripheral are adapted from [https://github.com/douggilliland/MultiComp MultiComp] and other places.
-
-* [[IOP16 ANSI Display|ANSI Display]] (better display)
-* [[IOP16 Constants Unit]] - ROM and counter for constants
-* [[IOP16 Front Panel interface|Front Panel interface]]
-* [[IOP16 General Purpose I/O (GPIO)|General Purpose I/O (GPIO)]]
-* [[IOP16 I2C|I2C]]
-* [[IOP16 PS/2 Keyboard|PS/2 Keyboard]]
-* [[IOP16 SD Card|SD Card]]
-* [[IOP16 SPI|SPI]]
-* [[IOP16 Seven Segment Displays|Seven Segment Displays]]
-* [[IOP16 Timer Unit|Timer Unit]]
-* [[IOP16 UART|UART]]
-* [[IOP16 VGA|VGA]] (2nd ANSI Display)
+[https://github.com/douggilliland/IOP16/wiki/IOP16B-Peripheral-Support Peripherals Set Wiki page]
