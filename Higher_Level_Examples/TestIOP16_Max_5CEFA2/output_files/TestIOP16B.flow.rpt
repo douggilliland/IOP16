@@ -1,5 +1,5 @@
 Flow report for TestIOP16B
-Sun Apr 17 19:48:59 2022
+Tue Apr 19 11:16:49 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Apr 17 19:48:45 2022       ;
+; Flow Status                     ; Successful - Tue Apr 19 11:16:33 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; TestIOP16B                                  ;
 ; Top-level Entity Name           ; TestIOP16B                                  ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEFA2F23I7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 1,214 / 9,430 ( 13 % )                      ;
-; Total registers                 ; 960                                         ;
+; Logic utilization (in ALMs)     ; 1,636 / 9,430 ( 17 % )                      ;
+; Total registers                 ; 1979                                        ;
 ; Total pins                      ; 106 / 224 ( 47 % )                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 43,136 / 1,802,240 ( 2 % )                  ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/17/2022 19:46:50 ;
+; Start date & time ; 04/19/2022 11:14:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TestIOP16B          ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+-----------------------------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                                     ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+-----------------------------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589187.165023921035132                            ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 10995770589187.165038126437224                            ; --            ; --          ; --         ;
 ; ENABLE_SIGNALTAP                    ; Off                                                       ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 100                                                       ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; -40                                                       ; --            ; --          ; --         ;
@@ -100,11 +100,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:49     ; 1.0                     ; 4956 MB             ; 00:01:33                           ;
-; Fitter               ; 00:00:55     ; 1.2                     ; 6351 MB             ; 00:01:49                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 4863 MB             ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:13     ; 1.5                     ; 5203 MB             ; 00:00:18                           ;
-; Total                ; 00:02:04     ; --                      ; --                  ; 00:03:46                           ;
+; Analysis & Synthesis ; 00:00:47     ; 1.0                     ; 4950 MB             ; 00:01:31                           ;
+; Fitter               ; 00:01:10     ; 1.2                     ; 6368 MB             ; 00:02:26                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4876 MB             ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:15     ; 1.7                     ; 5227 MB             ; 00:00:23                           ;
+; Total                ; 00:02:19     ; --                      ; --                  ; 00:04:27                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TestIOP16B
-Mon Apr 11 08:25:22 2022
+Tue Apr 19 11:06:21 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -24,13 +24,14 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
  16. Source assignments for cpu_001:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_2o44:auto_generated
  17. Source assignments for cpu_001:IOP16|ALU_Unit:ALU_Unit
  18. Parameter Settings for User Entity Instance: cpu_001:IOP16
- 19. Parameter Settings for User Entity Instance: cpu_001:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component
- 20. altsyncram Parameter Settings by Entity Instance
- 21. Port Connectivity Checks: "cpu_001:IOP16|ProgramCounter:progCtr"
- 22. Port Connectivity Checks: "cpu_001:IOP16"
- 23. Post-Synthesis Netlist Statistics for Top Partition
- 24. Elapsed Time Per Partition
- 25. Analysis & Synthesis Messages
+ 19. Parameter Settings for User Entity Instance: cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo
+ 20. Parameter Settings for User Entity Instance: cpu_001:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component
+ 21. altsyncram Parameter Settings by Entity Instance
+ 22. Port Connectivity Checks: "cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo"
+ 23. Port Connectivity Checks: "cpu_001:IOP16"
+ 24. Post-Synthesis Netlist Statistics for Top Partition
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
 
 
 
@@ -57,13 +58,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Apr 11 08:25:22 2022       ;
+; Analysis & Synthesis Status     ; Successful - Tue Apr 19 11:06:21 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; TestIOP16B                                  ;
 ; Top-level Entity Name           ; TestIOP16B                                  ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 153                                         ;
+; Total registers                 ; 237                                         ;
 ; Total pins                      ; 137                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 8,192                                       ;
@@ -217,16 +218,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 176         ;
+; Estimate of Logic utilization (ALMs needed) ; 224         ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 281         ;
-;     -- 7 input functions                    ; 3           ;
-;     -- 6 input functions                    ; 60          ;
-;     -- 5 input functions                    ; 60          ;
-;     -- 4 input functions                    ; 28          ;
-;     -- <=3 input functions                  ; 130         ;
+; Combinational ALUT usage for logic          ; 336         ;
+;     -- 7 input functions                    ; 21          ;
+;     -- 6 input functions                    ; 73          ;
+;     -- 5 input functions                    ; 68          ;
+;     -- 4 input functions                    ; 30          ;
+;     -- <=3 input functions                  ; 144         ;
 ;                                             ;             ;
-; Dedicated logic registers                   ; 153         ;
+; Dedicated logic registers                   ; 237         ;
 ;                                             ;             ;
 ; I/O pins                                    ; 137         ;
 ; Total MLAB memory bits                      ; 0           ;
@@ -235,9 +236,9 @@ https://fpgasoftware.intel.com/eula.
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; i_clk~input ;
-; Maximum fan-out                             ; 169         ;
-; Total fan-out                               ; 1820        ;
-; Average fan-out                             ; 2.48        ;
+; Maximum fan-out                             ; 253         ;
+; Total fan-out                               ; 2336        ;
+; Average fan-out                             ; 2.68        ;
 +---------------------------------------------+-------------+
 
 
@@ -246,18 +247,19 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                        ; Entity Name     ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |TestIOP16B                                  ; 281 (4)             ; 153 (2)                   ; 8192              ; 0          ; 137  ; 0            ; |TestIOP16B                                                                                                                ; TestIOP16B      ; work         ;
+; |TestIOP16B                                  ; 336 (12)            ; 237 (2)                   ; 8192              ; 0          ; 137  ; 0            ; |TestIOP16B                                                                                                                ; TestIOP16B      ; work         ;
 ;    |Debouncer:debounceReset|                 ; 27 (27)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |TestIOP16B|Debouncer:debounceReset                                                                                        ; Debouncer       ; work         ;
 ;    |TimerUnit:timerUnit|                     ; 74 (74)             ; 49 (49)                   ; 0                 ; 0          ; 0    ; 0            ; |TestIOP16B|TimerUnit:timerUnit                                                                                            ; TimerUnit       ; work         ;
-;    |cpu_001:IOP16|                           ; 176 (44)            ; 76 (0)                    ; 8192              ; 0          ; 0    ; 0            ; |TestIOP16B|cpu_001:IOP16                                                                                                  ; cpu_001         ; work         ;
+;    |cpu_001:IOP16|                           ; 223 (56)            ; 160 (0)                   ; 8192              ; 0          ; 0    ; 0            ; |TestIOP16B|cpu_001:IOP16                                                                                                  ; cpu_001         ; work         ;
 ;       |ALU_Unit:ALU_Unit|                    ; 64 (64)             ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TestIOP16B|cpu_001:IOP16|ALU_Unit:ALU_Unit                                                                                ; ALU_Unit        ; work         ;
-;       |GreyCode:GreyCodeCounter|             ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |TestIOP16B|cpu_001:IOP16|GreyCode:GreyCodeCounter                                                                         ; GreyCode        ; work         ;
+;       |GreyCode:GreyCodeCounter|             ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |TestIOP16B|cpu_001:IOP16|GreyCode:GreyCodeCounter                                                                         ; GreyCode        ; work         ;
 ;       |IOP_ROM:\GEN_512W_INST_ROM:IopRom|    ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |TestIOP16B|cpu_001:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom                                                                ; IOP_ROM         ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |TestIOP16B|cpu_001:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
 ;             |altsyncram_2o44:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |TestIOP16B|cpu_001:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_2o44:auto_generated ; altsyncram_2o44 ; work         ;
-;       |ProgramCounter:progCtr|               ; 10 (10)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |TestIOP16B|cpu_001:IOP16|ProgramCounter:progCtr                                                                           ; ProgramCounter  ; work         ;
+;       |ProgramCounter:progCtr|               ; 19 (19)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |TestIOP16B|cpu_001:IOP16|ProgramCounter:progCtr                                                                           ; ProgramCounter  ; work         ;
 ;       |RegisterFile:RegFile|                 ; 33 (33)             ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |TestIOP16B|cpu_001:IOP16|RegisterFile:RegFile                                                                             ; RegisterFile    ; work         ;
 ;       |Shifter:Shifter|                      ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TestIOP16B|cpu_001:IOP16|Shifter:Shifter                                                                                  ; Shifter         ; work         ;
+;       |lifo:\GEN_STACK_DEEPER:lifo|          ; 25 (25)             ; 84 (84)                   ; 0                 ; 0          ; 0    ; 0            ; |TestIOP16B|cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo                                                                      ; lifo            ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -271,24 +273,73 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------------------------------------+
 
 
-+----------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                         ;
-+-------------------------------------------------------+--------------------+
-; Register name                                         ; Reason for Removal ;
-+-------------------------------------------------------+--------------------+
-; cpu_001:IOP16|ProgramCounter:progCtr|w_progCtr[9..11] ; Lost fanout        ;
-; Total Number of Removed Registers = 3                 ;                    ;
-+-------------------------------------------------------+--------------------+
++------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                           ;
++---------------------------------------------------------+--------------------+
+; Register name                                           ; Reason for Removal ;
++---------------------------------------------------------+--------------------+
+; cpu_001:IOP16|ProgramCounter:progCtr|w_progCtr[9..11]   ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|o_data[9..11] ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~27      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~26      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~25      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~39      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~38      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~37      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~51      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~50      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~49      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~63      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~62      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~61      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~75      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~74      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~73      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~87      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~86      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~85      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~99      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~98      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~97      ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~111     ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~110     ; Lost fanout        ;
+; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~109     ; Lost fanout        ;
+; Total Number of Removed Registers = 30                  ;                    ;
++---------------------------------------------------------+--------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                   ;
-+----------------------------------------------------+--------------------+-----------------------------------------------------+
-; Register name                                      ; Reason for Removal ; Registers Removed due to This Register              ;
-+----------------------------------------------------+--------------------+-----------------------------------------------------+
-; cpu_001:IOP16|ProgramCounter:progCtr|w_progCtr[11] ; Lost Fanouts       ; cpu_001:IOP16|ProgramCounter:progCtr|w_progCtr[10], ;
-;                                                    ;                    ; cpu_001:IOP16|ProgramCounter:progCtr|w_progCtr[9]   ;
-+----------------------------------------------------+--------------------+-----------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                     ;
++----------------------------------------------------+--------------------+-------------------------------------------------------+
+; Register name                                      ; Reason for Removal ; Registers Removed due to This Register                ;
++----------------------------------------------------+--------------------+-------------------------------------------------------+
+; cpu_001:IOP16|ProgramCounter:progCtr|w_progCtr[11] ; Lost Fanouts       ; cpu_001:IOP16|ProgramCounter:progCtr|w_progCtr[10],   ;
+;                                                    ;                    ; cpu_001:IOP16|ProgramCounter:progCtr|w_progCtr[9],    ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|o_data[11], ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|o_data[10], ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|o_data[9],  ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~27,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~26,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~25,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~39,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~38,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~37,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~51,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~50,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~49,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~63,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~62,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~61,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~75,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~74,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~73,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~99,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~98,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~97,   ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~111,  ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~110,  ;
+;                                                    ;                    ; cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem~109   ;
++----------------------------------------------------+--------------------+-------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -296,12 +347,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 153   ;
-; Number of registers using Synchronous Clear  ; 39    ;
-; Number of registers using Synchronous Load   ; 9     ;
+; Total registers                              ; 237   ;
+; Number of registers using Synchronous Clear  ; 42    ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 117   ;
+; Number of registers using Clock Enable       ; 200   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -312,26 +363,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
 ; o_UsrLed~reg0                          ; 2       ;
-; Debouncer:debounceReset|o_PinOut       ; 21      ;
+; Debouncer:debounceReset|o_PinOut       ; 34      ;
 ; Total number of inverted registers = 2 ;         ;
 +----------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |TestIOP16B|cpu_001:IOP16|ProgramCounter:progCtr|w_progCtr[5] ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |TestIOP16B|TimerUnit:timerUnit|w_countSecs[7]                ;
-; 8:1                ; 10 bits   ; 50 LEs        ; 0 LEs                ; 50 LEs                 ; Yes        ; |TestIOP16B|TimerUnit:timerUnit|w_countmSecs[9]               ;
-; 8:1                ; 10 bits   ; 50 LEs        ; 0 LEs                ; 50 LEs                 ; Yes        ; |TestIOP16B|TimerUnit:timerUnit|w_countuSecs[2]               ;
-; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; Yes        ; |TestIOP16B|TimerUnit:timerUnit|prescalerUSec[2]              ;
-; 5:1                ; 7 bits    ; 21 LEs        ; 21 LEs               ; 0 LEs                  ; No         ; |TestIOP16B|cpu_001:IOP16|w_regFIn[1]                         ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |TestIOP16B|cpu_001:IOP16|ALU_Unit:ALU_Unit|o_ALU_Out         ;
-; 7:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; No         ; |TestIOP16B|cpu_001:IOP16|Shifter:Shifter|o_DataOut           ;
-; 9:1                ; 7 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |TestIOP16B|cpu_001:IOP16|RegisterFile:RegFile|o_RegFData[1]  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |TestIOP16B|cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_wr_index[2] ;
+; 5:1                ; 12 bits   ; 36 LEs        ; 24 LEs               ; 12 LEs                 ; Yes        ; |TestIOP16B|cpu_001:IOP16|ProgramCounter:progCtr|w_progCtr[11]      ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |TestIOP16B|TimerUnit:timerUnit|w_countSecs[7]                      ;
+; 8:1                ; 10 bits   ; 50 LEs        ; 0 LEs                ; 50 LEs                 ; Yes        ; |TestIOP16B|TimerUnit:timerUnit|w_countmSecs[1]                     ;
+; 8:1                ; 10 bits   ; 50 LEs        ; 0 LEs                ; 50 LEs                 ; Yes        ; |TestIOP16B|TimerUnit:timerUnit|w_countuSecs[3]                     ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; Yes        ; |TestIOP16B|TimerUnit:timerUnit|prescalerUSec[3]                    ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 21 LEs               ; 0 LEs                  ; No         ; |TestIOP16B|cpu_001:IOP16|w_regFIn[1]                               ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |TestIOP16B|cpu_001:IOP16|ALU_Unit:ALU_Unit|o_ALU_Out               ;
+; 7:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; No         ; |TestIOP16B|cpu_001:IOP16|Shifter:Shifter|o_DataOut                 ;
+; 9:1                ; 7 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |TestIOP16B|cpu_001:IOP16|RegisterFile:RegFile|o_RegFData[1]        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------+
@@ -341,6 +393,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+-------+------+---------------+
 ; IGNORE_LCELL_BUFFERS         ; off   ; -    ; OP_IOR        ;
 ; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; OP_IOR        ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; w_ProgCtr[11] ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; w_ProgCtr[11] ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; w_ProgCtr[10] ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; w_ProgCtr[10] ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; w_ProgCtr[9]  ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; w_ProgCtr[9]  ;
 ; IGNORE_LCELL_BUFFERS         ; off   ; -    ; w_ProgCtr[8]  ;
 ; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; w_ProgCtr[8]  ;
 ; IGNORE_LCELL_BUFFERS         ; off   ; -    ; w_ProgCtr[7]  ;
@@ -529,8 +587,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Parameter Name     ; Value ; Type                          ;
 +--------------------+-------+-------------------------------+
 ; inst_rom_size_pass ; 512   ; Signed Integer                ;
-; stack_depth_pass   ; 0     ; Signed Integer                ;
+; stack_depth_pass   ; 3     ; Signed Integer                ;
 +--------------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; g_index_width  ; 3     ; Signed Integer                                                ;
+; g_data_width   ; 12    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -615,13 +684,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+---------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "cpu_001:IOP16|ProgramCounter:progCtr"                                                           ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port             ; Type   ; Severity ; Details                                                                             ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------+
-; o_progctr[11..9] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo"                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; o_full  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; o_empty ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------+
@@ -638,32 +708,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 153                         ;
-;     ENA               ; 80                          ;
-;     ENA SCLR          ; 28                          ;
-;     ENA SCLR SLD      ; 9                           ;
-;     SCLR              ; 2                           ;
+; arriav_ff             ; 237                         ;
+;     ENA               ; 161                         ;
+;     ENA SCLR          ; 39                          ;
+;     SCLR              ; 3                           ;
 ;     plain             ; 34                          ;
 ; arriav_io_obuf        ; 10                          ;
-; arriav_lcell_comb     ; 284                         ;
-;     arith             ; 64                          ;
-;         1 data inputs ; 55                          ;
-;         2 data inputs ; 9                           ;
-;     extend            ; 3                           ;
-;         7 data inputs ; 3                           ;
-;     normal            ; 217                         ;
+; arriav_lcell_comb     ; 339                         ;
+;     arith             ; 72                          ;
+;         1 data inputs ; 62                          ;
+;         2 data inputs ; 10                          ;
+;     extend            ; 21                          ;
+;         7 data inputs ; 21                          ;
+;     normal            ; 246                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 42                          ;
-;         2 data inputs ; 8                           ;
-;         3 data inputs ; 17                          ;
-;         4 data inputs ; 28                          ;
-;         5 data inputs ; 60                          ;
-;         6 data inputs ; 60                          ;
+;         1 data inputs ; 43                          ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 18                          ;
+;         4 data inputs ; 30                          ;
+;         5 data inputs ; 68                          ;
+;         6 data inputs ; 73                          ;
 ; boundary_port         ; 137                         ;
 ; stratixv_ram_block    ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.30                        ;
-; Average LUT depth     ; 4.38                        ;
+; Average LUT depth     ; 3.93                        ;
 +-----------------------+-----------------------------+
 
 
@@ -682,7 +751,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Mon Apr 11 08:25:05 2022
+    Info: Processing started: Tue Apr 19 11:06:04 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestIOP16B -c TestIOP16B
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -750,9 +819,9 @@ Warning (10540): VHDL Signal Declaration warning at TestIOP16B.vhd(80): used exp
 Warning (10036): Verilog HDL or VHDL warning at TestIOP16B.vhd(94): object "w_periphRd" assigned a value but never read File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 94
 Info (12128): Elaborating entity "Debouncer" for hierarchy "Debouncer:debounceReset" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 110
 Info (12128): Elaborating entity "TimerUnit" for hierarchy "TimerUnit:timerUnit" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 118
-Info (12128): Elaborating entity "cpu_001" for hierarchy "cpu_001:IOP16" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 136
-Warning (10541): VHDL Signal Declaration warning at cpu_001.vhd(50): used implicit default value for signal "w_rtnAddr" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 50
+Info (12128): Elaborating entity "cpu_001" for hierarchy "cpu_001:IOP16" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 137
 Info (12128): Elaborating entity "ProgramCounter" for hierarchy "cpu_001:IOP16|ProgramCounter:progCtr" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 146
+Info (12128): Elaborating entity "lifo" for hierarchy "cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 186
 Info (12128): Elaborating entity "RegisterFile" for hierarchy "cpu_001:IOP16|RegisterFile:RegFile" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 209
 Info (12128): Elaborating entity "Shifter" for hierarchy "cpu_001:IOP16|Shifter:Shifter" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 235
 Info (12128): Elaborating entity "IOP_ROM" for hierarchy "cpu_001:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 264
@@ -814,6 +883,13 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (12128): Elaborating entity "altsyncram_2o44" for hierarchy "cpu_001:IOP16|IOP_ROM:\GEN_512W_INST_ROM:IopRom|altsyncram:altsyncram_component|altsyncram_2o44:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "GreyCode" for hierarchy "cpu_001:IOP16|GreyCode:GreyCodeCounter" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 309
 Info (12128): Elaborating entity "ALU_Unit" for hierarchy "cpu_001:IOP16|ALU_Unit:ALU_Unit" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 318
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276007): RAM logic "cpu_001:IOP16|lifo:\GEN_STACK_DEEPER:lifo|r_mem" is uninferred due to asynchronous read logic File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/lifo.vhd Line: 58
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following LCELL buffer node(s):
+        Warning (14320): Synthesized away node "cpu_001:IOP16|w_ProgCtr[9]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
+        Warning (14320): Synthesized away node "cpu_001:IOP16|w_ProgCtr[10]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
+        Warning (14320): Synthesized away node "cpu_001:IOP16|w_ProgCtr[11]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
 Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "ps2Clk" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 54
     Warning (13040): bidirectional pin "ps2Data" has no driver File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 55
@@ -930,16 +1006,16 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "sdMOSI" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 78
     Warning (13410): Pin "sdSCLK" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 80
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Info (17049): 30 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "cpu_001:IOP16|w_romData[7]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
     Info (17048): Logic cell "cpu_001:IOP16|w_romData[6]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
     Info (17048): Logic cell "cpu_001:IOP16|w_romData[5]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
     Info (17048): Logic cell "cpu_001:IOP16|w_romData[3]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
-    Info (17048): Logic cell "cpu_001:IOP16|w_romData[15]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
-    Info (17048): Logic cell "cpu_001:IOP16|w_romData[4]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
-    Info (17048): Logic cell "cpu_001:IOP16|w_romData[13]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
     Info (17048): Logic cell "cpu_001:IOP16|w_romData[12]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:IOP16|w_romData[4]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:IOP16|w_romData[15]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
+    Info (17048): Logic cell "cpu_001:IOP16|w_romData[13]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
     Info (17048): Logic cell "cpu_001:IOP16|w_romData[14]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
     Info (17048): Logic cell "cpu_001:IOP16|w_romData[2]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
     Info (17048): Logic cell "cpu_001:IOP16|w_romData[1]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
@@ -948,7 +1024,6 @@ Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "cpu_001:IOP16|w_romData[8]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
     Info (17048): Logic cell "cpu_001:IOP16|w_romData[10]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
     Info (17048): Logic cell "cpu_001:IOP16|w_romData[9]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 61
-    Info (17048): Logic cell "cpu_001:IOP16|w_ProgCtr[0]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
     Info (17048): Logic cell "cpu_001:IOP16|w_ProgCtr[1]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
     Info (17048): Logic cell "cpu_001:IOP16|w_ProgCtr[2]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
     Info (17048): Logic cell "cpu_001:IOP16|w_ProgCtr[3]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/Design_A_CPU/cpu_001.vhd Line: 46
@@ -993,16 +1068,16 @@ Warning (21074): Design contains 20 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "sdRamData[14]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
     Warning (15610): No output dependent on input pin "sdRamData[15]" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 74
     Warning (15610): No output dependent on input pin "sdMISO" File: C:/Users/HPz420/Documents/GitHub/Doug Gilliland/IOP16/Higher_Level_Examples/TestIOP16_InABox/TestIOP16B.vhd Line: 79
-Info (21057): Implemented 511 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 638 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 104 output pins
     Info (21060): Implemented 10 bidirectional pins
-    Info (21061): Implemented 358 logic cells
+    Info (21061): Implemented 485 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 164 warnings
-    Info: Peak virtual memory: 4899 megabytes
-    Info: Processing ended: Mon Apr 11 08:25:22 2022
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 168 warnings
+    Info: Peak virtual memory: 4900 megabytes
+    Info: Processing ended: Tue Apr 19 11:06:21 2022
     Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Total CPU time (on all processors): 00:00:42
 
 

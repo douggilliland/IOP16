@@ -62,7 +62,7 @@ BEGIN
 		address_aclr_a => "NONE",
 		clock_enable_input_a => "BYPASS",
 		clock_enable_output_a => "BYPASS",
-		init_file => "../../IOP16_Code/testTimer/testTimer.mif",
+		init_file => "../../../IOP16_Code/IOP16_Menu/IOP16_Menu_ROM.mif",
 		intended_device_family => "Cyclone V",
 		lpm_hint => "ENABLE_RUNTIME_MOD=NO",
 		lpm_type => "altsyncram",
@@ -104,7 +104,7 @@ END SYN;
 -- Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
 -- Retrieval info: PRIVATE: JTAG_ID STRING "NONE"
 -- Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
--- Retrieval info: PRIVATE: MIFfilename STRING "../../IOP16_Code/testTimer/testTimer.mif"
+-- Retrieval info: PRIVATE: MIFfilename STRING "../../../IOP16_Code/IOP16_Menu/IOP16_Menu_ROM.mif"
 -- Retrieval info: PRIVATE: NUMWORDS_A NUMERIC "512"
 -- Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "0"
 -- Retrieval info: PRIVATE: RegAddr NUMERIC "1"
@@ -119,7 +119,7 @@ END SYN;
 -- Retrieval info: CONSTANT: ADDRESS_ACLR_A STRING "NONE"
 -- Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_A STRING "BYPASS"
 -- Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_A STRING "BYPASS"
--- Retrieval info: CONSTANT: INIT_FILE STRING "../../IOP16_Code/testTimer/testTimer.mif"
+-- Retrieval info: CONSTANT: INIT_FILE STRING "../../../IOP16_Code/IOP16_Menu/IOP16_Menu_ROM.mif"
 -- Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Cyclone V"
 -- Retrieval info: CONSTANT: LPM_HINT STRING "ENABLE_RUNTIME_MOD=NO"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"

@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Mon Apr 11 08:25:22 2022
+Analysis & Synthesis Status : Successful - Tue Apr 19 11:06:21 2022
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : TestIOP16B
 Top-level Entity Name : TestIOP16B
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 153
+Total registers : 237
 Total pins : 137
 Total virtual pins : 0
 Total block memory bits : 8,192

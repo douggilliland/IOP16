@@ -156,11 +156,12 @@ begin
 	-- I/O Processor
 	-- Set ROM size in generic INST_SRAM_SIZE_PASS (512W uses 1 of 1K Blocks in EP4CE15 FPGA)
 	-- Set stack size in STACK_DEPTH generic
+	--	https://github.com/douggilliland/IOP16/wiki/Subroutine-Address-Stack
 	IOP16: ENTITY work.cpu_001
 	-- Need to pass down instruction RAM and stack sizes
 		generic map 	( 
 			INST_ROM_SIZE_PASS	=> 512,	-- Small code size since program is "simple"
-			STACK_DEPTH_PASS		=> 4		-- Single level subroutine (not nested)
+			STACK_DEPTH_PASS		=> 7		-- Subroutine depth (nesting depth)
 		)
 		PORT map
 		(
