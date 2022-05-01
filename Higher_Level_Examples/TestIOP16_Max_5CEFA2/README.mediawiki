@@ -6,7 +6,7 @@
 
 * Minimal IOP16 build for 5CEFA2F23I7 FPGA
 
-<img src="http://land-boards.com/blwiki/images/8/8f/RETRO-EP4CE15-REV4-BLACK-P1464-720PX.jpg"></img>
+<img src="http://land-boards.com/blwiki/images/e/e2/IOP-16_LEDs_P18125_720px.jpg"></img>
 
 === VHDL Code ===
 
