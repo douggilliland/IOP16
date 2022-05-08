@@ -5,3 +5,4 @@
 * [https://hackaday.io/project/180452-small-cpu-in-vhdl Hackaday page]
 * [https://github.com/douggilliland/IOP16/wiki Wiki page] on GitHub
 * [http://land-boards.com/blwiki/index.php?title=IOP16_16-bit_I/O_CPU_Design Wiki page] on Land Boards
+* [https://github.com/douggilliland/IOP16/tree/main/IOP16_Code/IOP16_Menu Menu Driven demo program]
