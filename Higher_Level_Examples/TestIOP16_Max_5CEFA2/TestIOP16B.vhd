@@ -30,6 +30,7 @@
 --		0x0E			- Read Constants value (R)
 --		0x10			- GPIO3 (8-bit output port)
 --		0x11			- GPIO4 (8-bit output port)
+--		0x20			- Data Stack
 --		
 --	---------------------------------------------------------------------------------------------------------
 
@@ -123,6 +124,8 @@ architecture struct of TestIOP16B is
 	signal w_rdConAdr				:	std_logic;
 	signal w_wrGpio3				:	std_logic;
 	signal w_wrGpio4				:	std_logic;
+	signal w_wrDatStk				:	std_logic;
+	signal w_rdDatStk				:	std_logic;
 
 -- Interfaces
 	signal w_timerOut				:	std_logic_vector(7 downto 0);
@@ -132,6 +135,7 @@ architecture struct of TestIOP16B is
 	signal w_ConstsData			:	std_logic_vector(7 downto 0);
 	signal w_gpio3					:	std_logic_vector(7 downto 0);
 	signal w_gpio4					:	std_logic_vector(7 downto 0);
+	signal w_DataStk				:	std_logic_vector(7 downto 0);
 
 -- Serial clock enable
 	signal W_serialEn      		: std_logic;		-- 16x baud rate clock	
@@ -185,6 +189,7 @@ begin
 						w_ConstsData			when w_periphAdr = x"0E"						else		-- Read Constants ROM
 						w_gpio3					when w_periphAdr = x"10"						else		-- Read back gpio3
 						w_gpio4					when w_periphAdr = x"11"						else		-- Read back gpio4
+						w_DataStk				when w_periphAdr = x"20"						else		-- Read Dats Stack
 						x"00";
 
 	-- Strobes/Selects
@@ -199,6 +204,8 @@ begin
 	w_rdConAdr	<= '1' when (w_periphAdr=x"0E")							and (w_periphRd = '1')	else '0';
 	w_wrGpio3	<= '1' when (w_periphAdr=x"10")							and (w_periphWr = '1')	else '0';
 	w_wrGpio4	<= '1' when (w_periphAdr=x"11")							and (w_periphWr = '1')	else '0';
+	w_wrDatStk	<= '1' when (w_periphAdr=x"20")							and (w_periphWr = '1')	else '0';
+	w_rdDatStk	<= '1' when (w_periphAdr=x"20")							and (w_periphRd = '1')	else '0';
 
 	-- Latch up the LED bit
 	o_UsrLed <= W_LED;
@@ -256,8 +263,19 @@ begin
 		o_dataOut			=> w_timerOut
 	);
 
+	-- Data Stack - Pass/return parameters stack
+	DATASTACK : entity work.IOP16DataStack
+	PORT map (
+		i_CLOCK_50		=> i_clk,
+		i_n_reset		=> w_resetClean_n,
+		i_dataStkDin	=> w_periphOut,
+		i_wrDatStk		=> w_wrDatStk,
+		i_rdDatStk		=> w_rdDatStk,
+		o_dataStkDout	=> w_DataStk
+	);
+
 	-- Baud Rate Generator
-	-- These clock enables are asserted for one period of input clk, at 16x the baud rate.
+		-- These clock enables are asserted for one period of input clk, at 16x the baud rate.
 	-- Set baud rate in BAUD_RATE generic
 	BAUDRATEGEN	:	ENTITY work.BaudRate6850
 		GENERIC map (
